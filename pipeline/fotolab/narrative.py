@@ -10,7 +10,8 @@ import numpy as np
 
 
 def _pct(x: float) -> str:
-    return f"{x * 100:.0f}%".replace(".", ",")
+    # round half up, like Intl.NumberFormat in the web app (Python's format() rounds half to even)
+    return f"{int(x * 100 + 0.5)}%"
 
 
 def _usd(x: float) -> str:

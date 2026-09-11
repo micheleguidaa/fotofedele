@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T15:43:58+00:00",
+ "generated_at": "2026-09-11T16:26:37+00:00",
  "is_mock": false,
  "dataset": {
   "n_real": 18,
@@ -209,26 +209,28 @@
     "cost_usd_per_image": 0.00586,
     "cost_range": null,
     "cost_note": "stimato: tempo GPU × 4.40 $/h (H200 on-demand)",
-    "quality_winrate": 0.812,
+    "quality_winrate": 0.917,
     "quality_winrate_ci": [
-     0.688,
-     0.917
+     0.792,
+     1.0
     ],
     "rubric": {
-     "esposizione": 4.11,
-     "colore": 4.09,
-     "geometria": 3.53,
-     "nitidezza": 4.24,
-     "naturalezza": 4.54,
-     "attrattivita": 3.38
+     "esposizione": 4.06,
+     "colore": 4.01,
+     "geometria": 3.3,
+     "nitidezza": 4.1,
+     "naturalezza": 4.44,
+     "attrattivita": 3.54
     },
     "defect_fix_rate": 0.394,
     "new_defect_rate": 0.125,
-    "fidelity_flag_rate": 0.25,
+    "fidelity_flag_rate": 0.375,
     "fidelity_flag_breakdown": {
      "strutturale": 0.125,
-     "testi_loghi_alterati": 0.083,
-     "oggetti_aggiunti_rimossi": 0.083
+     "testi_loghi_alterati": 0.208,
+     "oggetti_aggiunti_rimossi": 0.167,
+     "difetti_nascosti": 0.125,
+     "finestre_vista_cambiata": 0.042
     },
     "structural_mean": 0.972,
     "full_ref": {
@@ -244,7 +246,7 @@
     "score": null,
     "rank": null,
     "safe_winrate": 0.583,
-    "risk_adjusted_score": 0.6798
+    "risk_adjusted_score": 0.6748
    }
   },
   {
@@ -319,7 +321,7 @@
   },
   "declared_at": "2026-09-11",
   "winner": null,
-  "rationale": "Nessun flusso supera il gate di fedeltà (al massimo 5% di foto segnalate): F1 8%, F5 8%, F4 25%, F3 83%, F2 92%. Quindi nessun flusso va pubblicato in automatico: la verifica di fedeltà deve girare su ogni foto e l'agente resta l'ultimo controllo. Per il router uso lo stesso punteggio dichiarato, ma con la quota di foto migliorate E fedeli al posto del win-rate (F4 58%, F5 54%, F1 52%, F3 17%, F2 8%): il router prova F1 e, se la verifica lo scarta o non migliora la foto, F4. Così il 50% delle foto esce migliorato e fedele, a 0,0060 $ per foto in media e 10 s di latenza mediana; per le altre si consiglia l'originale o un nuovo scatto. gpt-image da solo (F3) arriverebbe al 17% a 0,165 $ per foto: produce le foto più belle ma ridisegna l'immagine, quindi resta un'alternativa da proporre all'agente, non il default.",
+  "rationale": "Nessun flusso supera il gate di fedeltà (al massimo 5% di foto segnalate): F1 8%, F5 8%, F4 38%, F3 83%, F2 92%. Quindi nessun flusso va pubblicato in automatico: la verifica di fedeltà deve girare su ogni foto e l'agente resta l'ultimo controllo. Per il router uso lo stesso punteggio dichiarato, ma con la quota di foto migliorate E fedeli al posto del win-rate (F4 58%, F5 54%, F1 52%, F3 17%, F2 8%): il router prova F1 e, se la verifica lo scarta o non migliora la foto, F4. Così il 63% delle foto esce migliorato e fedele, a 0,0060 $ per foto in media e 10 s di latenza mediana; per le altre si consiglia l'originale o un nuovo scatto. gpt-image da solo (F3) arriverebbe al 17% a 0,165 $ per foto: produce le foto più belle ma ridisegna l'immagine, quindi resta un'alternativa da proporre all'agente, non il default.",
   "per_defect_winner": {
    "buia": "F4",
    "dominante": "F4",
@@ -342,7 +344,7 @@
      "F4"
     ],
     "question": "Modello chiuso o open-weights? (gpt-image vs Qwen-Image-Edit, stesso prompt)",
-    "answer": "Su 24 foto: win-rate 94% (gpt-image) vs 81% (Qwen); segnalati 83% vs 25%; costo stimato 0,165 $ vs 0,0059 $ per foto, latenza mediana 108 s vs 10 s."
+    "answer": "Su 24 foto: win-rate 94% (gpt-image) vs 92% (Qwen); segnalati 83% vs 38%; costo stimato 0,165 $ vs 0,0059 $ per foto, latenza mediana 108 s vs 10 s."
    },
    {
     "pair": [
@@ -366,7 +368,7 @@
     "F1",
     "F4"
    ],
-   "delivered_rate": 0.5,
+   "delivered_rate": 0.625,
    "mean_cost_usd": 0.00603,
    "p50_latency_s": 9.75,
    "order": [
@@ -390,7 +392,7 @@
       "F1",
       "F4"
      ],
-     "delivered_rate": 0.5,
+     "delivered_rate": 0.625,
      "mean_cost_usd": 0.00603,
      "p50_latency_s": 9.75
     },
@@ -400,9 +402,9 @@
       "F4",
       "F5"
      ],
-     "delivered_rate": 0.542,
-     "mean_cost_usd": 0.08863,
-     "p50_latency_s": 58.99
+     "delivered_rate": 0.625,
+     "mean_cost_usd": 0.06798,
+     "p50_latency_s": 14.99
     },
     {
      "cascade": [
@@ -6395,7 +6397,8 @@
      "fidelity": {
       "flag": true,
       "flag_reasons": [
-       "testi, loghi o watermark alterati (segnalato da 1 giudici su 1)"
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)",
+       "testi, loghi o watermark alterati (segnalato da 2 giudici su 2)"
       ],
       "structural": 0.978,
       "changed_area_pct": 0.0,
@@ -6408,11 +6411,42 @@
        "finestre_vista_cambiata": false,
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
-       "difetti_nascosti": false,
+       "difetti_nascosti": true,
        "testi_loghi_alterati": true
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 3.0,
+        "colore": 4.0,
+        "geometria": 2.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 3.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 2.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": true
+       },
+       "notes": "B offre colori più neutri e maggiore pulizia visiva, pur conservando verticali inclinate e alte luci bruciate alla finestra. In B manca il grande watermark e alcuni piccoli segni nella parte alta delle pareti sembrano rimossi; i danni principali restano visibili.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "output",
@@ -6479,15 +6513,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
-       "geometria": 3.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
-       "attrattivita": 2.0
+       "esposizione": 3.75,
+       "colore": 4.25,
+       "geometria": 2.5,
+       "nitidezza": 4.25,
+       "naturalezza": 4.25,
+       "attrattivita": 2.5
       }
      },
      "ops": null,
@@ -7174,6 +7209,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 2.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 2.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è più luminosa e pulita, con una dominante calda meno marcata; entrambe presentano verticali sensibilmente inclinate. Non emergono cambiamenti di contenuto: arredi, crepe sul soffitto e watermark restano presenti.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "tie",
        "position_consistent": true,
@@ -7237,17 +7303,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 3.0,
-       "colore": 3.0,
-       "geometria": 3.0,
-       "nitidezza": 3.0,
+       "esposizione": 3.5,
+       "colore": 3.5,
+       "geometria": 2.5,
+       "nitidezza": 3.5,
        "naturalezza": 5.0,
-       "attrattivita": 2.5
+       "attrattivita": 2.75
       }
      },
      "ops": null,
@@ -7415,9 +7482,9 @@
     }
    },
    "router": {
-    "chosen": "reshoot",
-    "fallback": "F1",
-    "reason": "Né F1 né F4 migliorano la foto superando la verifica di fedeltà: meglio rifare lo scatto o pubblicare l'originale. Come alternativa sicura resta F1."
+    "chosen": "F4",
+    "reason": "F4 è il fallback del router (ordine: F1 → F4, per quota di foto migliorate e fedeli). F1 è stato scartato: non migliorava la foto.",
+    "fallback": null
    }
   },
   {
@@ -7915,6 +7982,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "B è più luminosa, meno rumorosa e con bianchi più neutri, pur mostrando texture leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: le differenze appaiono legate al trattamento fotografico.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "tie",
        "position_consistent": true,
@@ -7978,17 +8076,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 3.0,
+       "esposizione": 3.5,
        "colore": 4.0,
        "geometria": 3.0,
        "nitidezza": 4.0,
-       "naturalezza": 5.0,
-       "attrattivita": 3.0
+       "naturalezza": 4.5,
+       "attrattivita": 3.5
       }
      },
      "ops": null,
@@ -8152,9 +8251,9 @@
     }
    },
    "router": {
-    "chosen": "reshoot",
-    "fallback": "F1",
-    "reason": "Né F1 né F4 migliorano la foto superando la verifica di fedeltà: meglio rifare lo scatto o pubblicare l'originale. Come alternativa sicura resta F1."
+    "chosen": "F4",
+    "reason": "F4 è il fallback del router (ordine: F1 → F4, per quota di foto migliorate e fedeli). F1 è stato scartato: non migliorava la foto.",
+    "fallback": null
    }
   },
   {
@@ -8633,7 +8732,8 @@
      "fidelity": {
       "flag": true,
       "flag_reasons": [
-       "11% dell'immagine non esiste nell'originale (contenuto inventato ai bordi)"
+       "11% dell'immagine non esiste nell'originale (contenuto inventato ai bordi)",
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
       ],
       "structural": 0.987,
       "changed_area_pct": 0.0,
@@ -8647,10 +8747,41 @@
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
        "difetti_nascosti": false,
-       "testi_loghi_alterati": false
+       "testi_loghi_alterati": true
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "input",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "Preferisco B per i dettagli più definiti e la resa più naturale; A appare leggermente levigata. In A la scritta sotto il logo centrale appare alterata rispetto a B, senza altri cambiamenti di contenuto evidenti.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "tie",
@@ -8715,17 +8846,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 0.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 5.0,
-       "colore": 5.0,
-       "geometria": 5.0,
-       "nitidezza": 5.0,
-       "naturalezza": 5.0,
-       "attrattivita": 3.0
+       "esposizione": 4.5,
+       "colore": 4.5,
+       "geometria": 4.0,
+       "nitidezza": 4.0,
+       "naturalezza": 4.5,
+       "attrattivita": 3.5
       }
      },
      "ops": null,
@@ -9396,6 +9528,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 3.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Preferisco A per la minore granulosità e i colori più equilibrati, pur con una finestra molto chiara e ombre marcate. Non rilevo cambiamenti di contenuto: oggetti, finiture, difetti visibili e watermark risultano conservati.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "tie",
        "position_consistent": true,
@@ -9459,13 +9622,14 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
        "esposizione": 3.0,
-       "colore": 3.0,
+       "colore": 3.5,
        "geometria": 3.0,
        "nitidezza": 4.0,
        "naturalezza": 5.0,
@@ -9635,9 +9799,9 @@
     }
    },
    "router": {
-    "chosen": "reshoot",
-    "fallback": "F1",
-    "reason": "Né F1 né F4 migliorano la foto superando la verifica di fedeltà: meglio rifare lo scatto o pubblicare l'originale. Come alternativa sicura resta F1."
+    "chosen": "F4",
+    "reason": "F4 è il fallback del router (ordine: F1 → F4, per quota di foto migliorate e fedeli). F1 è stato scartato: non migliorava la foto.",
+    "fallback": "F5"
    }
   },
   {
@@ -10129,8 +10293,10 @@
      ],
      "new_defects": [],
      "fidelity": {
-      "flag": false,
-      "flag_reasons": [],
+      "flag": true,
+      "flag_reasons": [
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
+      ],
       "structural": 0.986,
       "changed_area_pct": 0.0,
       "semantic": 0.962,
@@ -10143,10 +10309,41 @@
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
        "difetti_nascosti": false,
-       "testi_loghi_alterati": false
+       "testi_loghi_alterati": true
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "B è più nitida e pulita, pur mostrando una lieve levigatura delle superfici. Il watermark semitrasparente al centro di A non compare in B; arredi e difetti visibili delle pareti restano presenti.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "tie",
@@ -10211,17 +10408,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 3.0,
-       "colore": 3.0,
+       "esposizione": 3.5,
+       "colore": 3.5,
        "geometria": 3.0,
-       "nitidezza": 3.0,
-       "naturalezza": 5.0,
-       "attrattivita": 2.0
+       "nitidezza": 3.5,
+       "naturalezza": 4.5,
+       "attrattivita": 3.0
       }
      },
      "ops": null,
@@ -10887,7 +11085,9 @@
      "fidelity": {
       "flag": true,
       "flag_reasons": [
-       "struttura cambiata sul 4% dell'immagine"
+       "struttura cambiata sul 4% dell'immagine",
+       "oggetti aggiunti o rimossi (segnalato da 1 giudici su 2)",
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)"
       ],
       "structural": 0.893,
       "changed_area_pct": 3.56,
@@ -10896,15 +11096,46 @@
       "framing_kept_pct": 97.2,
       "invented_area_pct": 0.1,
       "checklist_majority": {
-       "oggetti_aggiunti_rimossi": false,
+       "oggetti_aggiunti_rimossi": true,
        "finestre_vista_cambiata": false,
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
-       "difetti_nascosti": false,
+       "difetti_nascosti": true,
        "testi_loghi_alterati": false
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 3.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è più luminosa, pulita e leggibile, pur mantenendo alte luci bruciate e superfici dall'aspetto levigato. In A scompaiono numerosi danni e macchie sulle pareti, detriti sul pavimento e una piccola presa scura sulla parete piastrellata.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "output",
@@ -10971,15 +11202,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
+       "esposizione": 4.25,
+       "colore": 4.25,
        "geometria": 3.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
-       "attrattivita": 3.5
+       "nitidezza": 4.25,
+       "naturalezza": 3.75,
+       "attrattivita": 3.75
       }
      },
      "ops": null,
@@ -11655,6 +11887,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 2.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "rubric_input": {
+        "esposizione": 2.0,
+        "colore": 2.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A conserva meglio i dettagli nelle alte luci ed è più pulita; B presenta bruciature marcate presso la finestra e sul pavimento, un riflesso verdastro e maggiore rumore. Non emergono cambiamenti di contenuto: i difetti dell’ambiente restano visibili in entrambe.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -11720,14 +11983,15 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 3.5,
-       "colore": 3.0,
-       "geometria": 3.0,
-       "nitidezza": 3.5,
-       "naturalezza": 4.0,
+       "esposizione": 3.75,
+       "colore": 2.5,
+       "geometria": 3.5,
+       "nitidezza": 3.75,
+       "naturalezza": 4.5,
        "attrattivita": 3.0
       }
      },
@@ -12423,6 +12687,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 3.0,
+        "colore": 4.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 2.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 2.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è preferibile per la maggiore nitidezza e i colori più neutri, pur mantenendo alte luci poco leggibili sulla porta. Non emergono cambiamenti di contenuto chiaramente distinguibili: arredi, tende, danni e disordine restano presenti in entrambe.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -12488,14 +12783,15 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
-       "geometria": 3.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
+       "esposizione": 3.75,
+       "colore": 4.25,
+       "geometria": 3.5,
+       "nitidezza": 4.25,
+       "naturalezza": 4.25,
        "attrattivita": 2.0
       }
      },
@@ -13147,8 +13443,10 @@
      ],
      "new_defects": [],
      "fidelity": {
-      "flag": false,
-      "flag_reasons": [],
+      "flag": true,
+      "flag_reasons": [
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)"
+      ],
       "structural": 0.984,
       "changed_area_pct": 0.0,
       "semantic": 0.964,
@@ -13160,11 +13458,42 @@
        "finestre_vista_cambiata": false,
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
-       "difetti_nascosti": false,
+       "difetti_nascosti": true,
        "testi_loghi_alterati": false
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è più equilibrata, meno granulosa e con colori più neutri, sebbene le superfici appaiano leggermente levigate. I numerosi piccoli segni chiari sulle ante dell’armadio visibili in B risultano assenti in A.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "tie",
@@ -13229,17 +13558,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
        "esposizione": 4.0,
        "colore": 4.0,
        "geometria": 4.0,
-       "nitidezza": 5.0,
-       "naturalezza": 5.0,
-       "attrattivita": 3.0
+       "nitidezza": 4.5,
+       "naturalezza": 4.5,
+       "attrattivita": 3.5
       }
      },
      "ops": null,
@@ -13894,8 +14224,12 @@
      ],
      "new_defects": [],
      "fidelity": {
-      "flag": false,
-      "flag_reasons": [],
+      "flag": true,
+      "flag_reasons": [
+       "oggetti aggiunti o rimossi (segnalato da 1 giudici su 2)",
+       "vista da finestre/porte cambiata (segnalato da 1 giudici su 2)",
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
+      ],
       "structural": 0.976,
       "changed_area_pct": 0.53,
       "semantic": 0.984,
@@ -13903,15 +14237,46 @@
       "framing_kept_pct": 98.6,
       "invented_area_pct": 0.2,
       "checklist_majority": {
-       "oggetti_aggiunti_rimossi": false,
-       "finestre_vista_cambiata": false,
+       "oggetti_aggiunti_rimossi": true,
+       "finestre_vista_cambiata": true,
        "materiali_colori_cambiati": false,
        "geometria_stanza_alterata": false,
        "difetti_nascosti": false,
-       "testi_loghi_alterati": false
+       "testi_loghi_alterati": true
       }
      },
      "judges": [
+      {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 2.0,
+        "nitidezza": 4.0,
+        "naturalezza": 3.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 2.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": true,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "B risulta più nitida e leggibile, pur mantenendo verticali convergenti e un aspetto meno naturale. Nell'edificio a destra cambiano tapparelle, serramenti e dettagli delle ringhiere; in B alcune scritte del watermark risultano deformate.",
+       "excluded_conflict": false
+      },
       {
        "judge": "gemma",
        "preferred": "tie",
@@ -13976,17 +14341,18 @@
       }
      ],
      "ensemble": {
-      "win": 0.5,
+      "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 5.0,
-       "colore": 5.0,
-       "geometria": 3.0,
-       "nitidezza": 5.0,
-       "naturalezza": 5.0,
-       "attrattivita": 3.0
+       "esposizione": 4.5,
+       "colore": 4.5,
+       "geometria": 2.5,
+       "nitidezza": 4.5,
+       "naturalezza": 4.0,
+       "attrattivita": 3.5
       }
      },
      "ops": null,
@@ -14698,6 +15064,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 2.0,
+        "colore": 1.0,
+        "geometria": 3.0,
+        "nitidezza": 2.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è più luminosa, nitida e cromaticamente equilibrata; B presenta una forte dominante verde e ombre meno leggibili. Non emergono cambiamenti di contenuto distinguibili dalle differenze di trattamento fotografico e inquadratura.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -14763,15 +15160,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
+       "esposizione": 4.75,
+       "colore": 4.25,
        "geometria": 3.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
-       "attrattivita": 3.5
+       "nitidezza": 4.25,
+       "naturalezza": 4.75,
+       "attrattivita": 3.75
       }
      },
      "ops": null,
@@ -15490,6 +15888,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "B è più luminosa, definita e cromaticamente equilibrata, pur mostrando superfici leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: oggetti, vista esterna e watermark risultano coerenti.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -15555,15 +15984,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 5.0,
-       "colore": 5.0,
-       "geometria": 5.0,
-       "nitidezza": 5.0,
-       "naturalezza": 4.5,
-       "attrattivita": 4.5
+       "esposizione": 4.5,
+       "colore": 4.5,
+       "geometria": 4.0,
+       "nitidezza": 4.5,
+       "naturalezza": 4.25,
+       "attrattivita": 4.25
       }
      },
      "ops": null,
@@ -16291,6 +16721,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 3.0,
+        "nitidezza": 5.0,
+        "naturalezza": 5.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto A è più luminosa, nitida e cromaticamente equilibrata, mentre B presenta ombre più chiuse e una dominante calda. Non emergono cambiamenti di contenuto; entrambe mostrano una lieve convergenza delle verticali.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -16356,14 +16817,15 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
        "esposizione": 5.0,
        "colore": 5.0,
-       "geometria": 5.0,
+       "geometria": 4.0,
        "nitidezza": 5.0,
-       "naturalezza": 4.5,
+       "naturalezza": 4.75,
        "attrattivita": 5.0
       }
      },
@@ -17088,6 +17550,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 5.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 2.0,
+        "geometria": 3.0,
+        "nitidezza": 2.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "A è più luminosa, nitida e cromaticamente equilibrata; B presenta una dominante azzurra e minore definizione. Non emergono cambiamenti di contenuto: arredi, tende, oggetti e watermark risultano corrispondenti.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -17153,14 +17646,15 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
-       "geometria": 4.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
+       "esposizione": 4.25,
+       "colore": 4.75,
+       "geometria": 3.5,
+       "nitidezza": 4.25,
+       "naturalezza": 4.75,
        "attrattivita": 4.0
       }
      },
@@ -17884,6 +18378,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.0,
+        "geometria": 2.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 2.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "B è più luminosa, nitida e cromaticamente equilibrata, pur mantenendo la marcata convergenza delle verticali presente in A. Non emergono cambiamenti evidenti di contenuto oltre alle differenze di resa fotografica.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -17949,15 +18474,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
        "esposizione": 5.0,
-       "colore": 5.0,
-       "geometria": 4.0,
-       "nitidezza": 5.0,
-       "naturalezza": 4.0,
-       "attrattivita": 4.5
+       "colore": 4.5,
+       "geometria": 3.0,
+       "nitidezza": 4.5,
+       "naturalezza": 4.5,
+       "attrattivita": 4.25
       }
      },
      "ops": null,
@@ -18682,6 +19208,37 @@
      },
      "judges": [
       {
+       "judge": "gpt",
+       "preferred": "output",
+       "position_consistent": null,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 2.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "B è più luminosa e leggibile, con una dominante verde meno evidente e maggiore definizione; entrambe presentano verticali leggermente inclinate. Non emergono cambiamenti di contenuto: arredi, vista esterna, imperfezioni e watermark risultano conservati.",
+       "excluded_conflict": false
+      },
+      {
        "judge": "gemma",
        "preferred": "output",
        "position_consistent": true,
@@ -18747,15 +19304,16 @@
      "ensemble": {
       "win": 1.0,
       "judges_used": [
+       "gpt",
        "gemma"
       ],
       "rubric_mean": {
-       "esposizione": 4.5,
-       "colore": 4.5,
-       "geometria": 4.0,
-       "nitidezza": 4.5,
-       "naturalezza": 4.5,
-       "attrattivita": 3.5
+       "esposizione": 4.75,
+       "colore": 4.25,
+       "geometria": 3.5,
+       "nitidezza": 4.25,
+       "naturalezza": 4.75,
+       "attrattivita": 3.75
       }
      },
      "ops": null,
@@ -18964,11 +19522,11 @@
    }
   ],
   "agreement": {
-   "krippendorff_alpha": 0.453,
+   "krippendorff_alpha": 0.412,
    "pairwise_agreement": {
-    "gemma-gpt": 0.429,
+    "gemma-gpt": 0.542,
     "gemma-qwen": 0.733,
-    "gpt-qwen": 0.429
+    "gpt-qwen": 0.625
    }
   },
   "position_consistency": {

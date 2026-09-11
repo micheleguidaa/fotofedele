@@ -55,17 +55,18 @@ La regola:
 | F1 classico | 60% | 8% | 52% | 0,0002 $ | 0,3 s |
 | F2 gpt-image semplice | 100% | **92%** | 8% | 0,165 $ | 59 s |
 | F3 gpt-image vincolato | 94% | **83%** | 17% | 0,165 $ | 108 s |
-| F4 Qwen open weights | 81% | 25% | **58%** | 0,006 $ | 10 s |
+| F4 Qwen open weights | 92% | 38% | **58%** | 0,006 $ | 10 s |
 | F5 ibrido | 56% | 8% | 54% | 0,165 $ | 108 s |
 
 - **Nessun flusso supera il gate del 5%.** Quindi niente pubblicazione automatica: la verifica gira foto per foto e l'agente approva.
-- **Il router è F1 → F4:** si prova il classico e, se la verifica lo scarta o la foto non migliora, si passa a Qwen. Consegna **il 50% delle foto migliorate e fedeli a 0,006 $ di media**, contro il 17% a 0,165 $ di gpt-image da solo. L'ordine usa il punteggio dichiarato, con la quota «migliore e fedele» al posto del win-rate.
+- **Il router è F1 → F4:** si prova il classico e, se la verifica lo scarta o la foto non migliora, si passa a Qwen. Consegna **il 63% delle foto migliorate e fedeli a 0,006 $ di media**, contro il 17% a 0,165 $ di gpt-image da solo. L'ordine usa il punteggio dichiarato, con la quota «migliore e fedele» al posto del win-rate.
 - **gpt-image fa le foto più belle ma ridisegna la casa.** Nel test iniziale ha inventato uno skyline dietro le tende e su R01 ha ricolorato le pareti. Con «rendila professionale» cancella o altera loghi e watermark nel 54% delle foto e nasconde difetti nel 33%. Il prompt vincolato dimezza l'area ridisegnata (dal 22% all'11%), ma le segnalazioni restano all'83%.
+- **Qwen open weights è preferito quasi quanto gpt-image** (92% contro 94%), costa 28 volte meno e altera meno della metà delle volte (38% contro 83%).
 - **L'ibrido F5 conserva i pixel originali** (8% di segnalazioni), ma eredita costo e latenza di gpt-image.
 - **Misura della misura:**
   - la regola finale ha precision e recall 1,00 sulle trappole, mentre il solo rilevatore strutturale ha recall 0,83 perché non vede un logo cancellato;
   - i tre giudici riconoscono l'originale pulito nel 100% dei casi;
-  - l'accordo tra giudici è moderato (α 0,50);
+  - l'accordo tra giudici è moderato (α 0,41);
   - Qwen favorisce la propria famiglia (81% contro 67%).
 - **Iterazione:** F1 e F5 v1 tagliavano loghi ai bordi, e F5 v1 dava un effetto slavato. Li ho corretti e rimisurati; le v1 sono archiviate.
 
@@ -80,7 +81,7 @@ Claude Code per architettura, codice e analisi, con un agente in parallelo per l
 
 ## 9. Limiti
 - **Campione piccolo:** 24 foto. Gli intervalli di confidenza sono ampi.
-- **Nessun valutatore umano.** Su F4 decide soprattutto Gemma, perché Qwen è escluso per conflitto e GPT ha coperto solo 7 coppie prima della fine del quota.
+- **Nessun valutatore umano**, e GPT, per il quota, ha giudicato ogni coppia in un solo ordine. Su F4 giudicano Gemma e GPT, perché Qwen è escluso per conflitto.
 - **Trappole poche** e generate da un solo modello.
 - **Quota ChatGPT:** circa 20 generazioni per finestra. F2 è stato completato in una seconda finestra e alcune richieste sono state ripetute: non è una strada da produzione.
 - **Foto già ricompresse** dal portale (al massimo 1,6 MP) e **soglia strutturale severa per scelta**: anche il dettaglio ridisegnato conta come alterazione.
