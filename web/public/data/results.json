@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T12:27:52+00:00",
+ "generated_at": "2026-09-11T15:43:58+00:00",
  "is_mock": false,
  "dataset": {
   "n_real": 18,
@@ -71,15 +71,15 @@
    "engine": "codex_image",
    "family": "openai",
    "generative": true,
-   "description": "Una sola istruzione generica: rendi la foto professionale e attraente (eseguito su 12 immagini).",
+   "description": "Una sola istruzione generica: rendi la foto professionale e attraente.",
    "question": "Cosa succede se si chiede solo 'rendila bella'?",
    "prompt": "Improve the quality of this real-estate listing photo so that it looks professional and attractive for a property listing.",
    "summary": {
     "success_rate": 1.0,
-    "n_ok": 12,
-    "n_total": 12,
-    "latency_p50_s": 53.41,
-    "latency_p90_s": 59.22,
+    "n_ok": 24,
+    "n_total": 24,
+    "latency_p50_s": 58.92,
+    "latency_p90_s": 76.05,
     "gpu_s_p50": null,
     "cost_usd_per_image": 0.165,
     "cost_range": [
@@ -93,32 +93,32 @@
      1.0
     ],
     "rubric": {
-     "esposizione": 4.79,
-     "colore": 4.73,
-     "geometria": 4.75,
-     "nitidezza": 4.81,
+     "esposizione": 4.83,
+     "colore": 4.74,
+     "geometria": 4.68,
+     "nitidezza": 4.79,
      "naturalezza": 4.31,
-     "attrattivita": 4.5
+     "attrattivita": 4.56
     },
-    "defect_fix_rate": 0.675,
+    "defect_fix_rate": 0.634,
     "new_defect_rate": 0.0,
     "fidelity_flag_rate": 0.917,
     "fidelity_flag_breakdown": {
-     "difetti_nascosti": 0.417,
-     "strutturale": 0.833,
-     "testi_loghi_alterati": 0.583,
-     "materiali_colori_cambiati": 0.083,
-     "geometria_stanza_alterata": 0.083,
-     "oggetti_aggiunti_rimossi": 0.167,
-     "finestre_vista_cambiata": 0.25
+     "difetti_nascosti": 0.333,
+     "strutturale": 0.875,
+     "testi_loghi_alterati": 0.542,
+     "oggetti_aggiunti_rimossi": 0.25,
+     "materiali_colori_cambiati": 0.042,
+     "geometria_stanza_alterata": 0.042,
+     "finestre_vista_cambiata": 0.167
     },
-    "structural_mean": 0.691,
+    "structural_mean": 0.712,
     "full_ref": {
-     "psnr": 17.924,
-     "ssim": 0.655,
-     "lpips": 0.196
+     "psnr": 17.526,
+     "ssim": 0.616,
+     "lpips": 0.217
     },
-    "iqa_musiq": 76.26,
+    "iqa_musiq": 76.65,
     "gates": {
      "reliability": true,
      "fidelity": false
@@ -126,7 +126,7 @@
     "score": null,
     "rank": null,
     "safe_winrate": 0.083,
-    "risk_adjusted_score": 0.2832
+    "risk_adjusted_score": 0.2755
    }
   },
   {
@@ -334,7 +334,7 @@
      "F3"
     ],
     "question": "Quanto conta il prompt? (stesso modello gpt-image, prompt semplice vs vincolato)",
-    "answer": "Su 12 foto in comune: win-rate 100% (semplice) vs 96% (vincolato); output segnalati 92% vs 83%; area con struttura cambiata 23% vs 13%. Il prompt vincolato riduce le alterazioni ma non le elimina: gpt-image ridisegna comunque l'immagine."
+    "answer": "Su 24 foto in comune: win-rate 100% (semplice) vs 94% (vincolato); output segnalati 92% vs 83%; area con struttura cambiata 22% vs 11%. Il prompt vincolato riduce le alterazioni ma non le elimina: gpt-image ridisegna comunque l'immagine."
    },
    {
     "pair": [
@@ -2950,6 +2950,141 @@
       "topiq": 0.533
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/R04/F2.webp",
+     "w": 1400,
+     "h": 1049,
+     "thumb": "images/R04/F2_t.webp",
+     "heatmap": "images/R04/F2_heat.webp",
+     "latency_s": 78.71,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 65.509,
+      "clip_high_pct": 0.081,
+      "cast": 9.08,
+      "tilt_deg": 0.591,
+      "sharpness": 1675.337,
+      "noise_sigma": 1.069,
+      "megapixels": 1.574,
+      "width": 1449,
+      "height": 1086
+     },
+     "fixed_defects": [
+      "bassa_risoluzione"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 32% dell'immagine",
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
+      ],
+      "structural": 0.598,
+      "changed_area_pct": 32.15,
+      "semantic": 0.872,
+      "alignment_ok": true,
+      "framing_kept_pct": 96.5,
+      "invented_area_pct": 0.3,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 4.0,
+        "nitidezza": 4.5,
+        "naturalezza": 4.5,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 3.5,
+        "naturalezza": 4.0,
+        "attrattivita": 2.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto B è preferibile per l'esposizione più luminosa e i colori più naturali. È stato rimosso il watermark centrale presente nella foto A.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'ambiente più accogliente e professionale. Non sono presenti differenze di contenuto o oggetti, ma solo un evidente miglioramento tecnico della stessa inquadratura.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 4.5,
+       "nitidezza": 4.75,
+       "naturalezza": 4.5,
+       "attrattivita": 4.5
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 76.203,
+      "topiq": 0.804
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/R04/F3.webp",
@@ -4386,6 +4521,140 @@
       "topiq": 0.48
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/R06/F2.webp",
+     "w": 1400,
+     "h": 1050,
+     "thumb": "images/R06/F2_t.webp",
+     "heatmap": "images/R06/F2_heat.webp",
+     "latency_s": 56.43,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 75.403,
+      "clip_high_pct": 0.034,
+      "cast": 8.2,
+      "tilt_deg": 0.291,
+      "sharpness": 291.535,
+      "noise_sigma": 0.531,
+      "megapixels": 1.573,
+      "width": 1448,
+      "height": 1086
+     },
+     "fixed_defects": [
+      "sfocata"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 13% dell'immagine"
+      ],
+      "structural": 0.831,
+      "changed_area_pct": 13.45,
+      "semantic": 0.834,
+      "alignment_ok": true,
+      "framing_kept_pct": 71.5,
+      "invented_area_pct": 0.0,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 2.5,
+        "colore": 3.0,
+        "geometria": 5.0,
+        "nitidezza": 3.5,
+        "naturalezza": 5.0,
+        "attrattivita": 2.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto B è molto più luminosa e attraente, sebbene presenti un aspetto leggermente artificiale. È stata aggiunta una pianta decorativa sopra il mobile nero nella foto B.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 4.5,
+        "colore": 4.5,
+        "geometria": 4.5,
+        "nitidezza": 4.5,
+        "naturalezza": 4.5,
+        "attrattivita": 4.5
+       },
+       "rubric_input": {
+        "esposizione": 4.5,
+        "colore": 4.5,
+        "geometria": 4.5,
+        "nitidezza": 4.5,
+        "naturalezza": 4.5,
+        "attrattivita": 4.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono identiche per contenuto, inquadratura e qualità tecnica, rendendo la scelta tra le due irrilevante. Non si rilevano differenze di esposizione, colore o presenza di oggetti che giustifichino una preferenza.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 4.75,
+       "colore": 4.75,
+       "geometria": 4.75,
+       "nitidezza": 4.75,
+       "naturalezza": 4.5,
+       "attrattivita": 4.75
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 76.578,
+      "topiq": 0.736
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/R06/F3.webp",
@@ -5029,6 +5298,144 @@
      "iqa": {
       "musiq": 52.639,
       "topiq": 0.371
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/R07/F2.webp",
+     "w": 1049,
+     "h": 1400,
+     "thumb": "images/R07/F2_t.webp",
+     "heatmap": "images/R07/F2_heat.webp",
+     "latency_s": 53.35,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 66.615,
+      "clip_high_pct": 0.251,
+      "cast": 9.675,
+      "tilt_deg": 0.225,
+      "sharpness": 208.719,
+      "noise_sigma": 0.723,
+      "megapixels": 1.574,
+      "width": 1086,
+      "height": 1449
+     },
+     "fixed_defects": [
+      "bassa_risoluzione",
+      "buia",
+      "sfocata",
+      "storta"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 18% dell'immagine",
+       "oggetti aggiunti o rimossi (segnalato da 2 giudici su 2)"
+      ],
+      "structural": 0.769,
+      "changed_area_pct": 18.49,
+      "semantic": 0.852,
+      "alignment_ok": true,
+      "framing_kept_pct": 74.8,
+      "invented_area_pct": 0.3,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": true,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto B è tecnicamente superiore per luce e geometria, rendendo l'ambiente molto più invitante. Sono stati aggiunti elementi di staging come il quadro, il plaid sul letto e le piante.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. Si notano in A elementi decorativi aggiunti (quadro, piante, coperta) che non sono presenti nella Foto B.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 5.0,
+       "nitidezza": 5.0,
+       "naturalezza": 4.0,
+       "attrattivita": 5.0
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 76.994,
+      "topiq": 0.747
      }
     },
     "F3": {
@@ -7196,6 +7603,138 @@
       "topiq": 0.44
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/R10/F2.webp",
+     "w": 1049,
+     "h": 1400,
+     "thumb": "images/R10/F2_t.webp",
+     "heatmap": "images/R10/F2_heat.webp",
+     "latency_s": 76.31,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 78.284,
+      "clip_high_pct": 0.299,
+      "cast": 2.813,
+      "tilt_deg": 0.523,
+      "sharpness": 866.526,
+      "noise_sigma": 0.599,
+      "megapixels": 1.574,
+      "width": 1086,
+      "height": 1449
+     },
+     "fixed_defects": [
+      "bassa_risoluzione"
+     ],
+     "remaining_defects": [],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 18% dell'immagine"
+      ],
+      "structural": 0.781,
+      "changed_area_pct": 17.59,
+      "semantic": 0.932,
+      "alignment_ok": true,
+      "framing_kept_pct": 82.9,
+      "invented_area_pct": 0.6,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento del bianco e correzione prospettica. La foto B appare sgranata, con colori spenti e verticali leggermente inclinate.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 5.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 2.5,
+        "naturalezza": 3.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e raddrizzamento, risultando più professionale e attraente. Si nota l'aggiunta di una pianta decorativa sul piano di lavoro nella Foto B, elemento assente nella A.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 5.0,
+       "nitidezza": 5.0,
+       "naturalezza": 4.5,
+       "attrattivita": 5.0
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 76.473,
+      "topiq": 0.721
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/R10/F3.webp",
@@ -7798,6 +8337,139 @@
      "iqa": {
       "musiq": 77.725,
       "topiq": 0.62
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/R11/F2.webp",
+     "w": 1400,
+     "h": 1050,
+     "thumb": "images/R11/F2_t.webp",
+     "heatmap": "images/R11/F2_heat.webp",
+     "latency_s": 61.84,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 74.769,
+      "clip_high_pct": 1.642,
+      "cast": 5.264,
+      "tilt_deg": 0.295,
+      "sharpness": 391.664,
+      "noise_sigma": 0.624,
+      "megapixels": 1.573,
+      "width": 1448,
+      "height": 1086
+     },
+     "fixed_defects": [],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 17% dell'immagine",
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
+      ],
+      "structural": 0.767,
+      "changed_area_pct": 17.11,
+      "semantic": 0.915,
+      "alignment_ok": true,
+      "framing_kept_pct": 91.4,
+      "invented_area_pct": 2.0,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 4.5,
+        "nitidezza": 4.5,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 4.5,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto A è superiore per nitidezza, bilanciamento cromatico e assenza di watermark. La foto B presenta un watermark centrale invasivo e una resa generale meno pulita.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 5.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 5.0,
+        "attrattivita": 5.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono identiche per contenuto, inquadratura e qualità tecnica, non presentando differenze rilevabili. Non è possibile esprimere una preferenza in quanto si tratta dello stesso file o di copie esatte.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 4.75,
+       "nitidezza": 4.75,
+       "naturalezza": 4.5,
+       "attrattivita": 4.5
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 78.519,
+      "topiq": 0.779
      }
     },
     "F3": {
@@ -9153,6 +9825,143 @@
      "iqa": {
       "musiq": 59.924,
       "topiq": 0.424
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/R13/F2.webp",
+     "w": 1400,
+     "h": 772,
+     "thumb": "images/R13/F2_t.webp",
+     "heatmap": "images/R13/F2_heat.webp",
+     "latency_s": 57.54,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 69.336,
+      "clip_high_pct": 0.907,
+      "cast": 6.913,
+      "tilt_deg": 1.604,
+      "sharpness": 661.07,
+      "noise_sigma": 0.673,
+      "megapixels": 1.572,
+      "width": 1689,
+      "height": 931
+     },
+     "fixed_defects": [
+      "sfocata"
+     ],
+     "remaining_defects": [
+      "dominante",
+      "storta"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 8% dell'immagine",
+       "oggetti aggiunti o rimossi (segnalato da 1 giudici su 2)",
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)"
+      ],
+      "structural": 0.823,
+      "changed_area_pct": 8.33,
+      "semantic": 0.907,
+      "alignment_ok": true,
+      "framing_kept_pct": 98.7,
+      "invented_area_pct": 1.3,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": true,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": true,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 4.0,
+        "nitidezza": 4.5,
+        "naturalezza": 3.5,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.5,
+        "nitidezza": 3.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto A è stata pesantemente editata per rimuovere difetti della parete e aggiungere elementi decorativi (piante, quadri). Nonostante l'aspetto artificiale, risulta molto più attraente per un annuncio.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 4.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 4.0,
+        "attrattivita": 4.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono praticamente identiche per contenuto, inquadratura e qualità tecnica, rendendo la scelta tra l'una e l'altra irrilevante. Non si rilevano differenze significative di esposizione, colore o presenza di oggetti che giustifichino una preferenza.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 4.5,
+       "colore": 4.5,
+       "geometria": 4.0,
+       "nitidezza": 4.25,
+       "naturalezza": 3.75,
+       "attrattivita": 4.0
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 76.297,
+      "topiq": 0.764
      }
     },
     "F3": {
@@ -10526,6 +11335,142 @@
      "iqa": {
       "musiq": 64.951,
       "topiq": 0.482
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/R15/F2.webp",
+     "w": 1400,
+     "h": 1050,
+     "thumb": "images/R15/F2_t.webp",
+     "heatmap": "images/R15/F2_heat.webp",
+     "latency_s": 65.14,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 67.951,
+      "clip_high_pct": 0.141,
+      "cast": 6.006,
+      "tilt_deg": 0.276,
+      "sharpness": 474.438,
+      "noise_sigma": 0.827,
+      "megapixels": 1.573,
+      "width": 1448,
+      "height": 1086
+     },
+     "fixed_defects": [
+      "sfocata"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 23% dell'immagine",
+       "14% dell'immagine non esiste nell'originale (contenuto inventato ai bordi)",
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)"
+      ],
+      "structural": 0.743,
+      "changed_area_pct": 23.48,
+      "semantic": 0.829,
+      "alignment_ok": true,
+      "framing_kept_pct": 88.8,
+      "invented_area_pct": 13.8,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": true,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.5,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 2.0,
+        "colore": 2.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto A è professionale, luminosa e bilanciata. La foto B mostra difetti strutturali (crepe/macchie sulla parete sinistra) che sono stati rimossi o non sono visibili in A.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 4.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "rubric_input": {
+        "esposizione": 4.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono praticamente identiche per contenuto, inquadratura e qualità tecnica, rendendo la scelta tra l'una e l'altra irrilevante. Non si rilevano differenze significative di esposizione, colore o nitidezza che giustifichino una preferenza.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 4.5,
+       "colore": 3.75,
+       "geometria": 4.5,
+       "nitidezza": 4.5,
+       "naturalezza": 4.5,
+       "attrattivita": 4.0
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 75.441,
+      "topiq": 0.709
      }
     },
     "F3": {
@@ -11907,6 +12852,142 @@
       "topiq": 0.673
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/R17/F2.webp",
+     "w": 1400,
+     "h": 935,
+     "thumb": "images/R17/F2_t.webp",
+     "heatmap": "images/R17/F2_heat.webp",
+     "latency_s": 61.82,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 65.64,
+      "clip_high_pct": 0.463,
+      "cast": 8.671,
+      "tilt_deg": 0.102,
+      "sharpness": 516.487,
+      "noise_sigma": 0.784,
+      "megapixels": 1.573,
+      "width": 1535,
+      "height": 1025
+     },
+     "fixed_defects": [],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 33% dell'immagine",
+       "oggetti aggiunti o rimossi (segnalato da 1 giudici su 2)",
+       "vista da finestre/porte cambiata (segnalato da 1 giudici su 2)",
+       "difetti o degrado nascosti (segnalato da 1 giudici su 2)",
+       "testi, loghi o watermark alterati (segnalato da 1 giudici su 2)"
+      ],
+      "structural": 0.615,
+      "changed_area_pct": 33.05,
+      "semantic": 0.807,
+      "alignment_ok": true,
+      "framing_kept_pct": 89.2,
+      "invented_area_pct": 3.0,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": true,
+       "finestre_vista_cambiata": true,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": true,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 3.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 2.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": true,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": true,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto B è tecnicamente superiore e più attraente, sebbene mostri chiari segni di virtual staging. Sono stati rimossi il disordine e i watermark, aggiunte piante e libri, e modificata la vista esterna.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 4.5,
+        "colore": 4.5,
+        "geometria": 4.5,
+        "nitidezza": 4.5,
+        "naturalezza": 4.5,
+        "attrattivita": 4.5
+       },
+       "rubric_input": {
+        "esposizione": 4.5,
+        "colore": 4.5,
+        "geometria": 4.5,
+        "nitidezza": 4.5,
+        "naturalezza": 4.5,
+        "attrattivita": 4.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono praticamente identiche per contenuto, esposizione e qualità tecnica, rendendo la scelta tra le due irrilevante. Non si rilevano differenze di oggetti, geometria o difetti nascosti.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 4.75,
+       "colore": 4.75,
+       "geometria": 4.75,
+       "nitidezza": 4.75,
+       "naturalezza": 4.0,
+       "attrattivita": 4.75
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 77.03,
+      "topiq": 0.802
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/R17/F3.webp",
@@ -12513,6 +13594,139 @@
      "iqa": {
       "musiq": 76.609,
       "topiq": 0.561
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/R18/F2.webp",
+     "w": 1400,
+     "h": 1050,
+     "thumb": "images/R18/F2_t.webp",
+     "heatmap": "images/R18/F2_heat.webp",
+     "latency_s": 78.32,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 62.415,
+      "clip_high_pct": 1.838,
+      "cast": 5.238,
+      "tilt_deg": 0.566,
+      "sharpness": 1537.391,
+      "noise_sigma": 0.938,
+      "megapixels": 1.573,
+      "width": 1448,
+      "height": 1086
+     },
+     "fixed_defects": [
+      "buia",
+      "storta"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": false,
+      "flag_reasons": [],
+      "structural": 0.894,
+      "changed_area_pct": 0.76,
+      "semantic": 0.914,
+      "alignment_ok": true,
+      "framing_kept_pct": 99.5,
+      "invented_area_pct": 0.1,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": false
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.5,
+        "geometria": 3.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 4.5,
+        "colore": 4.5,
+        "geometria": 3.0,
+        "nitidezza": 5.0,
+        "naturalezza": 5.0,
+        "attrattivita": 3.5
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "La foto B è preferibile per l'esposizione più bilanciata che recupera i dettagli nelle zone d'ombra. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "tie",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "rubric_input": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 3.0,
+        "nitidezza": 4.0,
+        "naturalezza": 5.0,
+        "attrattivita": 4.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": false
+       },
+       "notes": "Le due immagini sono praticamente identiche per contenuto, esposizione e qualità tecnica, rendendo la scelta tra le due irrilevante. Non si rilevano differenze di soggetto, oggetti o geometria che giustifichino una preferenza.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 4.75,
+       "geometria": 3.0,
+       "nitidezza": 4.5,
+       "naturalezza": 4.75,
+       "attrattivita": 4.0
+      }
+     },
+     "ops": null,
+     "full_ref": null,
+     "iqa": {
+      "musiq": 77.465,
+      "topiq": 0.758
      }
     },
     "F3": {
@@ -13946,6 +15160,146 @@
      "iqa": {
       "musiq": 76.354,
       "topiq": 0.672
+     }
+    },
+    "F2": {
+     "status": "ok",
+     "src": "images/D02/F2.webp",
+     "w": 1400,
+     "h": 1025,
+     "thumb": "images/D02/F2_t.webp",
+     "heatmap": "images/D02/F2_heat.webp",
+     "latency_s": 59.93,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 67.995,
+      "clip_high_pct": 0.076,
+      "cast": 8.316,
+      "tilt_deg": 0.696,
+      "sharpness": 790.414,
+      "noise_sigma": 0.827,
+      "megapixels": 1.573,
+      "width": 1466,
+      "height": 1073
+     },
+     "fixed_defects": [
+      "bassa_risoluzione",
+      "storta"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 9% dell'immagine",
+       "testi, loghi o watermark alterati (segnalato da 2 giudici su 2)"
+      ],
+      "structural": 0.845,
+      "changed_area_pct": 8.53,
+      "semantic": 0.88,
+      "alignment_ok": true,
+      "framing_kept_pct": 98.1,
+      "invented_area_pct": 0.3,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto B è tecnicamente superiore per luminosità, geometria e nitidezza, nonostante l'effetto HDR leggermente artificiale. In B è stato rimosso il watermark presente in A.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 4.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.5,
+        "nitidezza": 3.0,
+        "naturalezza": 4.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto A è nettamente superiore per nitidezza, esposizione e pulizia visiva, rendendo l'ambiente molto più accogliente. La foto B risulta più scura, con colori meno definiti e presenta un watermark centrale che distrae l'occhio.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 4.5,
+       "geometria": 5.0,
+       "nitidezza": 5.0,
+       "naturalezza": 4.25,
+       "attrattivita": 5.0
+      }
+     },
+     "ops": null,
+     "full_ref": {
+      "psnr": 19.8734,
+      "ssim": 0.6982,
+      "lpips": 0.1707
+     },
+     "iqa": {
+      "musiq": 77.07,
+      "topiq": 0.76
      }
     },
     "F3": {
@@ -15404,6 +16758,148 @@
       "topiq": 0.695
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/D04/F2.webp",
+     "w": 1400,
+     "h": 887,
+     "thumb": "images/D04/F2_t.webp",
+     "heatmap": "images/D04/F2_heat.webp",
+     "latency_s": 61.23,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 67.633,
+      "clip_high_pct": 0.191,
+      "cast": 4.804,
+      "tilt_deg": 0.652,
+      "sharpness": 522.072,
+      "noise_sigma": 0.692,
+      "megapixels": 1.572,
+      "width": 1575,
+      "height": 998
+     },
+     "fixed_defects": [
+      "bassa_risoluzione",
+      "sfocata",
+      "storta"
+     ],
+     "remaining_defects": [
+      "dominante"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 30% dell'immagine",
+       "oggetti aggiunti o rimossi (segnalato da 1 giudici su 2)",
+       "testi, loghi o watermark alterati (segnalato da 2 giudici su 2)"
+      ],
+      "structural": 0.629,
+      "changed_area_pct": 29.96,
+      "semantic": 0.832,
+      "alignment_ok": true,
+      "framing_kept_pct": 93.3,
+      "invented_area_pct": 0.5,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": true,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto B è tecnicamente superiore per luce e geometria, ma presenta evidenti aggiunte di staging virtuale (piante, cibo, accessori). Sono stati rimossi il watermark e il disordine presenti nella foto A.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.0,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.5,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": true,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. La Foto B appare più scura, con colori meno saturi e un watermark in basso a sinistra che la rende meno adatta alla pubblicazione.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 5.0,
+       "nitidezza": 5.0,
+       "naturalezza": 4.0,
+       "attrattivita": 5.0
+      }
+     },
+     "ops": null,
+     "full_ref": {
+      "psnr": 15.8522,
+      "ssim": 0.6015,
+      "lpips": 0.3052
+     },
+     "iqa": {
+      "musiq": 78.282,
+      "topiq": 0.823
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/D04/F3.webp",
@@ -16855,6 +18351,147 @@
       "topiq": 0.68
      }
     },
+    "F2": {
+     "status": "ok",
+     "src": "images/D06/F2.webp",
+     "w": 1400,
+     "h": 808,
+     "thumb": "images/D06/F2_t.webp",
+     "heatmap": "images/D06/F2_heat.webp",
+     "latency_s": 66.63,
+     "gpu_s": null,
+     "cost_usd": 0.165,
+     "metrics": {
+      "exposure_L": 61.844,
+      "clip_high_pct": 0.561,
+      "cast": 4.074,
+      "tilt_deg": 1.042,
+      "sharpness": 857.782,
+      "noise_sigma": 0.981,
+      "megapixels": 1.573,
+      "width": 1651,
+      "height": 953
+     },
+     "fixed_defects": [
+      "bassa_risoluzione",
+      "buia"
+     ],
+     "remaining_defects": [
+      "dominante",
+      "storta"
+     ],
+     "new_defects": [],
+     "fidelity": {
+      "flag": true,
+      "flag_reasons": [
+       "struttura cambiata sul 38% dell'immagine",
+       "testi, loghi o watermark alterati (segnalato da 2 giudici su 2)"
+      ],
+      "structural": 0.503,
+      "changed_area_pct": 38.5,
+      "semantic": 0.859,
+      "alignment_ok": true,
+      "framing_kept_pct": 81.1,
+      "invented_area_pct": 0.0,
+      "checklist_majority": {
+       "oggetti_aggiunti_rimossi": false,
+       "finestre_vista_cambiata": false,
+       "materiali_colori_cambiati": false,
+       "geometria_stanza_alterata": false,
+       "difetti_nascosti": false,
+       "testi_loghi_alterati": true
+      }
+     },
+     "judges": [
+      {
+       "judge": "gemma",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 4.0,
+        "nitidezza": 3.0,
+        "naturalezza": 4.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La foto B è tecnicamente superiore per luminosità, colori e allineamento. Sono state aggiunte delle piante negli scaffali e rimosso il watermark centrale.",
+       "excluded_conflict": false
+      },
+      {
+       "judge": "qwen",
+       "preferred": "output",
+       "position_consistent": true,
+       "rubric_output": {
+        "esposizione": 5.0,
+        "colore": 5.0,
+        "geometria": 5.0,
+        "nitidezza": 5.0,
+        "naturalezza": 4.5,
+        "attrattivita": 5.0
+       },
+       "rubric_input": {
+        "esposizione": 3.0,
+        "colore": 3.0,
+        "geometria": 3.0,
+        "nitidezza": 2.5,
+        "naturalezza": 4.0,
+        "attrattivita": 3.0
+       },
+       "checklist": {
+        "oggetti_aggiunti_rimossi": false,
+        "finestre_vista_cambiata": false,
+        "materiali_colori_cambiati": false,
+        "geometria_stanza_alterata": false,
+        "difetti_nascosti": false,
+        "testi_loghi_alterati": true
+       },
+       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e assenza di artefatti, rendendo l'ambiente più accogliente e professionale. La Foto B presenta una marcata sfocatura, una leggera inclinazione e un watermark centrale che ne riduce drasticamente l'efficacia commerciale.",
+       "excluded_conflict": false
+      }
+     ],
+     "ensemble": {
+      "win": 1.0,
+      "judges_used": [
+       "gemma",
+       "qwen"
+      ],
+      "rubric_mean": {
+       "esposizione": 5.0,
+       "colore": 5.0,
+       "geometria": 5.0,
+       "nitidezza": 5.0,
+       "naturalezza": 4.5,
+       "attrattivita": 5.0
+      }
+     },
+     "ops": null,
+     "full_ref": {
+      "psnr": 15.6575,
+      "ssim": 0.4312,
+      "lpips": 0.2386
+     },
+     "iqa": {
+      "musiq": 78.087,
+      "topiq": 0.812
+     }
+    },
     "F3": {
      "status": "ok",
      "src": "images/D06/F3.webp",
@@ -17327,16 +18964,16 @@
    }
   ],
   "agreement": {
-   "krippendorff_alpha": 0.501,
+   "krippendorff_alpha": 0.453,
    "pairwise_agreement": {
     "gemma-gpt": 0.429,
-    "gemma-qwen": 0.759,
+    "gemma-qwen": 0.733,
     "gpt-qwen": 0.429
    }
   },
   "position_consistency": {
-   "gemma": 0.857,
-   "qwen": 0.841
+   "gemma": 0.87,
+   "qwen": 0.855
   },
   "gt_accuracy": {
    "gpt": 1.0,
@@ -17347,7 +18984,7 @@
    {
     "judge": "qwen",
     "own_family_winrate": 0.812,
-    "others_winrate": 0.673
+    "others_winrate": 0.682
    }
   ]
  },
@@ -17667,10 +19304,10 @@
   }
  ],
  "limits": [
-  "Campione piccolo (24 immagini, 12 per F2): gli intervalli di confidenza sono ampi; i numeri indicano tendenze, non verità statistiche.",
+  "Campione piccolo (24 immagini): gli intervalli di confidenza sono ampi; i numeri indicano tendenze, non verità statistiche.",
   "Qualità misurata con giudici AI, senza valutatori umani: la calibrazione umana è il primo prossimo passo.",
   "Le trappole sono 12 e generate con un solo modello: precision e recall dei detector sono stime grezze.",
-  "L'abbonamento ChatGPT limita le generazioni (~20 per finestra): F2 è stato eseguito su metà del dataset e alcune richieste sono fallite per quota.",
+  "L'abbonamento ChatGPT limita le generazioni (~20 per finestra): F2 è stato completato in una seconda finestra e una trentina di richieste sono fallite per quota e state ripetute.",
   "Costi di gpt-image stimati da listino; latenza gpt-image gonfiata dall'agente Codex.",
   "Il rilevatore strutturale non vede cambiamenti a basso contrasto (es. watermark semi-trasparenti): per questo è combinato con i giudici.",
   "Le foto servite da Immobiliare.it sono già ricompresse (max ~1,6 MP): non sono gli originali caricati dagli agenti."

@@ -28,9 +28,8 @@ workflows:
     family: openai
     generative: true
     prompt: enhance_simple
-    # run on a balanced subset only: the ChatGPT subscription caps image generations (~20 per window)
-    subset: [R01, R02, R03, R05, R08, R09, R12, R14, R16, D01, D03, D05]
-    description: "Una sola istruzione generica: rendi la foto professionale e attraente (eseguito su 12 immagini)."
+    # first run on a 12-image subset (ChatGPT subscription cap), completed on all 24 in a later quota window
+    description: "Una sola istruzione generica: rendi la foto professionale e attraente."
     question: "Cosa succede se si chiede solo 'rendila bella'?"
     cost: {type: fixed, usd_per_image: 0.165, range: [0.041, 0.165], note: "listino gpt-image-2 1024x1536 medium-high"}
 

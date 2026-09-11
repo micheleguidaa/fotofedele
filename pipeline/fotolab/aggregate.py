@@ -591,10 +591,10 @@ REAL_VS_SIMULATED = [
 ]
 
 LIMITS = [
-    "Campione piccolo (24 immagini, 12 per F2): gli intervalli di confidenza sono ampi; i numeri indicano tendenze, non verità statistiche.",
+    "Campione piccolo (24 immagini): gli intervalli di confidenza sono ampi; i numeri indicano tendenze, non verità statistiche.",
     "Qualità misurata con giudici AI, senza valutatori umani: la calibrazione umana è il primo prossimo passo.",
     "Le trappole sono 12 e generate con un solo modello: precision e recall dei detector sono stime grezze.",
-    "L'abbonamento ChatGPT limita le generazioni (~20 per finestra): F2 è stato eseguito su metà del dataset e alcune richieste sono fallite per quota.",
+    "L'abbonamento ChatGPT limita le generazioni (~20 per finestra): F2 è stato completato in una seconda finestra e una trentina di richieste sono fallite per quota e state ripetute.",
     "Costi di gpt-image stimati da listino; latenza gpt-image gonfiata dall'agente Codex.",
     "Il rilevatore strutturale non vede cambiamenti a basso contrasto (es. watermark semi-trasparenti): per questo è combinato con i giudici.",
     "Le foto servite da Immobiliare.it sono già ricompresse (max ~1,6 MP): non sono gli originali caricati dagli agenti.",
