@@ -1,7 +1,7 @@
 # FotoFedele — foto degli annunci migliori, senza alterare la casa
 
 Case study *Product Builder, Agentic AI Products* · Immobiliare.it · settembre 2026
-**Demo:** ⟨URL⟩ · **Codice:** ⟨REPO⟩ ([`pipeline/`](pipeline/) Python, [`web/`](web/) Next.js)
+**Demo:** ⟨URL⟩ · **Codice:** https://github.com/micheleguidaa/fotofedele ([`pipeline/`](pipeline/) Python, [`web/`](web/) Next.js) · **Screenshot:** [risultati](docs/screenshots/risultati.jpg), [studio](docs/screenshots/studio.jpg), [heatmap](docs/screenshots/laboratorio-heatmap.jpg)
 
 ## 1. Perimetro
 **Per chi:** agenti e inserzionisti che caricano foto da smartphone. **Bisogno:** foto presentabili in pochi secondi, senza rischiare annunci ingannevoli.
