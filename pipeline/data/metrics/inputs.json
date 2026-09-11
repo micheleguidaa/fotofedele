@@ -1,0 +1,912 @@
+{
+ "R01": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 42.697235107421875,
+   "contrast_L": 19.250633239746094,
+   "clip_high_pct": 0.30543009440104163,
+   "clip_low_pct": 0.9747823079427084,
+   "cast": 9.205093913574414,
+   "cast_a": 4.547216415405273,
+   "cast_b": 8.003535270690918,
+   "colorfulness": 45.61900329589844,
+   "tilt_deg": 0.8251922756595471,
+   "tilt_signed_deg": -0.8251922756595471,
+   "n_vertical_lines": 35,
+   "keystone": -2.1408148140479883,
+   "sharpness": 38.259119587470195,
+   "noise_sigma": 0.42030831301954713,
+   "graphic_score": 0.003987630208333333
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata"
+  ],
+  "iqa": {
+   "musiq": 58.37417221069336,
+   "topiq": 0.3997279703617096
+  }
+ },
+ "R02": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 65.62614440917969,
+   "contrast_L": 26.493860244750977,
+   "clip_high_pct": 1.13067626953125,
+   "clip_low_pct": 0.7237752278645833,
+   "cast": 2.1173237761011943,
+   "cast_a": -1.1351094245910645,
+   "cast_b": 1.7873406410217285,
+   "colorfulness": 6.080275058746338,
+   "tilt_deg": 0.4666908678476451,
+   "tilt_signed_deg": -0.4666908678476451,
+   "n_vertical_lines": 62,
+   "keystone": -20.16605310609638,
+   "sharpness": 365.22992004495364,
+   "noise_sigma": 0.4384843140864189,
+   "graphic_score": 0.10229110717773438
+  },
+  "defects": [],
+  "iqa": {
+   "musiq": 72.54474639892578,
+   "topiq": 0.6193854212760925
+  }
+ },
+ "R03": {
+  "technical": {
+   "width": 1154,
+   "height": 865,
+   "megapixels": 0.99821,
+   "exposure_L": 52.682437896728516,
+   "contrast_L": 24.958173751831055,
+   "clip_high_pct": 0.14979044596354169,
+   "clip_low_pct": 1.5694936116536458,
+   "cast": 9.405530983206452,
+   "cast_a": 0.1461704969406128,
+   "cast_b": 9.40439510345459,
+   "colorfulness": 11.426133155822754,
+   "tilt_deg": 1.7995042564804833,
+   "tilt_signed_deg": -1.7995042564804833,
+   "n_vertical_lines": 35,
+   "keystone": -13.352649999174984,
+   "sharpness": 1269.6650997188924,
+   "noise_sigma": 0.7346482311231006,
+   "graphic_score": 0.0021921793619791665
+  },
+  "defects": [
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 72.23737335205078,
+   "topiq": 0.5366786122322083
+  }
+ },
+ "R04": {
+  "technical": {
+   "width": 1154,
+   "height": 865,
+   "megapixels": 0.99821,
+   "exposure_L": 52.2388801574707,
+   "contrast_L": 22.708309173583984,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 1.265080769856771,
+   "cast": 8.585919224877717,
+   "cast_a": 1.6486210823059082,
+   "cast_b": 8.426153182983398,
+   "colorfulness": 15.063159942626953,
+   "tilt_deg": 0.47260145317507374,
+   "tilt_signed_deg": -0.47260145317507374,
+   "n_vertical_lines": 25,
+   "keystone": -11.0153962263944,
+   "sharpness": 572.4082588549289,
+   "noise_sigma": 0.8521397489762834,
+   "graphic_score": 4.9591064453125e-05
+  },
+  "defects": [
+   "dominante",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 66.70503997802734,
+   "topiq": 0.5287337899208069
+  }
+ },
+ "R05": {
+  "technical": {
+   "width": 343,
+   "height": 456,
+   "megapixels": 0.156408,
+   "exposure_L": 45.82329177856445,
+   "contrast_L": 21.298954010009766,
+   "clip_high_pct": 2.1916329904481997,
+   "clip_low_pct": 0.6284154573842763,
+   "cast": 6.861612769017228,
+   "cast_a": -0.4385278820991516,
+   "cast_b": 6.847585201263428,
+   "colorfulness": 7.498444557189941,
+   "tilt_deg": 0.7368854334473625,
+   "tilt_signed_deg": 0.7368854334473625,
+   "n_vertical_lines": 46,
+   "keystone": -19.088167503060337,
+   "sharpness": 7.874894521934769,
+   "noise_sigma": 0.21015415650977357,
+   "graphic_score": 0.028615218589272594
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 32.15583419799805,
+   "topiq": 0.26838138699531555
+  }
+ },
+ "R06": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 56.463924407958984,
+   "contrast_L": 15.400612831115723,
+   "clip_high_pct": 0.042724609375,
+   "clip_low_pct": 1.2217203776041665,
+   "cast": 9.992671030664873,
+   "cast_a": 0.614392876625061,
+   "cast_b": 9.97376537322998,
+   "colorfulness": 11.232911109924316,
+   "tilt_deg": 0.21434569673545698,
+   "tilt_signed_deg": -0.21434569673545698,
+   "n_vertical_lines": 75,
+   "keystone": -15.718412276334124,
+   "sharpness": 79.07293670997024,
+   "noise_sigma": 0.2531590367732287,
+   "graphic_score": 0.0034192403157552085
+  },
+  "defects": [
+   "dominante",
+   "sfocata"
+  ],
+  "iqa": {
+   "musiq": 72.65120697021484,
+   "topiq": 0.459248423576355
+  }
+ },
+ "R07": {
+  "technical": {
+   "width": 787,
+   "height": 1050,
+   "megapixels": 0.82635,
+   "exposure_L": 44.64805603027344,
+   "contrast_L": 19.053997039794922,
+   "clip_high_pct": 0.47834404740117126,
+   "clip_low_pct": 1.3275816709370425,
+   "cast": 9.84432801651053,
+   "cast_a": 5.809732437133789,
+   "cast_b": 7.947188377380371,
+   "colorfulness": 24.719511032104492,
+   "tilt_deg": 1.7603220047896222,
+   "tilt_signed_deg": -1.7603220047896222,
+   "n_vertical_lines": 21,
+   "keystone": -22.05947484632206,
+   "sharpness": 39.51802774393301,
+   "noise_sigma": 0.34582167542980413,
+   "graphic_score": 0.005000057192532943
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 54.802635192871094,
+   "topiq": 0.3707650899887085
+  }
+ },
+ "R08": {
+  "technical": {
+   "width": 1475,
+   "height": 1050,
+   "megapixels": 1.54875,
+   "exposure_L": 57.7236328125,
+   "contrast_L": 17.285045623779297,
+   "clip_high_pct": 5.0068587105624145,
+   "clip_low_pct": 0.7110553840877915,
+   "cast": 8.244132258383468,
+   "cast_a": 3.60392165184021,
+   "cast_b": 7.414679050445557,
+   "colorfulness": 10.461528778076172,
+   "tilt_deg": 1.2497489430343127,
+   "tilt_signed_deg": 1.2497489430343127,
+   "n_vertical_lines": 50,
+   "keystone": -46.51780039139247,
+   "sharpness": 188.3115716479483,
+   "noise_sigma": 0.5311469527430347,
+   "graphic_score": 0.05922469778806584
+  },
+  "defects": [
+   "dominante",
+   "storta"
+  ],
+  "iqa": {
+   "musiq": 65.63130950927734,
+   "topiq": 0.5117871165275574
+  }
+ },
+ "R09": {
+  "technical": {
+   "width": 788,
+   "height": 1050,
+   "megapixels": 0.8274,
+   "exposure_L": 51.30855941772461,
+   "contrast_L": 17.99587059020996,
+   "clip_high_pct": 0.3750887784090909,
+   "clip_low_pct": 0.4756804435483871,
+   "cast": 11.714036689408104,
+   "cast_a": 3.85265851020813,
+   "cast_b": 11.06235408782959,
+   "colorfulness": 19.679855346679688,
+   "tilt_deg": 0.38442931262868124,
+   "tilt_signed_deg": -0.38442931262868124,
+   "n_vertical_lines": 61,
+   "keystone": -29.460587270101303,
+   "sharpness": 119.53597312122335,
+   "noise_sigma": 0.37065055462640206,
+   "graphic_score": 0.004217690386730206
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 64.3211441040039,
+   "topiq": 0.45467740297317505
+  }
+ },
+ "R10": {
+  "technical": {
+   "width": 787,
+   "height": 1050,
+   "megapixels": 0.82635,
+   "exposure_L": 60.4255485534668,
+   "contrast_L": 16.33871841430664,
+   "clip_high_pct": 0.008936333272327965,
+   "clip_low_pct": 0.648634814238653,
+   "cast": 3.848970127361941,
+   "cast_a": -0.9428834915161133,
+   "cast_b": 3.731694221496582,
+   "colorfulness": 5.483072757720947,
+   "tilt_deg": 0.5245549741883401,
+   "tilt_signed_deg": 0.5245549741883401,
+   "n_vertical_lines": 18,
+   "keystone": -22.82119199985686,
+   "sharpness": 238.6143071409733,
+   "noise_sigma": 0.3555621650448238,
+   "graphic_score": 0.0007899718612737921
+  },
+  "defects": [
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 65.33692169189453,
+   "topiq": 0.42281854152679443
+  }
+ },
+ "R11": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 75.791015625,
+   "contrast_L": 15.241348266601562,
+   "clip_high_pct": 0.4894256591796875,
+   "clip_low_pct": 0.09371439615885416,
+   "cast": 6.018811408526763,
+   "cast_a": 2.229848861694336,
+   "cast_b": 5.590515613555908,
+   "colorfulness": 17.141422271728516,
+   "tilt_deg": 0.06936941145106512,
+   "tilt_signed_deg": -0.06936941145106512,
+   "n_vertical_lines": 101,
+   "keystone": -30.076801884084492,
+   "sharpness": 196.66069505767277,
+   "noise_sigma": 0.27798791596981837,
+   "graphic_score": 0.05510838826497396
+  },
+  "defects": [
+   "dominante"
+  ],
+  "iqa": {
+   "musiq": 74.81411743164062,
+   "topiq": 0.6126918196678162
+  }
+ },
+ "R12": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 41.341033935546875,
+   "contrast_L": 20.8311824798584,
+   "clip_high_pct": 2.5842030843098955,
+   "clip_low_pct": 2.7940114339192705,
+   "cast": 9.007017389110434,
+   "cast_a": 3.724919557571411,
+   "cast_b": 8.200691223144531,
+   "colorfulness": 14.907736778259277,
+   "tilt_deg": 0.619279184315002,
+   "tilt_signed_deg": -0.619279184315002,
+   "n_vertical_lines": 108,
+   "keystone": 15.083661903951201,
+   "sharpness": 266.2859618406122,
+   "noise_sigma": 0.6849904727299633,
+   "graphic_score": 0.027806599934895832
+  },
+  "defects": [
+   "buia",
+   "dominante"
+  ],
+  "iqa": {
+   "musiq": 67.02383422851562,
+   "topiq": 0.5033517479896545
+  }
+ },
+ "R13": {
+  "technical": {
+   "width": 1394,
+   "height": 768,
+   "megapixels": 1.070592,
+   "exposure_L": 65.69367218017578,
+   "contrast_L": 28.59556770324707,
+   "clip_high_pct": 0.1277842420212766,
+   "clip_low_pct": 3.1750401706560285,
+   "cast": 5.301495656329398,
+   "cast_a": 0.5356402397155762,
+   "cast_b": 5.274366855621338,
+   "colorfulness": 11.97116756439209,
+   "tilt_deg": 1.243044788690147,
+   "tilt_signed_deg": 1.243044788690147,
+   "n_vertical_lines": 91,
+   "keystone": -15.185229256925115,
+   "sharpness": 109.01768562262592,
+   "noise_sigma": 0.3458216754298251,
+   "graphic_score": 0.08039498836436171
+  },
+  "defects": [
+   "dominante",
+   "storta",
+   "sfocata"
+  ],
+  "iqa": {
+   "musiq": 54.29863357543945,
+   "topiq": 0.40508875250816345
+  }
+ },
+ "R14": {
+  "technical": {
+   "width": 1680,
+   "height": 1050,
+   "megapixels": 1.764,
+   "exposure_L": 51.931556701660156,
+   "contrast_L": 19.107280731201172,
+   "clip_high_pct": 3.1121826171875,
+   "clip_low_pct": 0.1953125,
+   "cast": 4.429856264137964,
+   "cast_a": 2.646648645401001,
+   "cast_b": 3.5523059368133545,
+   "colorfulness": 9.235089302062988,
+   "tilt_deg": 1.7408556355104874,
+   "tilt_signed_deg": -1.7408556355104874,
+   "n_vertical_lines": 30,
+   "keystone": -22.164092858083187,
+   "sharpness": 139.66289765117457,
+   "noise_sigma": 0.6916433508596564,
+   "graphic_score": 0.03504180908203125
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta"
+  ],
+  "iqa": {
+   "musiq": 62.42948913574219,
+   "topiq": 0.5531779527664185
+  }
+ },
+ "R15": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 55.37211227416992,
+   "contrast_L": 17.598865509033203,
+   "clip_high_pct": 2.440897623697917,
+   "clip_low_pct": 0.07616678873697916,
+   "cast": 12.785325213586159,
+   "cast_a": 0.6807891726493835,
+   "cast_b": 12.767187118530273,
+   "colorfulness": 37.356075286865234,
+   "tilt_deg": 0.4885079064654338,
+   "tilt_signed_deg": 0.4885079064654338,
+   "n_vertical_lines": 19,
+   "keystone": -0.42720954886750473,
+   "sharpness": 107.92170870521254,
+   "noise_sigma": 0.43848431408642813,
+   "graphic_score": 0.019129435221354168
+  },
+  "defects": [
+   "dominante",
+   "sfocata"
+  ],
+  "iqa": {
+   "musiq": 64.08964538574219,
+   "topiq": 0.4487380087375641
+  }
+ },
+ "R16": {
+  "technical": {
+   "width": 480,
+   "height": 360,
+   "megapixels": 0.1728,
+   "exposure_L": 49.53815841674805,
+   "contrast_L": 20.3248291015625,
+   "clip_high_pct": 4.157129923502604,
+   "clip_low_pct": 1.021448771158854,
+   "cast": 8.31371895721229,
+   "cast_a": -1.2717291116714478,
+   "cast_b": 8.215876579284668,
+   "colorfulness": 9.999916076660156,
+   "tilt_deg": 1.0290547596280295,
+   "tilt_signed_deg": -1.0290547596280295,
+   "n_vertical_lines": 101,
+   "keystone": -7.399525450906741,
+   "sharpness": 57.07296414223027,
+   "noise_sigma": 0.2531590367732318,
+   "graphic_score": 0.0495452880859375
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 45.03874969482422,
+   "topiq": 0.32071539759635925
+  }
+ },
+ "R17": {
+  "technical": {
+   "width": 1573,
+   "height": 1050,
+   "megapixels": 1.65165,
+   "exposure_L": 53.20222091674805,
+   "contrast_L": 24.439823150634766,
+   "clip_high_pct": 1.3593350237573099,
+   "clip_low_pct": 2.850734420687134,
+   "cast": 12.782506550368954,
+   "cast_a": 2.2257909774780273,
+   "cast_b": 12.587228775024414,
+   "colorfulness": 19.012208938598633,
+   "tilt_deg": 0.16279148335970012,
+   "tilt_signed_deg": -0.16279148335970012,
+   "n_vertical_lines": 97,
+   "keystone": -5.5983846870869876,
+   "sharpness": 522.4099220100854,
+   "noise_sigma": 0.666814471663082,
+   "graphic_score": 0.015473661366959063
+  },
+  "defects": [
+   "dominante"
+  ],
+  "iqa": {
+   "musiq": 76.4202651977539,
+   "topiq": 0.6412498354911804
+  }
+ },
+ "R18": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 50.05044174194336,
+   "contrast_L": 24.763032913208008,
+   "clip_high_pct": 0.10236104329427083,
+   "clip_low_pct": 2.313486735026042,
+   "cast": 10.359990164099028,
+   "cast_a": 3.85241961479187,
+   "cast_b": 9.617081642150879,
+   "colorfulness": 19.638051986694336,
+   "tilt_deg": 2.7409642162727073,
+   "tilt_signed_deg": 2.7409642162727073,
+   "n_vertical_lines": 23,
+   "keystone": 25.350652769646018,
+   "sharpness": 618.459374924753,
+   "noise_sigma": 0.5311469527430259,
+   "graphic_score": 0.009267171223958334
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta"
+  ],
+  "iqa": {
+   "musiq": 76.0466079711914,
+   "topiq": 0.5628564953804016
+  }
+ },
+ "G01": {
+  "technical": {
+   "width": 1573,
+   "height": 1050,
+   "megapixels": 1.65165,
+   "exposure_L": 58.806236267089844,
+   "contrast_L": 25.11764144897461,
+   "clip_high_pct": 0.002141584429824561,
+   "clip_low_pct": 0.74027435124269,
+   "cast": 3.830988624928338,
+   "cast_a": 1.5840662717819214,
+   "cast_b": 3.488152503967285,
+   "colorfulness": 8.766142845153809,
+   "tilt_deg": 0.8544910069261854,
+   "tilt_signed_deg": 0.8544910069261854,
+   "n_vertical_lines": 106,
+   "keystone": -0.9561819073140384,
+   "sharpness": 521.9413515031064,
+   "noise_sigma": 0.5063180735464461,
+   "graphic_score": 0.02185415524488304
+  },
+  "defects": [
+   "storta"
+  ],
+  "iqa": {
+   "musiq": 72.04703521728516,
+   "topiq": 0.6381391286849976
+  }
+ },
+ "D01": {
+  "technical": {
+   "width": 865,
+   "height": 555,
+   "megapixels": 0.480075,
+   "exposure_L": 47.08921813964844,
+   "contrast_L": 20.19431495666504,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 1.1207429604261796,
+   "cast": 14.07902837478377,
+   "cast_a": -10.359610557556152,
+   "cast_b": 9.534018516540527,
+   "colorfulness": 18.15174674987793,
+   "tilt_deg": 3.272260540791897,
+   "tilt_signed_deg": 3.272260540791897,
+   "n_vertical_lines": 94,
+   "keystone": -0.9770780359684561,
+   "sharpness": 175.7628349946893,
+   "noise_sigma": 0.4003496786304741,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 65.55199432373047,
+   "topiq": 0.41448646783828735
+  }
+ },
+ "G02": {
+  "technical": {
+   "width": 1400,
+   "height": 1050,
+   "megapixels": 1.47,
+   "exposure_L": 69.79688262939453,
+   "contrast_L": 17.8432674407959,
+   "clip_high_pct": 0.13224283854166669,
+   "clip_low_pct": 0.12232462565104167,
+   "cast": 5.788511119709829,
+   "cast_a": 2.557864189147949,
+   "cast_b": 5.1927056312561035,
+   "colorfulness": 18.48187828063965,
+   "tilt_deg": 0.3110580265372338,
+   "tilt_signed_deg": 0.3110580265372338,
+   "n_vertical_lines": 54,
+   "keystone": -3.968391079772914,
+   "sharpness": 475.54184695454836,
+   "noise_sigma": 0.5989807122030609,
+   "graphic_score": 0.007846832275390625
+  },
+  "defects": [
+   "dominante"
+  ],
+  "iqa": {
+   "musiq": 75.24433135986328,
+   "topiq": 0.6474688649177551
+  }
+ },
+ "D02": {
+  "technical": {
+   "width": 758,
+   "height": 554,
+   "megapixels": 0.419932,
+   "exposure_L": 53.146644592285156,
+   "contrast_L": 13.717411041259766,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 0.12376754679144385,
+   "cast": 12.915254581039564,
+   "cast_a": 5.253759384155273,
+   "cast_b": 11.798381805419922,
+   "colorfulness": 23.56271743774414,
+   "tilt_deg": 1.858026951221639,
+   "tilt_signed_deg": -1.858026951221639,
+   "n_vertical_lines": 53,
+   "keystone": -4.028256913748383,
+   "sharpness": 125.26916953829873,
+   "noise_sigma": 0.3706505546264048,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 67.88500213623047,
+   "topiq": 0.425068199634552
+  }
+ },
+ "G03": {
+  "technical": {
+   "width": 1575,
+   "height": 1050,
+   "megapixels": 1.65375,
+   "exposure_L": 63.142616271972656,
+   "contrast_L": 19.770341873168945,
+   "clip_high_pct": 0.05190222364568082,
+   "clip_low_pct": 0.47641379941434847,
+   "cast": 3.081400786316075,
+   "cast_a": -1.7764132022857666,
+   "cast_b": 2.5178139209747314,
+   "colorfulness": 17.093812942504883,
+   "tilt_deg": 0.3137226047543784,
+   "tilt_signed_deg": -0.3137226047543784,
+   "n_vertical_lines": 71,
+   "keystone": 0.6616455016254872,
+   "sharpness": 304.4033795246684,
+   "noise_sigma": 0.3209927962332554,
+   "graphic_score": 0.0028910825402635432
+  },
+  "defects": [],
+  "iqa": {
+   "musiq": 75.84886169433594,
+   "topiq": 0.6808666586875916
+  }
+ },
+ "D03": {
+  "technical": {
+   "width": 863,
+   "height": 548,
+   "megapixels": 0.472924,
+   "exposure_L": 45.14307403564453,
+   "contrast_L": 14.228938102722168,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 0.741436298076923,
+   "cast": 10.362245061397836,
+   "cast_a": -1.4642852544784546,
+   "cast_b": 10.258264541625977,
+   "colorfulness": 19.895822525024414,
+   "tilt_deg": 2.708363557017648,
+   "tilt_signed_deg": 2.708363557017648,
+   "n_vertical_lines": 64,
+   "keystone": 0.45562697518236245,
+   "sharpness": 96.28327054202967,
+   "noise_sigma": 0.2713350378401196,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 67.55276489257812,
+   "topiq": 0.4672013819217682
+  }
+ },
+ "G04": {
+  "technical": {
+   "width": 1575,
+   "height": 1050,
+   "megapixels": 1.65375,
+   "exposure_L": 72.84855651855469,
+   "contrast_L": 19.95409393310547,
+   "clip_high_pct": 2.706493640190337,
+   "clip_low_pct": 0.0897922767203514,
+   "cast": 3.019930776513912,
+   "cast_a": 2.4637351036071777,
+   "cast_b": 1.7464224100112915,
+   "colorfulness": 15.08498764038086,
+   "tilt_deg": 0.10588104203834318,
+   "tilt_signed_deg": -0.10588104203834318,
+   "n_vertical_lines": 91,
+   "keystone": 0.6128910215959142,
+   "sharpness": 206.48510393984517,
+   "noise_sigma": 0.25315903677323615,
+   "graphic_score": 0.09184405883967789
+  },
+  "defects": [],
+  "iqa": {
+   "musiq": 72.67289733886719,
+   "topiq": 0.6300911903381348
+  }
+ },
+ "D04": {
+  "technical": {
+   "width": 773,
+   "height": 490,
+   "megapixels": 0.37877,
+   "exposure_L": 54.73107147216797,
+   "contrast_L": 16.375085830688477,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 0.15694217064714946,
+   "cast": 9.038644207346474,
+   "cast_a": -1.2208094596862793,
+   "cast_b": -8.955820083618164,
+   "colorfulness": 15.037163734436035,
+   "tilt_deg": 3.008198857440519,
+   "tilt_signed_deg": 3.008198857440519,
+   "n_vertical_lines": 81,
+   "keystone": 0.5688885209016706,
+   "sharpness": 61.437450190041545,
+   "noise_sigma": 0.2531590367732216,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 56.206787109375,
+   "topiq": 0.4052240252494812
+  }
+ },
+ "G05": {
+  "technical": {
+   "width": 1575,
+   "height": 1050,
+   "megapixels": 1.65375,
+   "exposure_L": 65.53280639648438,
+   "contrast_L": 19.48856544494629,
+   "clip_high_pct": 0.5785024707174231,
+   "clip_low_pct": 0.0840730234260615,
+   "cast": 4.98641319848486,
+   "cast_a": 2.818074941635132,
+   "cast_b": 4.113729476928711,
+   "colorfulness": 12.857840538024902,
+   "tilt_deg": 0.27559771579947734,
+   "tilt_signed_deg": 0.27559771579947734,
+   "n_vertical_lines": 52,
+   "keystone": 47.45233447029208,
+   "sharpness": 674.9830759276446,
+   "noise_sigma": 0.5311469527430391,
+   "graphic_score": 0.016099698023426062
+  },
+  "defects": [
+   "dominante"
+  ],
+  "iqa": {
+   "musiq": 73.2496337890625,
+   "topiq": 0.6529529690742493
+  }
+ },
+ "D05": {
+  "technical": {
+   "width": 807,
+   "height": 504,
+   "megapixels": 0.406728,
+   "exposure_L": 50.51256561279297,
+   "contrast_L": 14.486692428588867,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 0.113372802734375,
+   "cast": 11.093091844566366,
+   "cast_a": 5.123795986175537,
+   "cast_b": 9.838871955871582,
+   "colorfulness": 16.91140365600586,
+   "tilt_deg": 3.3102603130430563,
+   "tilt_signed_deg": -3.3102603130430563,
+   "n_vertical_lines": 68,
+   "keystone": 44.70901290822678,
+   "sharpness": 207.26782522610392,
+   "noise_sigma": 0.4203083130195438,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 60.35873794555664,
+   "topiq": 0.40351444482803345
+  }
+ },
+ "G06": {
+  "technical": {
+   "width": 1680,
+   "height": 1050,
+   "megapixels": 1.764,
+   "exposure_L": 57.22144317626953,
+   "contrast_L": 26.241634368896484,
+   "clip_high_pct": 0.27923583984375,
+   "clip_low_pct": 0.608062744140625,
+   "cast": 3.638448145745887,
+   "cast_a": 2.0516793727874756,
+   "cast_b": 3.0048155784606934,
+   "colorfulness": 16.558063507080078,
+   "tilt_deg": 0.24114293875793152,
+   "tilt_signed_deg": 0.24114293875793152,
+   "n_vertical_lines": 98,
+   "keystone": 1.0165009959957683,
+   "sharpness": 557.2793960275851,
+   "noise_sigma": 1.0441179044191666,
+   "graphic_score": 0.03395843505859375
+  },
+  "defects": [],
+  "iqa": {
+   "musiq": 74.7514419555664,
+   "topiq": 0.715507447719574
+  }
+ },
+ "D06": {
+  "technical": {
+   "width": 802,
+   "height": 463,
+   "megapixels": 0.371326,
+   "exposure_L": 45.966270446777344,
+   "contrast_L": 22.201549530029297,
+   "clip_high_pct": 0.0,
+   "clip_low_pct": 1.1343657466159052,
+   "cast": 11.367851124539385,
+   "cast_a": -6.986962795257568,
+   "cast_b": 8.967184066772461,
+   "colorfulness": 19.123638153076172,
+   "tilt_deg": 4.007326052657452,
+   "tilt_signed_deg": -4.007326052657452,
+   "n_vertical_lines": 91,
+   "keystone": 0.8323876022099888,
+   "sharpness": 176.2719551799424,
+   "noise_sigma": 0.5063180735464421,
+   "graphic_score": 0.0
+  },
+  "defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "iqa": {
+   "musiq": 63.76402282714844,
+   "topiq": 0.43425777554512024
+  }
+ }
+}

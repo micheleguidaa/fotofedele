@@ -1,0 +1,24 @@
+# Decision rule — fixed BEFORE aggregating results (2026-09-11, before running aggregate.py).
+# 1) Gates (must pass both), 2) weighted score among workflows that pass, 3) per-defect winners feed the router.
+declared_at: "2026-09-11"
+
+gates:
+  reliability_min: 0.95      # share of runs that produce a valid output
+  fidelity_flag_max: 0.05    # share of outputs flagged as altering the property
+
+weights:                     # normalised to sum 1 (same formula as web/lib/score.ts)
+  quality: 0.50              # ensemble win-rate vs the original photo (unconflicted judges, ties = 0.5)
+  naturalness: 0.20          # rubric "naturalezza" 1-5
+  cost: 0.15                 # log-scaled cost per image
+  speed: 0.15                # median latency
+
+# Fidelity flag = structural detector OR judge checklist (thresholds calibrated on the trap set)
+fidelity:
+  changed_area_pct_max: 3.0     # % of the frame whose local structure changed
+  invented_area_pct_max: 8.0    # % of the output frame with no counterpart in the input (outpainting)
+  framing_kept_pct_min: 70.0    # heavy re-framing hides part of the property
+  judge_quorum: 0.5             # share of unconflicted judges that must flag the same checklist item
+  # Calibrated on the 12-trap set (NOT on workflow outputs): a judge counts as flagging an item only
+  # if it flags it in every A/B order it was asked. 'any' gave P=0.86 R=1.00 (one single-order false
+  # alarm on T12); 'all' gave P=1.00 R=1.00. Structural-only: P=1.00 R=0.83 (misses the erased logo).
+  judge_orders_rule: all

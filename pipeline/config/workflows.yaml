@@ -1,0 +1,87 @@
+# Workflows under test. Adding a variant = adding an entry here (+ a prompt file if needed).
+# cost_usd_per_image is an ESTIMATE (list prices checked 2026-09-11), see `pricing_sources`.
+
+pricing_sources:
+  gpt_image_2: "https://www.aifreeapi.com/en/posts/openai-image-generation-api-pricing (1024x1536: high $0.165, medium $0.041; checked 2026-09-06)"
+  h200_hour: "https://getdeploying.com/gpus/nvidia-h200 (median on-demand ~$4.40/GPU-h, Sep 2026)"
+  nano_banana: "https://www.aifreeapi.com/en/posts/gemini-image-generation-free-api (Flash Image ~$0.039-0.045/img at 1K; Pro $0.134)"
+
+h200_usd_per_hour: 4.40
+
+workflows:
+  - id: F1
+    name: "Classico deterministico"
+    short: "OpenCV + Real-ESRGAN"
+    engine: classical
+    family: none
+    generative: false
+    description: >-
+      Raddrizza le verticali misurate, bilancia il bianco sui pixel neutri, corregge l'esposizione
+      (gamma + CLAHE), riduce il rumore; sotto 0,6 MP applica super-risoluzione Real-ESRGAN (H200).
+    question: "Baseline: quanto si ottiene a costo ~0 e senza rischio di allucinazioni?"
+    cost: {type: fixed, usd_per_image: 0.0002, note: "CPU; + ~1 s di H200 solo per la super-risoluzione"}
+
+  - id: F2
+    name: "gpt-image · prompt semplice"
+    short: "gpt-image-2 (Codex)"
+    engine: codex_image
+    family: openai
+    generative: true
+    prompt: enhance_simple
+    # run on a balanced subset only: the ChatGPT subscription caps image generations (~20 per window)
+    subset: [R01, R02, R03, R05, R08, R09, R12, R14, R16, D01, D03, D05]
+    description: "Una sola istruzione generica: rendi la foto professionale e attraente (eseguito su 12 immagini)."
+    question: "Cosa succede se si chiede solo 'rendila bella'?"
+    cost: {type: fixed, usd_per_image: 0.165, range: [0.041, 0.165], note: "listino gpt-image-2 1024x1536 medium-high"}
+
+  - id: F3
+    name: "gpt-image · prompt vincolato"
+    short: "gpt-image-2 (Codex)"
+    engine: codex_image
+    family: openai
+    generative: true
+    prompt: enhance_strict
+    description: "Stesso modello di F2 con un prompt che elenca cosa migliorare e cosa NON toccare."
+    question: "F2 vs F3: quanto conta il prompt?"
+    cost: {type: fixed, usd_per_image: 0.165, range: [0.041, 0.165], note: "listino gpt-image-2 1024x1536 medium-high"}
+
+  - id: F4
+    name: "Qwen-Image-Edit 2511 · open weights"
+    short: "Qwen 2511 + Lightning (H200)"
+    engine: comfy_qwen
+    family: alibaba
+    generative: true
+    prompt: enhance_strict
+    params: {megapixels: 1.0, seed: 42}
+    description: "Modello open-weights (fp8, LoRA Lightning 8 step) su ComfyUI, stesso prompt vincolato di F3."
+    question: "F3 vs F4: modello chiuso vs open-weights self-hosted"
+    cost: {type: gpu_time}
+
+  - id: F5
+    name: "Ibrido · gpt-image come art director"
+    short: "trasferimento tonale da F3"
+    engine: hybrid
+    family: openai
+    generative: false
+    reference: F3
+    description: >-
+      Usa l'output di F3 solo come riferimento di colore e luce: stima, dove le due foto hanno la stessa
+      struttura, una curva tonale monotona, una matrice colore 3x3 e una mappa di luminosità molto sfocata,
+      e le applica ai pixel dell'ORIGINALE; geometria corretta come in F1. Nessun pixel viene generato.
+    question: "F3 vs F5: generare i pixel o trasferire solo il 'look'?"
+    cost: {type: inherit, from: F3, extra_usd: 0.0002}
+
+  # F6 (Gemini / Nano Banana) was planned but NOT run: the Gemini CLI rejects individual accounts
+  # (IneligibleTierError), the Gemini web app has no API, and Vertex AI is pay-per-use. By project
+  # choice only the ChatGPT subscription (Codex) and self-hosted models are used. Documented in README.
+  - id: F6
+    enabled: false
+    name: "Gemini · Nano Banana"
+    short: "Gemini image"
+    engine: gemini_image
+    family: google
+    generative: true
+    prompt: enhance_strict
+    description: "Pianificato, non eseguito: nessun accesso automatizzabile tramite abbonamento (vedi README)."
+    question: "F3 vs F6: OpenAI vs Google a parità di prompt"
+    cost: {type: fixed, usd_per_image: 0.134, range: [0.039, 0.134], note: "listino Nano Banana / Pro"}

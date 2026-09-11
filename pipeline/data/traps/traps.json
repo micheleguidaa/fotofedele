@@ -1,0 +1,122 @@
+[
+ {
+  "id": "T01",
+  "type": "oggetti_aggiunti_rimossi",
+  "description": "Oggetto aggiunto (pianta)",
+  "source": "gt/G01.jpg",
+  "instruction": "Add a large green potted plant standing on the floor in front of the sofa. Keep everything else identical.",
+  "original": "T01_orig.jpg",
+  "altered": "T01_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T02",
+  "type": "oggetti_aggiunti_rimossi",
+  "description": "Oggetto rimosso (quadri)",
+  "source": "gt/G03.jpg",
+  "instruction": "Remove the three framed pictures from the green wall, leaving the wall empty. Keep everything else identical.",
+  "original": "T02_orig.jpg",
+  "altered": "T02_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T03",
+  "type": "finestre_vista_cambiata",
+  "description": "Vista dalla finestra sostituita",
+  "source": "real/R08.jpg",
+  "instruction": "Replace the view through the open window with a sunny sea view with blue sky. Keep everything else identical.",
+  "original": "T03_orig.jpg",
+  "altered": "T03_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T04",
+  "type": "materiali_colori_cambiati",
+  "description": "Pavimento cambiato",
+  "source": "gt/G02.jpg",
+  "instruction": "Change the floor to warm light oak wooden parquet. Keep everything else identical.",
+  "original": "T04_orig.jpg",
+  "altered": "T04_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T05",
+  "type": "difetti_nascosti",
+  "description": "Degrado nascosto",
+  "source": "real/R16.jpg",
+  "instruction": "Repair the room: remove the debris from the floor and the damage and stains from the walls, make it look clean and renovated. Keep the furniture and framing identical.",
+  "original": "T05_orig.jpg",
+  "altered": "T05_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T06",
+  "type": "testi_loghi_alterati",
+  "description": "Watermark rimosso",
+  "source": "real/R12.jpg",
+  "instruction": "Remove the red and grey 'professionecasa' watermark text overlay from the photo. Keep everything else identical.",
+  "original": "T06_orig.jpg",
+  "altered": "T06_alt.png",
+  "is_alteration": true
+ },
+ {
+  "id": "T07",
+  "type": "benigno",
+  "description": "Esposizione +0,7 EV",
+  "source": "gt/G04.jpg",
+  "instruction": null,
+  "original": "T07_orig.jpg",
+  "altered": "T07_alt.jpg",
+  "is_alteration": false
+ },
+ {
+  "id": "T08",
+  "type": "benigno",
+  "description": "Bilanciamento del bianco più caldo",
+  "source": "gt/G05.jpg",
+  "instruction": null,
+  "original": "T08_orig.jpg",
+  "altered": "T08_alt.jpg",
+  "is_alteration": false
+ },
+ {
+  "id": "T09",
+  "type": "benigno",
+  "description": "Contrasto e saturazione +15%",
+  "source": "gt/G06.jpg",
+  "instruction": null,
+  "original": "T09_orig.jpg",
+  "altered": "T09_alt.jpg",
+  "is_alteration": false
+ },
+ {
+  "id": "T10",
+  "type": "benigno",
+  "description": "Raddrizzata di 2° con ritaglio",
+  "source": "real/R02.jpg",
+  "instruction": null,
+  "original": "T10_orig.jpg",
+  "altered": "T10_alt.jpg",
+  "is_alteration": false
+ },
+ {
+  "id": "T11",
+  "type": "benigno",
+  "description": "Riduzione rumore + nitidezza",
+  "source": "real/R07.jpg",
+  "instruction": null,
+  "original": "T11_orig.jpg",
+  "altered": "T11_alt.jpg",
+  "is_alteration": false
+ },
+ {
+  "id": "T12",
+  "type": "benigno",
+  "description": "Ricompressione JPEG + ritaglio 3%",
+  "source": "real/R17.jpg",
+  "instruction": null,
+  "original": "T12_orig.jpg",
+  "altered": "T12_alt.jpg",
+  "is_alteration": false
+ }
+]

@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Python env
+pipeline/.venv/
+
+# Raw harvest (930 listing photos) and heavy intermediates: not redistributed.
+# The web-ready WebP copies used by the demo live in web/public/data/.
+pipeline/data/raw/candidates/
+pipeline/data/raw/*.jpg
+pipeline/data/inputs/**/*.jpg
+pipeline/data/inputs/*.jpg
+pipeline/data/runs/**/*.png
+pipeline/data/runs/**/*.jpg
+pipeline/data/runs/qa/
+pipeline/data/metrics/heatmaps/
+pipeline/data/traps/*.png
+pipeline/data/traps/*.jpg
+*.log

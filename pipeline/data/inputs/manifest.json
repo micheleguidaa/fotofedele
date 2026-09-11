@@ -1,0 +1,488 @@
+[
+ {
+  "id": "R01",
+  "kind": "real",
+  "path": "real/R01.jpg",
+  "note": "dominante+buia",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/120275842/",
+  "photo_url": "https://pwm.im-cdn.it/image/1698249982/xxl.jpg",
+  "listing_id": "120275842",
+  "photo_id": "1698249982"
+ },
+ {
+  "id": "R02",
+  "kind": "real",
+  "path": "real/R02.jpg",
+  "note": "dominante fredda",
+  "auto_defects": [
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/131152856/",
+  "photo_url": "https://pwm.im-cdn.it/image/1974234784/xxl.jpg",
+  "listing_id": "131152856",
+  "photo_id": "1974234784"
+ },
+ {
+  "id": "R03",
+  "kind": "real",
+  "path": "real/R03.jpg",
+  "note": "dominante calda+disordine",
+  "auto_defects": [
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/128207258/",
+  "photo_url": "https://pwm.im-cdn.it/image/1903129024/xxl.jpg",
+  "listing_id": "128207258",
+  "photo_id": "1903129024"
+ },
+ {
+  "id": "R04",
+  "kind": "real",
+  "path": "real/R04.jpg",
+  "note": "dominante calda",
+  "auto_defects": [
+   "dominante",
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/128207258/",
+  "photo_url": "https://pwm.im-cdn.it/image/1903128950/xxl.jpg",
+  "listing_id": "128207258",
+  "photo_id": "1903128950"
+ },
+ {
+  "id": "R05",
+  "kind": "real",
+  "path": "real/R05.jpg",
+  "note": "buia",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/130314316/",
+  "photo_url": "https://pwm.im-cdn.it/image/1954678138/xxl.jpg",
+  "listing_id": "130314316",
+  "photo_id": "1954678138"
+ },
+ {
+  "id": "R06",
+  "kind": "real",
+  "path": "real/R06.jpg",
+  "note": "buia",
+  "auto_defects": [
+   "dominante",
+   "storta",
+   "sfocata"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/131378836/",
+  "photo_url": "https://pwm.im-cdn.it/image/1979514900/xxl.jpg",
+  "listing_id": "131378836",
+  "photo_id": "1979514900"
+ },
+ {
+  "id": "R07",
+  "kind": "real",
+  "path": "real/R07.jpg",
+  "note": "buia+storta",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/121971330/",
+  "photo_url": "https://pwm.im-cdn.it/image/2002608228/xxl.jpg",
+  "listing_id": "121971330",
+  "photo_id": "2002608228"
+ },
+ {
+  "id": "R08",
+  "kind": "real",
+  "path": "real/R08.jpg",
+  "note": "storta+sovraesposta",
+  "auto_defects": [
+   "dominante",
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/132058930/",
+  "photo_url": "https://pwm.im-cdn.it/image/1995895102/xxl.jpg",
+  "listing_id": "132058930",
+  "photo_id": "1995895102"
+ },
+ {
+  "id": "R09",
+  "kind": "real",
+  "path": "real/R09.jpg",
+  "note": "storta",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/129563902/",
+  "photo_url": "https://pwm.im-cdn.it/image/1936264654/xxl.jpg",
+  "listing_id": "129563902",
+  "photo_id": "1936264654"
+ },
+ {
+  "id": "R10",
+  "kind": "real",
+  "path": "real/R10.jpg",
+  "note": "storta",
+  "auto_defects": [
+   "storta",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/121971330/",
+  "photo_url": "https://pwm.im-cdn.it/image/2002623520/xxl.jpg",
+  "listing_id": "121971330",
+  "photo_id": "2002623520"
+ },
+ {
+  "id": "R11",
+  "kind": "real",
+  "path": "real/R11.jpg",
+  "note": "storta",
+  "auto_defects": [
+   "dominante",
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/131152856/",
+  "photo_url": "https://pwm.im-cdn.it/image/1974234802/xxl.jpg",
+  "listing_id": "131152856",
+  "photo_id": "1974234802"
+ },
+ {
+  "id": "R12",
+  "kind": "real",
+  "path": "real/R12.jpg",
+  "note": "storta",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/129563902/",
+  "photo_url": "https://pwm.im-cdn.it/image/1936264650/xxl.jpg",
+  "listing_id": "129563902",
+  "photo_id": "1936264650"
+ },
+ {
+  "id": "R13",
+  "kind": "real",
+  "path": "real/R13.jpg",
+  "note": "sovraesposta",
+  "auto_defects": [
+   "dominante",
+   "storta",
+   "sfocata"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/130190344/",
+  "photo_url": "https://pwm.im-cdn.it/image/1951787288/xxl.jpg",
+  "listing_id": "130190344",
+  "photo_id": "1951787288"
+ },
+ {
+  "id": "R14",
+  "kind": "real",
+  "path": "real/R14.jpg",
+  "note": "sovraesposta",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/131034348/",
+  "photo_url": "https://pwm.im-cdn.it/image/1971655302/xxl.jpg",
+  "listing_id": "131034348",
+  "photo_id": "1971655302"
+ },
+ {
+  "id": "R15",
+  "kind": "real",
+  "path": "real/R15.jpg",
+  "note": "controluce",
+  "auto_defects": [
+   "dominante",
+   "sfocata"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/120275842/",
+  "photo_url": "https://pwm.im-cdn.it/image/1698249968/xxl.jpg",
+  "listing_id": "120275842",
+  "photo_id": "1698249968"
+ },
+ {
+  "id": "R16",
+  "kind": "real",
+  "path": "real/R16.jpg",
+  "note": "da ristrutturare",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta",
+   "sfocata",
+   "bassa_risoluzione"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/131248416/",
+  "photo_url": "https://pwm.im-cdn.it/image/1976562632/xxl.jpg",
+  "listing_id": "131248416",
+  "photo_id": "1976562632"
+ },
+ {
+  "id": "R17",
+  "kind": "real",
+  "path": "real/R17.jpg",
+  "note": "storta+finestra",
+  "auto_defects": [
+   "dominante"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/127148715/",
+  "photo_url": "https://pwm.im-cdn.it/image/1877664569/xxl.jpg",
+  "listing_id": "127148715",
+  "photo_id": "1877664569"
+ },
+ {
+  "id": "R18",
+  "kind": "real",
+  "path": "real/R18.jpg",
+  "note": "esterno, verticali convergenti",
+  "auto_defects": [
+   "buia",
+   "dominante",
+   "storta"
+  ],
+  "listing_url": "https://www.immobiliare.it/annunci/121195810/",
+  "photo_url": "https://pwm.im-cdn.it/image/1725986310/xxl.jpg",
+  "listing_id": "121195810",
+  "photo_id": "1725986310"
+ },
+ {
+  "id": "G01",
+  "kind": "clean",
+  "path": "gt/G01.jpg",
+  "note": "soggiorno",
+  "listing_url": "https://www.immobiliare.it/annunci/132194756/",
+  "photo_url": "https://pwm.im-cdn.it/image/1999117180/xxl.jpg",
+  "listing_id": "132194756",
+  "photo_id": "1999117180"
+ },
+ {
+  "id": "D01",
+  "kind": "degraded",
+  "path": "gt/D01.jpg",
+  "note": "soggiorno",
+  "ground_truth": "G01",
+  "degradation": {
+   "ev": -0.9874522666976666,
+   "cast": "green",
+   "cast_strength": 0.14205485521961547,
+   "tilt_deg": 2.4504143799811837,
+   "noise_sigma": 3.9004988547336765,
+   "target_mp": 0.4810330168094393,
+   "jpeg_q": 73,
+   "crop_box_in_original": [
+    24,
+    35,
+    1525,
+    979
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/132194756/",
+  "photo_url": "https://pwm.im-cdn.it/image/1999117180/xxl.jpg",
+  "listing_id": "132194756",
+  "photo_id": "1999117180"
+ },
+ {
+  "id": "G02",
+  "kind": "clean",
+  "path": "gt/G02.jpg",
+  "note": "ingresso",
+  "listing_url": "https://www.immobiliare.it/annunci/131152856/",
+  "photo_url": "https://pwm.im-cdn.it/image/1974234828/xxl.jpg",
+  "listing_id": "131152856",
+  "photo_id": "1974234828"
+ },
+ {
+  "id": "D02",
+  "kind": "degraded",
+  "path": "gt/D02.jpg",
+  "note": "ingresso",
+  "ground_truth": "G02",
+  "degradation": {
+   "ev": -0.9423745542811403,
+   "cast": "warm",
+   "cast_strength": 0.08884034585947577,
+   "tilt_deg": -2.2714734991979797,
+   "noise_sigma": 5.502118370454201,
+   "target_mp": 0.4199757501016577,
+   "jpeg_q": 72,
+   "crop_box_in_original": [
+    22,
+    29,
+    1356,
+    991
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/131152856/",
+  "photo_url": "https://pwm.im-cdn.it/image/1974234828/xxl.jpg",
+  "listing_id": "131152856",
+  "photo_id": "1974234828"
+ },
+ {
+  "id": "G03",
+  "kind": "clean",
+  "path": "gt/G03.jpg",
+  "note": "camera da letto",
+  "listing_url": "https://www.immobiliare.it/annunci/132288562/",
+  "photo_url": "https://pwm.im-cdn.it/image/2001045810/xxl.jpg",
+  "listing_id": "132288562",
+  "photo_id": "2001045810"
+ },
+ {
+  "id": "D03",
+  "kind": "degraded",
+  "path": "gt/D03.jpg",
+  "note": "camera da letto",
+  "ground_truth": "G03",
+  "degradation": {
+   "ev": -1.18584056175624,
+   "cast": "warm",
+   "cast_strength": 0.12845232591988154,
+   "tilt_deg": 3.0658563991326964,
+   "noise_sigma": 4.2904316041787816,
+   "target_mp": 0.4735163433590656,
+   "jpeg_q": 67,
+   "crop_box_in_original": [
+    30,
+    44,
+    1515,
+    961
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/132288562/",
+  "photo_url": "https://pwm.im-cdn.it/image/2001045810/xxl.jpg",
+  "listing_id": "132288562",
+  "photo_id": "2001045810"
+ },
+ {
+  "id": "G04",
+  "kind": "clean",
+  "path": "gt/G04.jpg",
+  "note": "cucina",
+  "listing_url": "https://www.immobiliare.it/annunci/129773250/",
+  "photo_url": "https://pwm.im-cdn.it/image/1941420074/xxl.jpg",
+  "listing_id": "129773250",
+  "photo_id": "1941420074"
+ },
+ {
+  "id": "D04",
+  "kind": "degraded",
+  "path": "gt/D04.jpg",
+  "note": "cucina",
+  "ground_truth": "G04",
+  "degradation": {
+   "ev": -0.8600092778529994,
+   "cast": "cool",
+   "cast_strength": 0.13624513264037494,
+   "tilt_deg": 3.1684034044686777,
+   "noise_sigma": 4.811859600426731,
+   "target_mp": 0.3793077213746508,
+   "jpeg_q": 68,
+   "crop_box_in_original": [
+    31,
+    46,
+    1513,
+    958
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/129773250/",
+  "photo_url": "https://pwm.im-cdn.it/image/1941420074/xxl.jpg",
+  "listing_id": "129773250",
+  "photo_id": "1941420074"
+ },
+ {
+  "id": "G05",
+  "kind": "clean",
+  "path": "gt/G05.jpg",
+  "note": "esterno",
+  "listing_url": "https://www.immobiliare.it/annunci/124542355/",
+  "photo_url": "https://pwm.im-cdn.it/image/1814991527/xxl.jpg",
+  "listing_id": "124542355",
+  "photo_id": "1814991527"
+ },
+ {
+  "id": "D05",
+  "kind": "degraded",
+  "path": "gt/D05.jpg",
+  "note": "esterno",
+  "ground_truth": "G05",
+  "degradation": {
+   "ev": -0.9245393198427154,
+   "cast": "warm",
+   "cast_strength": 0.10119871508493093,
+   "tilt_deg": -3.862035513238629,
+   "noise_sigma": 5.7100319502737324,
+   "target_mp": 0.4077450449216596,
+   "jpeg_q": 63,
+   "crop_box_in_original": [
+    37,
+    56,
+    1500,
+    938
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/124542355/",
+  "photo_url": "https://pwm.im-cdn.it/image/1814991527/xxl.jpg",
+  "listing_id": "124542355",
+  "photo_id": "1814991527"
+ },
+ {
+  "id": "G06",
+  "kind": "clean",
+  "path": "gt/G06.jpg",
+  "note": "cucina-soggiorno",
+  "listing_url": "https://www.immobiliare.it/annunci/131619476/",
+  "photo_url": "https://pwm.im-cdn.it/image/1985558600/xxl.jpg",
+  "listing_id": "131619476",
+  "photo_id": "1985558600"
+ },
+ {
+  "id": "D06",
+  "kind": "degraded",
+  "path": "gt/D06.jpg",
+  "note": "cucina-soggiorno",
+  "ground_truth": "G06",
+  "degradation": {
+   "ev": -0.8004832162322559,
+   "cast": "green",
+   "cast_strength": 0.11171509292849774,
+   "tilt_deg": -3.978461962933146,
+   "noise_sigma": 4.830349727804193,
+   "target_mp": 0.3720256233146732,
+   "jpeg_q": 74,
+   "crop_box_in_original": [
+    38,
+    61,
+    1603,
+    927
+   ]
+  },
+  "listing_url": "https://www.immobiliare.it/annunci/131619476/",
+  "photo_url": "https://pwm.im-cdn.it/image/1985558600/xxl.jpg",
+  "listing_id": "131619476",
+  "photo_id": "1985558600"
+ }
+]

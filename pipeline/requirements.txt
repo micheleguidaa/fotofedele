@@ -1,0 +1,19 @@
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+scikit-image==0.26.0
+scipy==1.18.1
+PyWavelets==1.10.0
+pandas==3.0.5
+PyYAML==6.0.3
+requests==2.34.2
+typer==0.27.2
+tqdm==4.70.1
+# learned metrics (LPIPS, MUSIQ/TOPIQ, DINOv2) and statistics
+torch==2.14.0
+torchvision==0.29.0
+lpips==0.1.4
+pyiqa==0.1.16
+transformers==5.17.0
+scikit-learn==1.9.1
+krippendorff==0.8.2
