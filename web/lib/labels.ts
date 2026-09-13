@@ -3,6 +3,19 @@ import type { Defect, FidelityChecklist, JudgeVerdict, Rubric, WorkflowId } from
 
 export const WORKFLOW_IDS: WorkflowId[] = ["F1", "F2", "F3", "F4", "F5", "F6"];
 
+const WORKFLOW_SHORT_NAME: Partial<Record<WorkflowId, string>> = {
+  F1: "Classico",
+  F2: "gpt-image semplice",
+  F3: "gpt-image vincolato",
+  F4: "Qwen Image Edit",
+  F5: "Ibrido",
+};
+
+/** Short name for tight spots (version list, slider label); falls back to the pipeline name. */
+export function workflowShortName(w: { id: WorkflowId; name: string }): string {
+  return WORKFLOW_SHORT_NAME[w.id] ?? w.name;
+}
+
 export const DEFECT_LABEL: Record<Defect, string> = {
   buia: "Buia",
   sovraesposta: "Sovraesposta",

@@ -42,14 +42,14 @@ export function ImageMatrix({ images, workflowIds = WORKFLOW_IDS }: { images: Im
             {images.map((im) => (
               <tr key={im.id}>
                 <th scope="row" className="sticky left-0 z-10 border-b border-line bg-surface px-3 py-2 text-left align-top font-normal">
-                  <Link href={`/lab/${im.id}`} className="font-mono font-semibold text-accent hover:underline">
+                  <Link href={`/foto/${im.id}`} className="font-mono font-semibold text-accent hover:underline">
                     {im.id}
                   </Link>
                   <p className="mt-0.5 max-w-28 text-xs leading-snug text-muted">{im.note}</p>
                   {im.router.chosen === "reshoot" && <p className="mt-0.5 text-xs font-medium text-warn">rifare lo scatto</p>}
                 </th>
                 <td className="border-b border-line px-1.5 py-2 align-top">
-                  <Link href={`/lab/${im.id}`} className="block w-24 overflow-hidden rounded-md" aria-label={`${im.id}: foto originale`}>
+                  <Link href={`/foto/${im.id}`} className="block w-24 overflow-hidden rounded-md" aria-label={`${im.id}: foto originale`}>
                     <img src={dataSrc(im.input.thumb ?? im.input.src)} alt="" loading="lazy" decoding="async" className="aspect-[4/3] w-full bg-subtle object-cover" />
                   </Link>
                 </td>
@@ -60,7 +60,7 @@ export function ImageMatrix({ images, workflowIds = WORKFLOW_IDS }: { images: Im
                     return (
                       <td key={id} className="border-b border-line px-1.5 py-2 align-top">
                         <Link
-                          href={`/lab/${im.id}`}
+                          href={`/foto/${im.id}`}
                           title={o?.error ?? "Nessun output"}
                           className="flex aspect-[4/3] w-24 items-center justify-center rounded-md bg-subtle p-1 text-center text-[11px] leading-tight text-muted ring-1 ring-line-strong"
                         >
@@ -77,7 +77,7 @@ export function ImageMatrix({ images, workflowIds = WORKFLOW_IDS }: { images: Im
                   return (
                     <td key={id} className="border-b border-line px-1.5 py-2 align-top">
                       <Link
-                        href={`/lab/${im.id}?b=${id}`}
+                        href={`/foto/${im.id}?v=${id}`}
                         className={cx(
                           "relative block w-24 overflow-hidden rounded-md",
                           flag ? "ring-2 ring-bad" : chosen ? "ring-2 ring-accent" : "ring-1 ring-line",

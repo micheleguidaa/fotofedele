@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { Card, Container, IconAlert, IconCheck, PageHeader, Pill, Section, WorkflowTag } from "@/components/ui";
-import { getResults } from "@/lib/data";
-import { dataSrc, fmtDate, fmtNum, fmtPct } from "@/lib/format";
+import { FlowDiagram } from "@/components/FlowDiagram";
+import { Card, Container, IconAlert, IconCheck, IconX, PageHeader, Pill, Section, Stat, WorkflowTag } from "@/components/ui";
+import { getResults, getWorkflow } from "@/lib/data";
+import { dataSrc, fmtDate, fmtNum, fmtPct, fmtScore, fmtSeconds, fmtUsd } from "@/lib/format";
 import { CHECKLIST_KEYS, CHECKLIST_QUESTION, DEFECT_LABEL, RUBRIC_KEYS, STATUS_LABEL, familyLabel } from "@/lib/labels";
 import { DEFECT_METRIC, DEFECT_ORDER, METRIC_BY_KEY, targetLabel } from "@/lib/metrics";
 import type { JudgeId, Results } from "@/lib/types";
@@ -11,6 +12,10 @@ import type { JudgeId, Results } from "@/lib/types";
 export const metadata: Metadata = { title: "Metodo" };
 
 const TOC = [
+  { id: "problema", label: "Il problema" },
+  { id: "perimetro", label: "Perimetro" },
+  { id: "come-funziona", label: "Come funziona" },
+  { id: "risultati", label: "Risultati chiave" },
   { id: "parametri", label: "Parametri" },
   { id: "decisione", label: "Regola di decisione" },
   { id: "misurabile", label: "Qualitativo → misurabile" },
@@ -19,6 +24,46 @@ const TOC = [
   { id: "reale", label: "Reale e simulato" },
   { id: "limiti", label: "Limiti" },
   { id: "prossimi", label: "Prossimi passi" },
+];
+
+const PERIMETER: { title: string; items: string[]; tone?: "no" | "yes" }[] = [
+  {
+    title: "Per chi",
+    items: ["Agenti e inserzionisti che caricano foto scattate con lo smartphone, senza fotografo professionista."],
+  },
+  {
+    title: "Bisogno",
+    items: ["Foto chiare e presentabili in pochi secondi, senza competenze di fotoritocco e senza mettere a rischio la credibilità dell'annuncio."],
+  },
+  {
+    title: "Cosa fa",
+    tone: "yes",
+    items: [
+      "Corregge esposizione e alte luci",
+      "Neutralizza le dominanti di colore",
+      "Raddrizza le verticali",
+      "Riduce il rumore, recupera nitidezza e risoluzione",
+    ],
+  },
+  {
+    title: "Cosa NON fa",
+    tone: "no",
+    items: [
+      "Niente virtual staging",
+      "Niente rimozione di oggetti",
+      "Niente cambio della vista o del cielo",
+      "Non nasconde difetti: macchie, crepe, umidità",
+    ],
+  },
+  {
+    title: "Rischi evitati",
+    items: [
+      "Annunci ingannevoli e contestazioni",
+      "Delusione alla visita, fiducia persa nel portale",
+      "Foto «da catalogo» che si riconoscono come false",
+      "Costi fuori controllo: il modello costoso solo quando serve",
+    ],
+  },
 ];
 
 const PARAMS = [
@@ -98,16 +143,21 @@ export default function MetodoPage() {
   const allPairsParsed = pairs.length > 0 && pairs.every((p) => p.pair);
   const finalDetector = r.traps.detectors.find((d) => /combin|final|finale/i.test(d.id)) ?? null;
   const detectorName = (id: string) => r.traps.detectors.find((d) => d.id === id)?.name ?? id;
+  const winner = getWorkflow(r, r.decision.winner);
+  const worstFlag = [...r.workflows].sort((a, b) => b.summary.fidelity_flag_rate - a.summary.fidelity_flag_rate)[0];
+  const rec = r.decision.recommendation;
+  const nImages = r.dataset.n_real + r.dataset.n_degraded;
 
   return (
     <>
       <PageHeader
         eyebrow="Metodo"
-        title="Come si misura una foto «migliore ma fedele»"
+        title="Il progetto e come si misura una foto «migliore ma fedele»"
         lead={
           <p>
-            Qualità e fedeltà sembrano giudizi soggettivi. Qui diventano numeri: criteri scelti prima dei risultati, domande
-            binarie invece di voti vaghi, giudici di famiglie diverse controllati con trappole e con un riferimento pulito.
+            Perché serve FotoFedele, cosa fa e cosa non fa. Poi il metodo: qualità e fedeltà diventano numeri, con criteri
+            scelti prima dei risultati, domande binarie invece di voti vaghi, giudici di famiglie diverse controllati con trappole
+            e con un riferimento pulito.
           </p>
         }
       />
@@ -125,6 +175,132 @@ export default function MetodoPage() {
         </nav>
 
         <div className="min-w-0">
+          <Section id="problema" title="Il problema">
+            <div className="grid gap-6 md:grid-cols-2">
+              <p className="leading-relaxed">
+                Molte foto degli annunci arrivano dallo smartphone dell&apos;agente o del proprietario: stanze buie, dominanti gialle o
+                verdi, verticali storte, immagini piccole e rumorose. Le foto sono il primo filtro di chi cerca casa, e una foto
+                brutta fa scartare un annuncio valido.
+              </p>
+              <p className="leading-relaxed">
+                I modelli generativi le rendono splendide, ma spesso lo fanno <strong>cambiando la casa</strong>: un panorama nuovo
+                alla finestra, una crepa sparita, un parquet diverso. Una foto che non corrisponde alla realtà è un annuncio
+                ingannevole: delude alla visita, espone inserzionista e portale a contestazioni, consuma fiducia.
+              </p>
+            </div>
+          </Section>
+
+          <Section id="perimetro" title="Perimetro" lead="Un intervento tecnico, come quello di un buon fotografo in post-produzione. Non un arredatore.">
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {PERIMETER.map((p) => (
+                <Card as="li" key={p.title} className={p.tone === "no" ? "border-bad/30" : undefined}>
+                  <h3 className="font-semibold">{p.title}</h3>
+                  <ul className="mt-2 space-y-1.5 text-sm leading-relaxed text-muted">
+                    {p.items.map((it) => (
+                      <li key={it} className="flex gap-2">
+                        {p.tone === "no" ? (
+                          <IconX className="mt-0.5 size-4 shrink-0 text-bad" />
+                        ) : p.tone === "yes" ? (
+                          <IconCheck className="mt-0.5 size-4 shrink-0 text-ok" />
+                        ) : null}
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Card>
+              ))}
+            </ul>
+          </Section>
+
+          <Section
+            id="come-funziona"
+            title="Come funziona"
+            lead="Un flusso agentico con un punto di controllo automatico (la verifica di fedeltà) e uno umano (l'approvazione)."
+          >
+            <FlowDiagram />
+          </Section>
+
+          <Section
+            id="risultati"
+            title="Risultati chiave"
+            lead={
+              <>
+                Dal laboratorio: {nImages} foto, {r.workflows.length} workflow, regola di decisione{" "}
+                <a href="#decisione" className="font-medium text-accent hover:underline">
+                  dichiarata prima dei risultati
+                </a>
+                .
+              </>
+            }
+          >
+            {winner ? (
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Stat
+                  label="Workflow scelto"
+                  value={<span className="font-mono">{winner.id}</span>}
+                  sub={
+                    <>
+                      <span className="font-medium text-ink">{winner.name}</span>. Supera i gate di affidabilità e fedeltà; punteggio{" "}
+                      {fmtScore(winner.summary.score)}.
+                    </>
+                  }
+                />
+                <Stat
+                  label="Preferito all'originale"
+                  value={fmtPct(winner.summary.quality_winrate)}
+                  sub={`dei confronti a coppie dei giudici AI (IC 95% ${fmtPct(winner.summary.quality_winrate_ci[0])}–${fmtPct(winner.summary.quality_winrate_ci[1])}).`}
+                />
+                <Stat
+                  label="Foto con alterazioni sospette"
+                  value={fmtPct(winner.summary.fidelity_flag_rate)}
+                  sub={
+                    worstFlag && worstFlag.id !== winner.id
+                      ? `contro il ${fmtPct(worstFlag.summary.fidelity_flag_rate)} di ${worstFlag.id} (${worstFlag.name}).`
+                      : "flag di fedeltà sul totale delle foto elaborate."
+                  }
+                />
+                <Stat
+                  label="Costo stimato per foto"
+                  value={fmtUsd(winner.summary.cost_usd_per_image)}
+                  sub={`latenza mediana ${fmtSeconds(winner.summary.latency_p50_s)}.`}
+                />
+              </div>
+            ) : (
+              <div className="grid gap-4 sm:grid-cols-2">
+                <Stat
+                  label="Pronti per l'automatico"
+                  value={<span className="font-mono">0 / {r.workflows.length}</span>}
+                  sub={`Nessun workflow resta sotto il ${fmtPct(r.decision.gates.fidelity_flag_max)} di foto segnalate: la verifica gira foto per foto.`}
+                />
+                {rec && (
+                  <Stat
+                    label={`Router ${rec.cascade.join(" → ")}`}
+                    value={fmtPct(rec.delivered_rate)}
+                    sub="delle foto esce migliorato e fedele; le altre restano all'originale o vanno riscattate."
+                  />
+                )}
+                {rec && (
+                  <Stat
+                    label="Costo medio con il router"
+                    value={fmtUsd(rec.mean_cost_usd)}
+                    sub={`per foto (stimato), latenza mediana ${fmtSeconds(rec.p50_latency_s)}.`}
+                  />
+                )}
+                {worstFlag && (
+                  <Stat
+                    label={`${worstFlag.id} · foto alterate`}
+                    value={fmtPct(worstFlag.summary.fidelity_flag_rate)}
+                    sub={`${worstFlag.name}: preferito all'originale nel ${fmtPct(worstFlag.summary.quality_winrate)} dei confronti, ma ridisegna la casa.`}
+                  />
+                )}
+              </div>
+            )}
+            <p className="mt-5 rounded-xl border border-line bg-surface p-5 text-sm leading-relaxed">
+              <span className="font-semibold">Perché: </span>
+              {r.decision.rationale}
+            </p>
+          </Section>
+
           <Section id="parametri" title="Parametri di valutazione" lead="Cinque parametri, ciascuno con una misura esplicita e un motivo di business.">
             <ul className="grid gap-4 md:grid-cols-2">
               {PARAMS.map((p) => (
@@ -188,9 +364,9 @@ export default function MetodoPage() {
                   </li>
                 </ul>
                 <p className="mt-3 text-sm text-muted">
-                  Solo tra chi supera i gate. Costo in scala logaritmica, velocità min-max; la formula è nel{" "}
-                  <Link href="/lab#classifica" className="font-medium text-accent hover:underline">
-                    laboratorio
+                  Solo tra chi supera i gate. Costo in scala logaritmica, velocità min-max; la formula è nella pagina{" "}
+                  <Link href="/numeri#classifica" className="font-medium text-accent hover:underline">
+                    Numeri
                   </Link>
                   , dove i pesi si possono cambiare per verificare la robustezza della scelta.
                 </p>

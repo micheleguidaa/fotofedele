@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T16:26:37+00:00",
+ "generated_at": "2026-09-13T08:29:30+00:00",
  "is_mock": false,
  "dataset": {
   "n_real": 18,
@@ -535,7 +535,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile poiché la B presenta una dominante gialla eccessiva e innaturale. Non ci sono differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile poiché la foto originale presenta una dominante gialla eccessiva e innaturale. Non ci sono differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -697,7 +697,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per luminosità, bilanciamento cromatico e verticalità. In B sono state rimosse le macchie di umidità e sporco visibili sulle pareti della foto A.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e verticalità. Nella foto migliorata sono state rimosse le macchie di umidità e sporco visibili sulle pareti della foto originale.",
        "excluded_conflict": false
       },
       {
@@ -833,7 +833,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per esposizione e bilanciamento del bianco. La foto B presenta una dominante gialla molto forte e un'esposizione scarsa che rende l'ambiente cupo.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento del bianco. La foto originale presenta una dominante gialla molto forte e un'esposizione scarsa che rende l'ambiente cupo.",
        "excluded_conflict": false
       },
       {
@@ -967,7 +967,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è preferibile per le ombre più leggibili e la dominante gialla meno intensa, pur mantenendo un riflesso eccessivo sulla porta e dettagli leggermente morbidi. Non emergono cambiamenti di contenuto: macchie e danni restano visibili in entrambe.",
+       "notes": "La foto migliorata è preferibile per le ombre più leggibili e la dominante gialla meno intensa, pur mantenendo un riflesso eccessivo sulla porta e dettagli leggermente morbidi. Non emergono cambiamenti di contenuto: macchie e danni restano visibili in entrambe.",
        "excluded_conflict": false
       },
       {
@@ -998,7 +998,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché corregge la forte dominante gialla della foto A, rendendo l'ambiente più luminoso e neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile perché corregge la forte dominante gialla della foto originale, rendendo l'ambiente più luminoso e neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -1029,7 +1029,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione e bilanciamento del bianco, risultando più luminosa e naturale rispetto alla B, che appare troppo scura e con una forte dominante gialla. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento del bianco, risultando più luminosa e naturale rispetto alla foto originale, che appare troppo scura e con una forte dominante gialla. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": true
       }
      ],
@@ -1135,7 +1135,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B presenta evidenti artefatti da elaborazione AI che alterano i colori e cancellano dettagli del pavimento e delle pareti. La foto A, pur avendo una forte dominante gialla, è l'unica fotograficamente autentica e credibile.",
+       "notes": "La foto migliorata presenta evidenti artefatti da elaborazione AI che alterano i colori e cancellano dettagli del pavimento e delle pareti. La foto originale, pur avendo una forte dominante gialla, è l'unica fotograficamente autentica e credibile.",
        "excluded_conflict": false
       },
       {
@@ -1166,7 +1166,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione e bilanciamento del bianco, risultando più luminosa e naturale rispetto alla dominante giallastra della Foto B. Non sono presenti differenze di contenuto o oggetti, ma la qualità tecnica della A la rende più adatta per un annuncio.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento del bianco, risultando più luminosa e naturale rispetto alla dominante giallastra della foto originale. Non sono presenti differenze di contenuto o oggetti, ma la qualità tecnica della foto migliorata la rende più adatta per un annuncio.",
        "excluded_conflict": false
       }
      ],
@@ -1318,7 +1318,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza riscontrabile tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza riscontrabile tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -1349,7 +1349,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché risulta più luminosa e ariosa, con un'esposizione più bilanciata che valorizza meglio l'ambiente rispetto alla Foto A, che appare leggermente più cupa. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di luce e colore.",
+       "notes": "La foto originale è preferibile perché risulta più luminosa e ariosa, con un'esposizione più bilanciata che valorizza meglio l'ambiente rispetto alla foto migliorata, che appare leggermente più cupa. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di luce e colore.",
        "excluded_conflict": false
       }
      ],
@@ -1474,7 +1474,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore per luce e geometria, ma presenta evidenti segni di editing AI. Sono stati rimossi i watermark, il disordine sul comodino e l'esterno della finestra è stato ricostruito.",
+       "notes": "La foto migliorata è tecnicamente superiore per luce e geometria, ma presenta evidenti segni di editing AI. Sono stati rimossi i watermark, il disordine sul comodino e l'esterno della finestra è stato ricostruito.",
        "excluded_conflict": false
       },
       {
@@ -1732,7 +1732,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Preferisco B per le texture più definite e la resa più naturale; A presenta una levigatura evidente dei dettagli, soprattutto nei tessuti. Non rilevo cambiamenti certi di contenuto: entrambe mantengono una finestra molto luminosa e verticali convergenti.",
+       "notes": "Preferisco la foto originale per le texture più definite e la resa più naturale; la foto migliorata presenta una levigatura evidente dei dettagli, soprattutto nei tessuti. Non rilevo cambiamenti certi di contenuto: entrambe mantengono una finestra molto luminosa e verticali convergenti.",
        "excluded_conflict": false
       },
       {
@@ -2085,7 +2085,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio, inclusi i contenuti e i difetti geometrici. Non vi è alcuna differenza qualitativa o di contenuto tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio, inclusi i contenuti e i difetti geometrici. Non vi è alcuna differenza qualitativa o di contenuto tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -2116,7 +2116,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché risulta più nitida e pulita, mentre la Foto B presenta una leggera grana e una compressione che riducono la qualità percepita. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto originale è preferibile perché risulta più nitida e pulita, mentre la foto migliorata presenta una leggera grana e una compressione che riducono la qualità percepita. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -2245,7 +2245,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente superiore per luminosità, bilanciamento del bianco e allineamento delle verticali. Nonostante l'aspetto leggermente più artificiale, risulta molto più professionale e invitante.",
+       "notes": "La foto migliorata è decisamente superiore per luminosità, bilanciamento del bianco e allineamento delle verticali. Nonostante l'aspetto leggermente più artificiale, risulta molto più professionale e invitante.",
        "excluded_conflict": false
       },
       {
@@ -2380,7 +2380,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un'esposizione e un bilanciamento del bianco decisamente superiori, rendendo l'ambiente più luminoso e naturale. La foto B appare sbiadita e con una dominante cromatica meno gradevole.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento del bianco decisamente superiori, rendendo l'ambiente più luminoso e naturale. La foto originale appare sbiadita e con una dominante cromatica meno gradevole.",
        "excluded_conflict": false
       },
       {
@@ -2411,7 +2411,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del bianco, rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo un netto miglioramento tecnico della resa visiva.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del bianco, rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo un netto miglioramento tecnico della resa visiva.",
        "excluded_conflict": false
       }
      ],
@@ -2516,7 +2516,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "A è più pulita, luminosa e meglio raddrizzata, mentre B presenta maggiore rumore e verticali inclinate. Le cifre dell’orologio e le scritte del calendario appaiono alterate; non emergono altri cambiamenti sostanziali di contenuto.",
+       "notes": "La foto migliorata è più pulita, luminosa e meglio raddrizzata, mentre la foto originale presenta maggiore rumore e verticali inclinate. Le cifre dell’orologio e le scritte del calendario appaiono alterate; non emergono altri cambiamenti sostanziali di contenuto.",
        "excluded_conflict": false
       },
       {
@@ -2680,7 +2680,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio, inclusi i contenuti e la composizione. Non vi sono differenze qualitative o di contenuto tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio, inclusi i contenuti e la composizione. Non vi sono differenze qualitative o di contenuto tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -2870,7 +2870,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -2901,7 +2901,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché risulta più nitida e dettagliata, mentre la Foto B appare leggermente più granulosa e con una texture meno definita. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto originale è preferibile perché risulta più nitida e dettagliata, mentre la foto migliorata appare leggermente più granulosa e con una texture meno definita. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -3030,7 +3030,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è preferibile per l'esposizione più luminosa e i colori più naturali. È stato rimosso il watermark centrale presente nella foto A.",
+       "notes": "La foto migliorata è preferibile per l'esposizione più luminosa e i colori più naturali. È stato rimosso il watermark centrale presente nella foto originale.",
        "excluded_conflict": false
       },
       {
@@ -3061,7 +3061,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'ambiente più accogliente e professionale. Non sono presenti differenze di contenuto o oggetti, ma solo un evidente miglioramento tecnico della stessa inquadratura.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'ambiente più accogliente e professionale. Non sono presenti differenze di contenuto o oggetti, ma solo un evidente miglioramento tecnico della stessa inquadratura.",
        "excluded_conflict": false
       }
      ],
@@ -3194,7 +3194,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
        "excluded_conflict": false
       }
      ],
@@ -3297,7 +3297,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più pulita e definita, con una dominante calda meno evidente, pur mostrando qualche dettaglio levigato. Il contenuto dello schermo TV appare modificato; non emergono cambiamenti sostanziali ad arredi o struttura della stanza.",
+       "notes": "La foto migliorata è più pulita e definita, con una dominante calda meno evidente, pur mostrando qualche dettaglio levigato. Il contenuto dello schermo TV appare modificato; non emergono cambiamenti sostanziali ad arredi o struttura della stanza.",
        "excluded_conflict": false
       },
       {
@@ -3459,7 +3459,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -3653,7 +3653,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile per una migliore esposizione e bilanciamento del bianco. Entrambe le foto sono penalizzate dalla presenza di sacchi di detriti nel corridoio.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e bilanciamento del bianco. Entrambe le foto sono penalizzate dalla presenza di sacchi di detriti nel corridoio.",
        "excluded_conflict": false
       },
       {
@@ -3684,7 +3684,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e pulizia dell'immagine, rendendo l'ambiente più accogliente e professionale. La Foto A appare scura, rumorosa e con una resa dei colori meno naturale, scoraggiando potenzialmente l'interesse del visitatore.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e pulizia dell'immagine, rendendo l'ambiente più accogliente e professionale. La foto originale appare scura, rumorosa e con una resa dei colori meno naturale, scoraggiando potenzialmente l'interesse del visitatore.",
        "excluded_conflict": false
       }
      ],
@@ -3815,7 +3815,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B risulta sottoesposta, sgranata e con una dominante cromatica spenta.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale risulta sottoesposta, sgranata e con una dominante cromatica spenta.",
        "excluded_conflict": false
       },
       {
@@ -3846,7 +3846,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, risultando professionale e invitante. La Foto A presenta una forte dominante gialla, scarsa luminosità e una nitidezza molto bassa che sminuisce la percezione dell'immobile.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, risultando professionale e invitante. La foto originale presenta una forte dominante gialla, scarsa luminosità e una nitidezza molto bassa che sminuisce la percezione dell'immobile.",
        "excluded_conflict": false
       }
      ],
@@ -3951,7 +3951,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per luminosità, bilanciamento del bianco e allineamento geometrico. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento del bianco e allineamento geometrico. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -3982,7 +3982,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo l'ambiente accogliente e professionale. La foto B appare sfocata, con una dominante di colore innaturale e una geometria leggermente distorta, probabilmente a causa di un'elaborazione automatica o di una cattiva messa a fuoco.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo l'ambiente accogliente e professionale. La foto originale appare sfocata, con una dominante di colore innaturale e una geometria leggermente distorta, probabilmente a causa di un'elaborazione automatica o di una cattiva messa a fuoco.",
        "excluded_conflict": false
       }
      ],
@@ -4087,7 +4087,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa, nitida e cromaticamente equilibrata, pur mantenendo verticali convergenti. L’elemento rettangolare bianco sulla parete sinistra in A non compare in B; la bassa definizione di A limita la verifica delle differenze più fini.",
+       "notes": "La foto migliorata è più luminosa, nitida e cromaticamente equilibrata, pur mantenendo verticali convergenti. L’elemento rettangolare bianco sulla parete sinistra nella foto originale non compare nella foto migliorata; la bassa definizione della foto originale limita la verifica delle differenze più fini.",
        "excluded_conflict": false
       },
       {
@@ -4118,7 +4118,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è decisamente superiore per esposizione e nitidezza, rendendo l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è decisamente superiore per esposizione e nitidezza, rendendo l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -4149,7 +4149,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, esposizione e naturalezza, rendendo l'ambiente accogliente e ben definito. La foto B appare sfocata, con una compressione dei dettagli che suggerisce un'elaborazione automatica o una cattiva qualità di ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e naturalezza, rendendo l'ambiente accogliente e ben definito. La foto originale appare sfocata, con una compressione dei dettagli che suggerisce un'elaborazione automatica o una cattiva qualità di ripresa.",
        "excluded_conflict": true
       }
      ],
@@ -4252,7 +4252,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile poiché mantiene una nitidezza naturale, mentre la B appare sgranata e processata artificialmente. Non ci sono differenze di contenuto tra le due immagini.",
+       "notes": "La foto originale è preferibile poiché mantiene una nitidezza naturale, mentre la foto migliorata appare sgranata e processata artificialmente. Non ci sono differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -4600,7 +4600,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è molto più luminosa e attraente, sebbene presenti un aspetto leggermente artificiale. È stata aggiunta una pianta decorativa sopra il mobile nero nella foto B.",
+       "notes": "La foto migliorata è molto più luminosa e attraente, sebbene presenti un aspetto leggermente artificiale. È stata aggiunta una pianta decorativa sopra il mobile nero nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -4732,7 +4732,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -4863,7 +4863,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa e pulita, anche se le superfici appaiono leggermente levigate e permane una dominante calda. Non emergono cambiamenti di contenuto: arredi, aperture e finiture risultano coerenti.",
+       "notes": "La foto migliorata è più luminosa e pulita, anche se le superfici appaiono leggermente levigate e permane una dominante calda. Non emergono cambiamenti di contenuto: arredi, aperture e finiture risultano coerenti.",
        "excluded_conflict": false
       },
       {
@@ -4894,7 +4894,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -5025,7 +5025,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è decisamente superiore per esposizione e bilanciamento del bianco, rendendo l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è decisamente superiore per esposizione e bilanciamento del bianco, rendendo l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -5383,7 +5383,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è tecnicamente superiore per luce e geometria, rendendo l'ambiente molto più invitante. Sono stati aggiunti elementi di staging come il quadro, il plaid sul letto e le piante.",
+       "notes": "La foto migliorata è tecnicamente superiore per luce e geometria, rendendo l'ambiente molto più invitante. Sono stati aggiunti elementi di staging come il quadro, il plaid sul letto e le piante.",
        "excluded_conflict": false
       },
       {
@@ -5414,7 +5414,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. Si notano in A elementi decorativi aggiunti (quadro, piante, coperta) che non sono presenti nella Foto B.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. Si notano nella foto migliorata elementi decorativi aggiunti (quadro, piante, coperta) che non sono presenti nella foto originale.",
        "excluded_conflict": false
       }
      ],
@@ -5520,7 +5520,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente più efficace grazie a un'esposizione bilanciata e a un bilanciamento del bianco neutro che rende l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è decisamente più efficace grazie a un'esposizione bilanciata e a un bilanciamento del bianco neutro che rende l'ambiente più luminoso e accogliente. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -5551,7 +5551,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, risultando più professionale e attraente. La Foto B appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, risultando più professionale e attraente. La foto originale appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
        "excluded_conflict": false
       }
      ],
@@ -5655,7 +5655,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa, meno rumorosa e con bianchi più neutri, pur mostrando una lieve levigatura delle texture e verticali ancora convergenti. Non emergono cambiamenti evidenti di contenuto.",
+       "notes": "La foto migliorata è più luminosa, meno rumorosa e con bianchi più neutri, pur mostrando una lieve levigatura delle texture e verticali ancora convergenti. Non emergono cambiamenti evidenti di contenuto.",
        "excluded_conflict": false
       },
       {
@@ -5686,7 +5686,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un'esposizione e un bilanciamento del bianco molto più naturali e luminosi. La foto B risulta troppo calda e cupa, penalizzando l'attrattività dell'ambiente.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento del bianco molto più naturali e luminosi. La foto originale risulta troppo calda e cupa, penalizzando l'attrattività dell'ambiente.",
        "excluded_conflict": false
       },
       {
@@ -5717,7 +5717,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B presenta un'esposizione più equilibrata e colori più neutri, rendendo l'ambiente più luminoso e accogliente rispetto alla dominante calda della Foto A. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici di luce e nitidezza.",
+       "notes": "La foto migliorata presenta un'esposizione più equilibrata e colori più neutri, rendendo l'ambiente più luminoso e accogliente rispetto alla dominante calda della foto originale. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici di luce e nitidezza.",
        "excluded_conflict": true
       }
      ],
@@ -5821,7 +5821,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore luminosità e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra le due immagini.",
+       "notes": "La foto migliorata è preferibile per una migliore luminosità e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -5852,7 +5852,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili rispetto alla Foto B, che risulta più scura e con colori meno definiti. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili rispetto alla foto originale, che risulta più scura e con colori meno definiti. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -6173,7 +6173,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è stata pesantemente ritoccata per nascondere gravi danni da umidità e macchie presenti sulle pareti della foto B. Nonostante l'aspetto artificiale, risulta più attraente per un annuncio.",
+       "notes": "La foto migliorata è stata pesantemente ritoccata per nascondere gravi danni da umidità e macchie presenti sulle pareti della foto originale. Nonostante l'aspetto artificiale, risulta più attraente per un annuncio.",
        "excluded_conflict": false
       },
       {
@@ -6308,7 +6308,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è preferibile per una migliore esposizione e bilanciamento cromatico. La foto A presenta un watermark sovrapposto che è assente nella B.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e bilanciamento cromatico. La foto originale presenta un watermark sovrapposto che è assente nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -6444,7 +6444,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "B offre colori più neutri e maggiore pulizia visiva, pur conservando verticali inclinate e alte luci bruciate alla finestra. In B manca il grande watermark e alcuni piccoli segni nella parte alta delle pareti sembrano rimossi; i danni principali restano visibili.",
+       "notes": "La foto migliorata offre colori più neutri e maggiore pulizia visiva, pur conservando verticali inclinate e alte luci bruciate alla finestra. Nella foto migliorata manca il grande watermark e alcuni piccoli segni nella parte alta delle pareti sembrano rimossi; i danni principali restano visibili.",
        "excluded_conflict": false
       },
       {
@@ -6475,7 +6475,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è preferibile per una migliore esposizione e bilanciamento cromatico. La foto A presenta un watermark sovrapposto che è assente nella B.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e bilanciamento cromatico. La foto originale presenta un watermark sovrapposto che è assente nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -6506,7 +6506,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La Foto A è preferibile perché presenta un'esposizione più luminosa e colori più neutri, rendendo l'ambiente più accogliente e leggibile rispetto alla Foto B, che appare più scura e con una dominante calda. La Foto B presenta un watermark molto evidente che ne riduce la professionalità e l'efficacia nell'annuncio.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più luminosa e colori più neutri, rendendo l'ambiente più accogliente e leggibile rispetto alla foto originale, che appare più scura e con una dominante calda. La foto originale presenta un watermark molto evidente che ne riduce la professionalità e l'efficacia nell'annuncio.",
        "excluded_conflict": true
       }
      ],
@@ -6966,7 +6966,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore per luce e geometria, sebbene appaia leggermente artificiale. Sono stati rimossi il disordine sul mobile, le crepe sul soffitto e il watermark.",
+       "notes": "La foto migliorata è tecnicamente superiore per luce e geometria, sebbene appaia leggermente artificiale. Sono stati rimossi il disordine sul mobile, le crepe sul soffitto e il watermark.",
        "excluded_conflict": false
       },
       {
@@ -6997,7 +6997,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è nettamente superiore per esposizione, nitidezza e pulizia dell'inquadratura, presentando l'ambiente in modo professionale e accogliente. La foto B soffre di una qualità tecnica inferiore, con un watermark evidente e la presenza di un oggetto (tessuto) sul mobile che non compare nella versione A.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e pulizia dell'inquadratura, presentando l'ambiente in modo professionale e accogliente. La foto originale soffre di una qualità tecnica inferiore, con un watermark evidente e la presenza di un oggetto (tessuto) sul mobile che non compare nella versione migliorata.",
        "excluded_conflict": false
       }
      ],
@@ -7102,7 +7102,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione e un bilanciamento del bianco più neutro. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -7133,7 +7133,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e naturalezza dei colori, risultando più invitante per un potenziale acquirente. La Foto B appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una cattiva esposizione.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e naturalezza dei colori, risultando più invitante per un potenziale acquirente. La foto originale appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una cattiva esposizione.",
        "excluded_conflict": false
       }
      ],
@@ -7236,7 +7236,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "A è più luminosa e pulita, con una dominante calda meno marcata; entrambe presentano verticali sensibilmente inclinate. Non emergono cambiamenti di contenuto: arredi, crepe sul soffitto e watermark restano presenti.",
+       "notes": "La foto migliorata è più luminosa e pulita, con una dominante calda meno marcata; entrambe presentano verticali sensibilmente inclinate. Non emergono cambiamenti di contenuto: arredi, crepe sul soffitto e watermark restano presenti.",
        "excluded_conflict": false
       },
       {
@@ -7298,7 +7298,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e professionale rispetto alla Foto A. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e professionale rispetto alla foto originale. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
        "excluded_conflict": true
       }
      ],
@@ -7401,7 +7401,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile perché più naturale; la B presenta artefatti di elaborazione digitale (effetto 'glow' e texture alterate) sulla porta e sul soffitto.",
+       "notes": "La foto originale è preferibile perché più naturale; la foto migliorata presenta artefatti di elaborazione digitale (effetto 'glow' e texture alterate) sulla porta e sul soffitto.",
        "excluded_conflict": false
       },
       {
@@ -7619,7 +7619,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili rispetto alla Foto A, che risulta leggermente più scura e piatta. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
+       "notes": "La foto originale è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e i dettagli più leggibili rispetto alla foto migliorata, che risulta leggermente più scura e piatta. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
        "excluded_conflict": false
       }
      ],
@@ -7745,7 +7745,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento del bianco e correzione prospettica. La foto B appare sgranata, con colori spenti e verticali leggermente inclinate.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento del bianco e correzione prospettica. La foto originale appare sgranata, con colori spenti e verticali leggermente inclinate.",
        "excluded_conflict": false
       },
       {
@@ -7776,7 +7776,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e raddrizzamento, risultando più professionale e attraente. Si nota l'aggiunta di una pianta decorativa sul piano di lavoro nella Foto B, elemento assente nella A.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e raddrizzamento, risultando più professionale e attraente. Si nota l'aggiunta di una pianta decorativa sul piano di lavoro nella foto migliorata, elemento assente nella foto originale.",
        "excluded_conflict": false
       }
      ],
@@ -7879,7 +7879,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento del bianco e verticalità. La foto B appare sgranata, con colori spenti e una prospettiva leggermente distorta.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento del bianco e verticalità. La foto originale appare sgranata, con colori spenti e una prospettiva leggermente distorta.",
        "excluded_conflict": false
       },
       {
@@ -7910,7 +7910,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, contrasto e bilanciamento del bianco, rendendo i dettagli dei materiali molto più leggibili. La Foto B appare leggermente più piatta e con una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una minore qualità di acquisizione.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, contrasto e bilanciamento del bianco, rendendo i dettagli dei materiali molto più leggibili. La foto originale appare leggermente più piatta e con una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una minore qualità di acquisizione.",
        "excluded_conflict": false
       }
      ],
@@ -8009,7 +8009,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa, meno rumorosa e con bianchi più neutri, pur mostrando texture leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: le differenze appaiono legate al trattamento fotografico.",
+       "notes": "La foto migliorata è più luminosa, meno rumorosa e con bianchi più neutri, pur mostrando texture leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: le differenze appaiono legate al trattamento fotografico.",
        "excluded_conflict": false
       },
       {
@@ -8071,7 +8071,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e professionale rispetto alla Foto A, che appare leggermente più piatta e con colori meno definiti. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e professionale rispetto alla foto originale, che appare leggermente più piatta e con colori meno definiti. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": true
       }
      ],
@@ -8357,7 +8357,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A presenta un bilanciamento del bianco e un'esposizione più naturali e gradevoli. La foto B appare leggermente più scura e con colori meno neutri.",
+       "notes": "La foto originale presenta un bilanciamento del bianco e un'esposizione più naturali e gradevoli. La foto migliorata appare leggermente più scura e con colori meno neutri.",
        "excluded_conflict": false
       },
       {
@@ -8514,7 +8514,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è superiore per nitidezza, bilanciamento cromatico e assenza di watermark. La foto B presenta un watermark centrale invasivo e una resa generale meno pulita.",
+       "notes": "La foto migliorata è superiore per nitidezza, bilanciamento cromatico e assenza di watermark. La foto originale presenta un watermark centrale invasivo e una resa generale meno pulita.",
        "excluded_conflict": false
       },
       {
@@ -8646,7 +8646,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B presenta un'esposizione e un bilanciamento del bianco leggermente migliori, rendendo l'ambiente più luminoso. Non ci sono differenze di contenuto tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione e un bilanciamento del bianco leggermente migliori, rendendo l'ambiente più luminoso. Non ci sono differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -8779,7 +8779,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "Preferisco B per i dettagli più definiti e la resa più naturale; A appare leggermente levigata. In A la scritta sotto il logo centrale appare alterata rispetto a B, senza altri cambiamenti di contenuto evidenti.",
+       "notes": "Preferisco la foto originale per i dettagli più definiti e la resa più naturale; la foto migliorata appare leggermente levigata. Nella foto migliorata la scritta sotto il logo centrale appare alterata rispetto alla foto originale, senza altri cambiamenti di contenuto evidenti.",
        "excluded_conflict": false
       },
       {
@@ -8841,7 +8841,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché risulta più luminosa, nitida e con colori più fedeli rispetto alla Foto B, che appare leggermente più scura e con una resa cromatica meno naturale. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto migliorata è preferibile perché risulta più luminosa, nitida e con colori più fedeli rispetto alla foto originale, che appare leggermente più scura e con una resa cromatica meno naturale. Non sono presenti differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": true
       }
      ],
@@ -8940,7 +8940,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono riscontrabili differenze tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono riscontrabili differenze tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -9160,7 +9160,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e leggibile rispetto alla Foto A, che risulta leggermente più scura e con colori meno definiti. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più luminosa e bilanciata, rendendo l'ambiente più accogliente e leggibile rispetto alla foto originale, che risulta leggermente più scura e con colori meno definiti. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
        "excluded_conflict": false
       }
      ],
@@ -9288,7 +9288,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B presenta un watermark sovrapposto che copre parte dell'immagine.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale presenta un watermark sovrapposto che copre parte dell'immagine.",
        "excluded_conflict": false
       },
       {
@@ -9422,7 +9422,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza. La foto B appare sbiadita e con una qualità generale inferiore.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza. La foto originale appare sbiadita e con una qualità generale inferiore.",
        "excluded_conflict": false
       },
       {
@@ -9555,7 +9555,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Preferisco A per la minore granulosità e i colori più equilibrati, pur con una finestra molto chiara e ombre marcate. Non rilevo cambiamenti di contenuto: oggetti, finiture, difetti visibili e watermark risultano conservati.",
+       "notes": "Preferisco la foto migliorata per la minore granulosità e i colori più equilibrati, pur con una finestra molto chiara e ombre marcate. Non rilevo cambiamenti di contenuto: oggetti, finiture, difetti visibili e watermark risultano conservati.",
        "excluded_conflict": false
       },
       {
@@ -9718,7 +9718,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A presenta un bilanciamento del bianco e un'esposizione più naturali e gradevoli rispetto alla B. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata presenta un bilanciamento del bianco e un'esposizione più naturali e gradevoli rispetto alla foto originale. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -9749,7 +9749,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché presenta un'esposizione più equilibrata e colori più naturali, rendendo l'ambiente più accogliente. La Foto B risulta leggermente più scura e con una resa cromatica meno fedele, senza che vi siano differenze nel contenuto della scena.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata e colori più naturali, rendendo l'ambiente più accogliente. La foto originale risulta leggermente più scura e con una resa cromatica meno fedele, senza che vi siano differenze nel contenuto della scena.",
        "excluded_conflict": false
       }
      ],
@@ -9909,7 +9909,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono presenti differenze tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono presenti differenze tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -9940,7 +9940,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché presenta un'esposizione più luminosa e colori più bilanciati, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
+       "notes": "La foto originale è preferibile perché presenta un'esposizione più luminosa e colori più bilanciati, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di post-produzione.",
        "excluded_conflict": false
       }
      ],
@@ -10071,7 +10071,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è stata pesantemente editata per rimuovere difetti della parete e aggiungere elementi decorativi (piante, quadri). Nonostante l'aspetto artificiale, risulta molto più attraente per un annuncio.",
+       "notes": "La foto migliorata è stata pesantemente editata per rimuovere difetti della parete e aggiungere elementi decorativi (piante, quadri). Nonostante l'aspetto artificiale, risulta molto più attraente per un annuncio.",
        "excluded_conflict": false
       },
       {
@@ -10206,7 +10206,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A presenta una resa cromatica più naturale e una nitidezza superiore. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata presenta una resa cromatica più naturale e una nitidezza superiore. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -10341,7 +10341,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "B è più nitida e pulita, pur mostrando una lieve levigatura delle superfici. Il watermark semitrasparente al centro di A non compare in B; arredi e difetti visibili delle pareti restano presenti.",
+       "notes": "La foto migliorata è più nitida e pulita, pur mostrando una lieve levigatura delle superfici. Il watermark semitrasparente al centro della foto originale non compare nella foto migliorata; arredi e difetti visibili delle pareti restano presenti.",
        "excluded_conflict": false
       },
       {
@@ -10505,7 +10505,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono presenti differenze tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non sono presenti differenze tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -10696,7 +10696,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra A e B.",
+       "notes": "Le due immagini sono identiche in ogni dettaglio tecnico e di contenuto. Non vi è alcuna differenza tra le due foto.",
        "excluded_conflict": false
       },
       {
@@ -10859,7 +10859,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è professionale, luminosa e pulita. La foto B presenta un watermark, macchie sulle pareti e una vista esterna sovraesposta/bianca.",
+       "notes": "La foto migliorata è professionale, luminosa e pulita. La foto originale presenta un watermark, macchie sulle pareti e una vista esterna sovraesposta/bianca.",
        "excluded_conflict": false
       },
       {
@@ -10994,7 +10994,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per esposizione e bilanciamento della luce, evitando l'effetto bruciato della finestra presente in B. Non ci sono differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento della luce, evitando l'effetto bruciato della finestra presente nella foto originale. Non ci sono differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -11133,7 +11133,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "A è più luminosa, pulita e leggibile, pur mantenendo alte luci bruciate e superfici dall'aspetto levigato. In A scompaiono numerosi danni e macchie sulle pareti, detriti sul pavimento e una piccola presa scura sulla parete piastrellata.",
+       "notes": "La foto migliorata è più luminosa, pulita e leggibile, pur mantenendo alte luci bruciate e superfici dall'aspetto levigato. Nella foto migliorata scompaiono numerosi danni e macchie sulle pareti, detriti sul pavimento e una piccola presa scura sulla parete piastrellata.",
        "excluded_conflict": false
       },
       {
@@ -11164,7 +11164,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è decisamente superiore per luminosità e bilanciamento cromatico. Nella foto B sono visibili macchie e segni di usura sulle pareti che risultano invece attenuati o invisibili in A.",
+       "notes": "La foto migliorata è decisamente superiore per luminosità e bilanciamento cromatico. Nella foto originale sono visibili macchie e segni di usura sulle pareti che risultano invece attenuati o invisibili nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -11195,7 +11195,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per esposizione e pulizia visiva, rendendo l'ambiente più accogliente e professionale. La foto B mostra chiaramente macchie e segni di usura sulle pareti che sono stati rimossi o coperti nella versione A, indicando un editing per nascondere i difetti.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e pulizia visiva, rendendo l'ambiente più accogliente e professionale. La foto originale mostra chiaramente macchie e segni di usura sulle pareti che sono stati rimossi o coperti nella versione migliorata, indicando un editing per nascondere i difetti.",
        "excluded_conflict": true
       }
      ],
@@ -11297,7 +11297,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile perché mantiene un aspetto naturale e una nitidezza superiore. La foto B presenta un'elaborazione artificiale che ha degradato i colori e creato un effetto nebbioso/sfocato.",
+       "notes": "La foto originale è preferibile perché mantiene un aspetto naturale e una nitidezza superiore. La foto migliorata presenta un'elaborazione artificiale che ha degradato i colori e creato un effetto nebbioso/sfocato.",
        "excluded_conflict": false
       },
       {
@@ -11328,7 +11328,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più equilibrata e colori più naturali, rendendo l'ambiente meno cupo e più accogliente. Non sono state rilevate differenze di contenuto o manipolazioni strutturali tra le due immagini.",
+       "notes": "La foto originale è preferibile perché presenta un'esposizione più equilibrata e colori più naturali, rendendo l'ambiente meno cupo e più accogliente. Non sono state rilevate differenze di contenuto o manipolazioni strutturali tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -11487,7 +11487,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è preferibile poiché la B presenta una dominante gialla eccessiva e innaturale. Non ci sono differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile poiché la foto originale presenta una dominante gialla eccessiva e innaturale. Non ci sono differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -11648,7 +11648,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è professionale, luminosa e bilanciata. La foto B mostra difetti strutturali (crepe/macchie sulla parete sinistra) che sono stati rimossi o non sono visibili in A.",
+       "notes": "La foto migliorata è professionale, luminosa e bilanciata. La foto originale mostra difetti strutturali (crepe/macchie sulla parete sinistra) che sono stati rimossi o non sono visibili nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -11783,7 +11783,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente superiore per esposizione e bilanciamento del bianco, eliminando la forte dominante gialla della A. La vista attraverso la porta è molto più leggibile e naturale.",
+       "notes": "La foto migliorata è decisamente superiore per esposizione e bilanciamento del bianco, eliminando la forte dominante gialla della foto originale. La vista attraverso la porta è molto più leggibile e naturale.",
        "excluded_conflict": false
       },
       {
@@ -11914,7 +11914,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "A conserva meglio i dettagli nelle alte luci ed è più pulita; B presenta bruciature marcate presso la finestra e sul pavimento, un riflesso verdastro e maggiore rumore. Non emergono cambiamenti di contenuto: i difetti dell’ambiente restano visibili in entrambe.",
+       "notes": "La foto migliorata conserva meglio i dettagli nelle alte luci ed è più pulita; la foto originale presenta bruciature marcate presso la finestra e sul pavimento, un riflesso verdastro e maggiore rumore. Non emergono cambiamenti di contenuto: i difetti dell’ambiente restano visibili in entrambe.",
        "excluded_conflict": false
       },
       {
@@ -11945,7 +11945,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché ha un'esposizione migliore e una dominante gialla meno oppressiva. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile perché ha un'esposizione migliore e una dominante gialla meno oppressiva. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -11976,7 +11976,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore perché mantiene un'esposizione corretta che permette di apprezzare i dettagli del pavimento e delle pareti, mentre la Foto B soffre di un grave sovraesposto nella zona della finestra che brucia i dettagli e crea un effetto innaturale. Non sono presenti differenze di contenuto o oggetti, ma solo variazioni di luce e bilanciamento del bianco.",
+       "notes": "La foto migliorata è nettamente superiore perché mantiene un'esposizione corretta che permette di apprezzare i dettagli del pavimento e delle pareti, mentre la foto originale soffre di un grave sovraesposto nella zona della finestra che brucia i dettagli e crea un effetto innaturale. Non sono presenti differenze di contenuto o oggetti, ma solo variazioni di luce e bilanciamento del bianco.",
        "excluded_conflict": true
       }
      ],
@@ -12079,7 +12079,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A presenta evidenti artefatti da elaborazione AI che rendono l'immagine innaturale e sgranata. La foto B, pur avendo una dominante gialla, è più fedele alla realtà e qualitativamente superiore.",
+       "notes": "La foto migliorata presenta evidenti artefatti da elaborazione AI che rendono l'immagine innaturale e sgranata. La foto originale, pur avendo una dominante gialla, è più fedele alla realtà e qualitativamente superiore.",
        "excluded_conflict": false
       },
       {
@@ -12110,7 +12110,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché mantiene una maggiore naturalezza e nitidezza, evitando l'aspetto 'pittorico' e la perdita di dettaglio presente nella B. Non sono state rilevate differenze di contenuto o oggetti, ma solo variazioni di elaborazione e bilanciamento del colore.",
+       "notes": "La foto originale è preferibile perché mantiene una maggiore naturalezza e nitidezza, evitando l'aspetto 'pittorico' e la perdita di dettaglio presente nella foto migliorata. Non sono state rilevate differenze di contenuto o oggetti, ma solo variazioni di elaborazione e bilanciamento del colore.",
        "excluded_conflict": false
       }
      ],
@@ -12277,7 +12277,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B ha un'esposizione e un bilanciamento cromatico migliori. In B sono più evidenti i detriti a terra e i danni alla parete sinistra, mentre il watermark è diverso.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento cromatico migliori. Nella foto migliorata sono più evidenti i detriti a terra e i danni alla parete sinistra, mentre il watermark è diverso.",
        "excluded_conflict": false
       },
       {
@@ -12308,7 +12308,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché offre un'esposizione più equilibrata e una nitidezza superiore, rendendo i dettagli dell'ambiente più leggibili. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
+       "notes": "La foto migliorata è preferibile perché offre un'esposizione più equilibrata e una nitidezza superiore, rendendo i dettagli dell'ambiente più leggibili. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
        "excluded_conflict": false
       }
      ],
@@ -12444,7 +12444,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è nettamente superiore per luminosità, geometria e pulizia visiva. Sono stati aggiunti elementi decorativi (fiori, diffusore) e rimosso il watermark e il disordine sul tavolo.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, geometria e pulizia visiva. Sono stati aggiunti elementi decorativi (fiori, diffusore) e rimosso il watermark e il disordine sul tavolo.",
        "excluded_conflict": false
       },
       {
@@ -12475,7 +12475,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è nettamente superiore per esposizione, nitidezza e pulizia, presentando l'ambiente in modo professionale e accogliente. La foto B è di bassa qualità, con una forte dominante verde, scarsa luce e un watermark intrusivo che la rende inadatta per un annuncio.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e pulizia, presentando l'ambiente in modo professionale e accogliente. La foto originale è di bassa qualità, con una forte dominante verde, scarsa luce e un watermark intrusivo che la rende inadatta per un annuncio.",
        "excluded_conflict": false
       }
      ],
@@ -12579,7 +12579,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è tecnicamente superiore per luminosità e nitidezza. Il logo in basso a destra è diverso tra le due immagini.",
+       "notes": "La foto migliorata è tecnicamente superiore per luminosità e nitidezza. Il logo in basso a destra è diverso tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -12610,7 +12610,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo l'ambiente più leggibile e professionale. Non sono presenti differenze di contenuto o oggetti aggiunti/rimossi tra le due immagini.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo l'ambiente più leggibile e professionale. Non sono presenti differenze di contenuto o oggetti aggiunti/rimossi tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -12714,7 +12714,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "A è preferibile per la maggiore nitidezza e i colori più neutri, pur mantenendo alte luci poco leggibili sulla porta. Non emergono cambiamenti di contenuto chiaramente distinguibili: arredi, tende, danni e disordine restano presenti in entrambe.",
+       "notes": "La foto migliorata è preferibile per la maggiore nitidezza e i colori più neutri, pur mantenendo alte luci poco leggibili sulla porta. Non emergono cambiamenti di contenuto chiaramente distinguibili: arredi, tende, danni e disordine restano presenti in entrambe.",
        "excluded_conflict": false
       },
       {
@@ -12745,7 +12745,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore gestione della luce e dei colori. Non ci sono differenze di contenuto tra le due immagini.",
+       "notes": "La foto migliorata è preferibile per una migliore gestione della luce e dei colori. Non ci sono differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -12776,7 +12776,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo i dettagli dell'ambiente molto più leggibili. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici della ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, rendendo i dettagli dell'ambiente molto più leggibili. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici della ripresa.",
        "excluded_conflict": true
       }
      ],
@@ -12880,7 +12880,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore gestione della luminosità e del bilanciamento cromatico. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto originale è preferibile per una migliore gestione della luminosità e del bilanciamento cromatico. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -12911,7 +12911,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più leggibile e accogliente. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
+       "notes": "La foto originale è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più leggibile e accogliente. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -13227,7 +13227,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore e più attraente, sebbene mostri chiari segni di virtual staging. Sono stati rimossi il disordine e i watermark, aggiunte piante e libri, e modificata la vista esterna.",
+       "notes": "La foto migliorata è tecnicamente superiore e più attraente, sebbene mostri chiari segni di virtual staging. Sono stati rimossi il disordine e i watermark, aggiunte piante e libri, e modificata la vista esterna.",
        "excluded_conflict": false
       },
       {
@@ -13359,7 +13359,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un'esposizione e un bilanciamento del bianco decisamente superiori, rendendo l'ambiente più luminoso e naturale. Non ci sono differenze di contenuto tra le due immagini.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento del bianco decisamente superiori, rendendo l'ambiente più luminoso e naturale. Non ci sono differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -13491,7 +13491,7 @@
         "difetti_nascosti": true,
         "testi_loghi_alterati": false
        },
-       "notes": "A è più equilibrata, meno granulosa e con colori più neutri, sebbene le superfici appaiano leggermente levigate. I numerosi piccoli segni chiari sulle ante dell’armadio visibili in B risultano assenti in A.",
+       "notes": "La foto migliorata è più equilibrata, meno granulosa e con colori più neutri, sebbene le superfici appaiano leggermente levigate. I numerosi piccoli segni chiari sulle ante dell’armadio visibili nella foto originale risultano assenti nella foto migliorata.",
        "excluded_conflict": false
       },
       {
@@ -13874,7 +13874,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A presenta un'esposizione e un contrasto leggermente superiori, rendendo i dettagli dell'edificio più definiti rispetto alla Foto B. Non sono state rilevate differenze di contenuto o modifiche strutturali tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione e un contrasto leggermente superiori, rendendo i dettagli dell'edificio più definiti rispetto alla foto originale. Non sono state rilevate differenze di contenuto o modifiche strutturali tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -14002,7 +14002,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per l'esposizione più bilanciata che recupera i dettagli nelle zone d'ombra. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per l'esposizione più bilanciata che recupera i dettagli nelle zone d'ombra. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -14274,7 +14274,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "B risulta più nitida e leggibile, pur mantenendo verticali convergenti e un aspetto meno naturale. Nell'edificio a destra cambiano tapparelle, serramenti e dettagli delle ringhiere; in B alcune scritte del watermark risultano deformate.",
+       "notes": "La foto migliorata risulta più nitida e leggibile, pur mantenendo verticali convergenti e un aspetto meno naturale. Nell'edificio a destra cambiano tapparelle, serramenti e dettagli delle ringhiere; nella foto migliorata alcune scritte del watermark risultano deformate.",
        "excluded_conflict": false
       },
       {
@@ -14336,7 +14336,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A presenta un'esposizione più equilibrata e colori più naturali, rendendo l'edificio più accattivante rispetto alla Foto B che appare leggermente più piatta e con una nitidezza inferiore. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione più equilibrata e colori più naturali, rendendo l'edificio più accattivante rispetto alla foto originale che appare leggermente più piatta e con una nitidezza inferiore. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
        "excluded_conflict": true
       }
      ],
@@ -14469,7 +14469,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A presenta un'esposizione e un bilanciamento del bianco leggermente superiori, rendendo i dettagli dell'edificio più leggibili rispetto alla Foto B. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione e un bilanciamento del bianco leggermente superiori, rendendo i dettagli dell'edificio più leggibili rispetto alla foto originale. Non sono state rilevate differenze di contenuto o oggetti modificati tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -14647,7 +14647,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è decisamente superiore per bilanciamento cromatico, luminosità e verticalità. Il watermark in basso a destra è leggermente diverso tra le due versioni.",
+       "notes": "La foto migliorata è decisamente superiore per bilanciamento cromatico, luminosità e verticalità. Il watermark in basso a destra è leggermente diverso tra le due versioni.",
        "excluded_conflict": false
       },
       {
@@ -14678,7 +14678,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, bilanciamento del bianco e raddrizzamento, eliminando la forte dominante verde della Foto A. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici che rendono l'ambiente più accogliente e realistico.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, bilanciamento del bianco e raddrizzamento, eliminando la forte dominante verde della foto originale. Non sono presenti differenze di contenuto o oggetti, ma solo miglioramenti tecnici che rendono l'ambiente più accogliente e realistico.",
        "excluded_conflict": false
       }
      ],
@@ -14815,7 +14815,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è nettamente superiore per luce, bilanciamento del bianco e geometria. Sono stati aggiunti elementi decorativi (fiori sul tavolo, cuscini) e rimosso il watermark.",
+       "notes": "La foto migliorata è nettamente superiore per luce, bilanciamento del bianco e geometria. Sono stati aggiunti elementi decorativi (fiori sul tavolo, cuscini) e rimosso il watermark.",
        "excluded_conflict": false
       },
       {
@@ -14846,7 +14846,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è nettamente superiore per esposizione, nitidezza e naturalezza dei colori, rendendo l'ambiente molto più accogliente e professionale. La foto B soffre di una forte dominante verde, scarsa luminosità e la presenza di un watermark in basso a destra che la rende inadatta alla pubblicazione.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e naturalezza dei colori, rendendo l'ambiente molto più accogliente e professionale. La foto originale soffre di una forte dominante verde, scarsa luminosità e la presenza di un watermark in basso a destra che la rende inadatta alla pubblicazione.",
        "excluded_conflict": false
       }
      ],
@@ -14953,7 +14953,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per bilanciamento del bianco, luminosità e correzione delle verticali. La foto A presenta una forte dominante verde/azzurra che rende l'ambiente poco accogliente.",
+       "notes": "La foto migliorata è nettamente superiore per bilanciamento del bianco, luminosità e correzione delle verticali. La foto originale presenta una forte dominante verde/azzurra che rende l'ambiente poco accogliente.",
        "excluded_conflict": false
       },
       {
@@ -14984,7 +14984,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza, presentando una scena luminosa e realistica. La Foto A soffre di una forte dominante verde e di un'illuminazione piatta che rende l'ambiente poco invitante.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza, presentando una scena luminosa e realistica. La foto originale soffre di una forte dominante verde e di un'illuminazione piatta che rende l'ambiente poco invitante.",
        "excluded_conflict": false
       }
      ],
@@ -15091,7 +15091,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "A è più luminosa, nitida e cromaticamente equilibrata; B presenta una forte dominante verde e ombre meno leggibili. Non emergono cambiamenti di contenuto distinguibili dalle differenze di trattamento fotografico e inquadratura.",
+       "notes": "La foto migliorata è più luminosa, nitida e cromaticamente equilibrata; la foto originale presenta una forte dominante verde e ombre meno leggibili. Non emergono cambiamenti di contenuto distinguibili dalle differenze di trattamento fotografico e inquadratura.",
        "excluded_conflict": false
       },
       {
@@ -15122,7 +15122,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente preferibile per l'assenza della forte dominante verde/azzurra presente in A e per una migliore luminosità generale. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è decisamente preferibile per l'assenza della forte dominante verde/azzurra presente nella foto originale e per una migliore luminosità generale. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -15153,7 +15153,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione e bilanciamento del bianco, rendendo l'ambiente luminoso e accogliente. La Foto B presenta una forte dominante verde e un'immagine più scura e piatta, che sminuisce la percezione della stanza.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento del bianco, rendendo l'ambiente luminoso e accogliente. La foto originale presenta una forte dominante verde e un'immagine più scura e piatta, che sminuisce la percezione della stanza.",
        "excluded_conflict": true
       }
      ],
@@ -15260,7 +15260,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente superiore grazie a un bilanciamento del bianco corretto, eliminando la forte dominante verde/azzurra della foto A. La luminosità e la nitidezza migliorate rendono l'ambiente molto più accogliente.",
+       "notes": "La foto migliorata è decisamente superiore grazie a un bilanciamento del bianco corretto, eliminando la forte dominante verde/azzurra della foto originale. La luminosità e la nitidezza migliorate rendono l'ambiente molto più accogliente.",
        "excluded_conflict": false
       },
       {
@@ -15291,7 +15291,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione e bilanciamento del bianco, eliminando la forte dominante verde della Foto A e rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo una marcata correzione del colore e della luce che migliora l'attrattività dell'annuncio.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e bilanciamento del bianco, eliminando la forte dominante verde della foto originale e rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo una marcata correzione del colore e della luce che migliora l'attrattività dell'annuncio.",
        "excluded_conflict": false
       }
      ],
@@ -15473,7 +15473,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B appare più cupa e meno definita.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale appare più cupa e meno definita.",
        "excluded_conflict": false
       },
       {
@@ -15504,7 +15504,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
        "excluded_conflict": false
       }
      ],
@@ -15639,7 +15639,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore per luminosità, geometria e nitidezza, nonostante l'effetto HDR leggermente artificiale. In B è stato rimosso il watermark presente in A.",
+       "notes": "La foto migliorata è tecnicamente superiore per luminosità, geometria e nitidezza, nonostante l'effetto HDR leggermente artificiale. Nella foto migliorata è stato rimosso il watermark presente nella foto originale.",
        "excluded_conflict": false
       },
       {
@@ -15670,7 +15670,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, esposizione e pulizia visiva, rendendo l'ambiente molto più accogliente. La foto B risulta più scura, con colori meno definiti e presenta un watermark centrale che distrae l'occhio.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e pulizia visiva, rendendo l'ambiente molto più accogliente. La foto originale risulta più scura, con colori meno definiti e presenta un watermark centrale che distrae l'occhio.",
        "excluded_conflict": false
       }
      ],
@@ -15778,7 +15778,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B appare sbiadita e con una qualità d'immagine inferiore.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale appare sbiadita e con una qualità d'immagine inferiore.",
        "excluded_conflict": false
       },
       {
@@ -15809,7 +15809,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più equilibrata, colori più naturali e una nitidezza superiore rispetto alla Foto A, che appare leggermente più scura e con una dominante cromatica più marcata. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata, colori più naturali e una nitidezza superiore rispetto alla foto originale, che appare leggermente più scura e con una dominante cromatica più marcata. Non sono state rilevate differenze di contenuto o oggetti tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -15915,7 +15915,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa, definita e cromaticamente equilibrata, pur mostrando superfici leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: oggetti, vista esterna e watermark risultano coerenti.",
+       "notes": "La foto migliorata è più luminosa, definita e cromaticamente equilibrata, pur mostrando superfici leggermente levigate e verticali ancora inclinate. Non emergono cambiamenti evidenti di contenuto: oggetti, vista esterna e watermark risultano coerenti.",
        "excluded_conflict": false
       },
       {
@@ -15946,7 +15946,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per la migliore gestione della luce, del contrasto e della nitidezza generale. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per la migliore gestione della luce, del contrasto e della nitidezza generale. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -15977,7 +15977,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La Foto B appare più scura, con una leggera dominante di colore e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una compressione più aggressiva.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La foto originale appare più scura, con una leggera dominante di colore e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di una compressione più aggressiva.",
        "excluded_conflict": true
       }
      ],
@@ -16083,7 +16083,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un'esposizione e un bilanciamento cromatico più naturali e gradevoli. La foto B appare leggermente più scura e con una dominante colore meno neutra.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento cromatico più naturali e gradevoli. La foto originale appare leggermente più scura e con una dominante colore meno neutra.",
        "excluded_conflict": false
       },
       {
@@ -16301,7 +16301,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento cromatico e correzione prospettica. La foto B appare sfuocata e con una dominante cromatica meno naturale.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento cromatico e correzione prospettica. La foto originale appare sfuocata e con una dominante cromatica meno naturale.",
        "excluded_conflict": false
       },
       {
@@ -16332,7 +16332,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, risultando più luminosa e professionale. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo una marcata differenza di qualità fotografica.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, risultando più luminosa e professionale. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo una marcata differenza di qualità fotografica.",
        "excluded_conflict": false
       }
      ],
@@ -16468,7 +16468,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B appare sbiadita e meno definita.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale appare sbiadita e meno definita.",
        "excluded_conflict": false
       },
       {
@@ -16499,7 +16499,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per luminosità, nitidezza e bilanciamento dei colori, rendendo l'ambiente più accogliente e professionale. La Foto B appare più scura, con una leggera dominante verde e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, nitidezza e bilanciamento dei colori, rendendo l'ambiente più accogliente e professionale. La foto originale appare più scura, con una leggera dominante verde e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
        "excluded_conflict": false
       }
      ],
@@ -16609,7 +16609,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento cromatico e luminosità. La foto B appare sfuocata e con una dominante cromatica spenta.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento cromatico e luminosità. La foto originale appare sfuocata e con una dominante cromatica spenta.",
        "excluded_conflict": false
       },
       {
@@ -16640,7 +16640,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo un netto miglioramento tecnico della resa fotografica.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'ambiente più luminoso e accogliente. Non sono presenti differenze di contenuto o oggetti, ma solo un netto miglioramento tecnico della resa fotografica.",
        "excluded_conflict": false
       }
      ],
@@ -16748,7 +16748,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è più luminosa, nitida e cromaticamente equilibrata, mentre B presenta ombre più chiuse e una dominante calda. Non emergono cambiamenti di contenuto; entrambe mostrano una lieve convergenza delle verticali.",
+       "notes": "La foto migliorata è più luminosa, nitida e cromaticamente equilibrata, mentre la foto originale presenta ombre più chiuse e una dominante calda. Non emergono cambiamenti di contenuto; entrambe mostrano una lieve convergenza delle verticali.",
        "excluded_conflict": false
       },
       {
@@ -16779,7 +16779,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto B appare sbiadita e meno definita.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento cromatico e nitidezza. La foto originale appare sbiadita e meno definita.",
        "excluded_conflict": false
       },
       {
@@ -16810,7 +16810,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per luminosità, nitidezza e naturalezza dei colori, rendendo l'ambiente più accogliente e professionale. La Foto B appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, nitidezza e naturalezza dei colori, rendendo l'ambiente più accogliente e professionale. La foto originale appare più scura, con una leggera dominante calda e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
        "excluded_conflict": true
       }
      ],
@@ -16918,7 +16918,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, contrasto e nitidezza. La foto B appare sbiadita e meno definita.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, contrasto e nitidezza. La foto originale appare sbiadita e meno definita.",
        "excluded_conflict": false
       },
       {
@@ -16949,7 +16949,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione e luminosità, rendendo l'ambiente più accogliente e i dettagli più leggibili. La Foto B appare più scura e con colori meno vividi, riducendo l'attrattività dell'annuncio.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione e luminosità, rendendo l'ambiente più accogliente e i dettagli più leggibili. La foto originale appare più scura e con colori meno vividi, riducendo l'attrattività dell'annuncio.",
        "excluded_conflict": false
       }
      ],
@@ -17133,7 +17133,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, bilanciamento del bianco e nitidezza. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -17164,7 +17164,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché presenta una maggiore nitidezza e una geometria più stabile, con le linee verticali perfettamente dritte. La Foto B appare leggermente più morbida e con una prospettiva che suggerisce un lieve raddrizzamento o distorsione.",
+       "notes": "La foto migliorata è preferibile perché presenta una maggiore nitidezza e una geometria più stabile, con le linee verticali perfettamente dritte. La foto originale appare leggermente più morbida e con una prospettiva che suggerisce un lieve raddrizzamento o distorsione.",
        "excluded_conflict": false
       }
      ],
@@ -17301,7 +17301,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore per luce e geometria, ma presenta evidenti aggiunte di staging virtuale (piante, cibo, accessori). Sono stati rimossi il watermark e il disordine presenti nella foto A.",
+       "notes": "La foto migliorata è tecnicamente superiore per luce e geometria, ma presenta evidenti aggiunte di staging virtuale (piante, cibo, accessori). Sono stati rimossi il watermark e il disordine presenti nella foto originale.",
        "excluded_conflict": false
       },
       {
@@ -17332,7 +17332,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. La Foto B appare più scura, con colori meno saturi e un watermark in basso a sinistra che la rende meno adatta alla pubblicazione.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e pulizia visiva, rendendo l'ambiente molto più accogliente e professionale. La foto originale appare più scura, con colori meno saturi e un watermark in basso a sinistra che la rende meno adatta alla pubblicazione.",
        "excluded_conflict": false
       }
      ],
@@ -17439,7 +17439,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per la maggiore luminosità, nitidezza e un bilanciamento del bianco più naturale. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per la maggiore luminosità, nitidezza e un bilanciamento del bianco più naturale. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -17470,7 +17470,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La Foto B appare più morbida, con una leggera dominante di colore e una perdita di dettaglio che suggerisce un'elaborazione automatica o una minore qualità di scatto.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La foto originale appare più morbida, con una leggera dominante di colore e una perdita di dettaglio che suggerisce un'elaborazione automatica o una minore qualità di scatto.",
        "excluded_conflict": false
       }
      ],
@@ -17577,7 +17577,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "A è più luminosa, nitida e cromaticamente equilibrata; B presenta una dominante azzurra e minore definizione. Non emergono cambiamenti di contenuto: arredi, tende, oggetti e watermark risultano corrispondenti.",
+       "notes": "La foto migliorata è più luminosa, nitida e cromaticamente equilibrata; la foto originale presenta una dominante azzurra e minore definizione. Non emergono cambiamenti di contenuto: arredi, tende, oggetti e watermark risultano corrispondenti.",
        "excluded_conflict": false
       },
       {
@@ -17608,7 +17608,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per nitidezza, bilanciamento cromatico e correzione prospettica. La foto B appare sfuocata e con una dominante cromatica meno naturale.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento cromatico e correzione prospettica. La foto originale appare sfuocata e con una dominante cromatica meno naturale.",
        "excluded_conflict": false
       },
       {
@@ -17639,7 +17639,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La Foto B appare leggermente più scura e con una qualità d'immagine inferiore, probabilmente a causa di un'elaborazione automatica o di una compressione più aggressiva.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e naturalezza dei colori, risultando più professionale e attraente. La foto originale appare leggermente più scura e con una qualità d'immagine inferiore, probabilmente a causa di un'elaborazione automatica o di una compressione più aggressiva.",
        "excluded_conflict": true
       }
      ],
@@ -17746,7 +17746,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B presenta un'esposizione più equilibrata e colori più naturali. Non sono presenti differenze di contenuto tra le due immagini.",
+       "notes": "La foto migliorata presenta un'esposizione più equilibrata e colori più naturali. Non sono presenti differenze di contenuto tra le due immagini.",
        "excluded_conflict": false
       },
       {
@@ -17962,7 +17962,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per bilanciamento cromatico, nitidezza e correzione delle verticali. La foto A presenta una forte dominante gialla e una prospettiva distorta.",
+       "notes": "La foto migliorata è nettamente superiore per bilanciamento cromatico, nitidezza e correzione delle verticali. La foto originale presenta una forte dominante gialla e una prospettiva distorta.",
        "excluded_conflict": false
       },
       {
@@ -17993,7 +17993,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per esposizione, nitidezza e verticalità, presentando l'edificio in modo più professionale e attraente. La Foto B appare più scura, con una leggera inclinazione e una maggiore presenza di rumore digitale, oltre a mostrare una parte di auto rossa in primo piano che non è presente nella A.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e verticalità, presentando l'edificio in modo più professionale e attraente. La foto originale appare più scura, con una leggera inclinazione e una maggiore presenza di rumore digitale, oltre a mostrare una parte di auto rossa in primo piano che non è presente nella foto migliorata.",
        "excluded_conflict": false
       }
      ],
@@ -18126,7 +18126,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è decisamente superiore per nitidezza, geometria e luminosità, rendendo l'edificio molto più attraente. Nonostante l'aspetto leggermente più artificiale, è la scelta migliore per un annuncio.",
+       "notes": "La foto migliorata è decisamente superiore per nitidezza, geometria e luminosità, rendendo l'edificio molto più attraente. Nonostante l'aspetto leggermente più artificiale, è la scelta migliore per un annuncio.",
        "excluded_conflict": false
       },
       {
@@ -18157,7 +18157,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'edificio molto più accattivante. Si notano lievi differenze nel contenuto, come la presenza di un cartello civico (numero 8) e una diversa densità di piante sui balconi, che suggeriscono un'elaborazione o una diversa inquadratura.",
+       "notes": "La foto migliorata è nettamente superiore per esposizione, nitidezza e bilanciamento del colore, rendendo l'edificio molto più accattivante. Si notano lievi differenze nel contenuto, come la presenza di un cartello civico (numero 8) e una diversa densità di piante sui balconi, che suggeriscono un'elaborazione o una diversa inquadratura.",
        "excluded_conflict": false
       }
      ],
@@ -18267,7 +18267,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per nitidezza, bilanciamento cromatico e correzione della prospettiva. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, bilanciamento cromatico e correzione della prospettiva. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -18298,7 +18298,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, risultando professionale e realistica. La Foto B appare più scura, con colori meno saturi e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e bilanciamento del bianco, risultando professionale e realistica. La foto originale appare più scura, con colori meno saturi e una nitidezza inferiore, probabilmente a causa di un'elaborazione automatica o di scarse condizioni di ripresa.",
        "excluded_conflict": false
       }
      ],
@@ -18405,7 +18405,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa, nitida e cromaticamente equilibrata, pur mantenendo la marcata convergenza delle verticali presente in A. Non emergono cambiamenti evidenti di contenuto oltre alle differenze di resa fotografica.",
+       "notes": "La foto migliorata è più luminosa, nitida e cromaticamente equilibrata, pur mantenendo la marcata convergenza delle verticali presente nella foto originale. Non emergono cambiamenti evidenti di contenuto oltre alle differenze di resa fotografica.",
        "excluded_conflict": false
       },
       {
@@ -18436,7 +18436,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un'esposizione e un bilanciamento del bianco decisamente superiori, risultando più nitida e naturale. La foto B appare sbiadita e con un contrasto piatto.",
+       "notes": "La foto migliorata ha un'esposizione e un bilanciamento del bianco decisamente superiori, risultando più nitida e naturale. La foto originale appare sbiadita e con un contrasto piatto.",
        "excluded_conflict": false
       },
       {
@@ -18467,7 +18467,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, contrasto e bilanciamento del bianco, rendendo l'edificio più accattivante e professionale. La Foto B appare più piatta, con colori meno saturi e una nitidezza inferiore che riduce la percezione di qualità dell'immobile.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, contrasto e bilanciamento del bianco, rendendo l'edificio più accattivante e professionale. La foto originale appare più piatta, con colori meno saturi e una nitidezza inferiore che riduce la percezione di qualità dell'immobile.",
        "excluded_conflict": true
       }
      ],
@@ -18574,7 +18574,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A ha un bilanciamento cromatico e un'esposizione più naturali. La foto B presenta un aspetto leggermente artificiale e colori meno neutri.",
+       "notes": "La foto migliorata ha un bilanciamento cromatico e un'esposizione più naturali. La foto originale presenta un aspetto leggermente artificiale e colori meno neutri.",
        "excluded_conflict": false
       },
       {
@@ -18605,7 +18605,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto A è preferibile perché è perfettamente raddrizzata (verticali dritte), mentre la Foto B presenta una marcata inclinazione laterale. La Foto B mostra inoltre una macchina rossa in primo piano che non è presente nella Foto A, rendendo quest'ultima più pulita e professionale.",
+       "notes": "La foto migliorata è preferibile perché è perfettamente raddrizzata (verticali dritte), mentre la foto originale presenta una marcata inclinazione laterale. La foto originale mostra inoltre una macchina rossa in primo piano che non è presente nella foto migliorata, rendendo quest'ultima più pulita e professionale.",
        "excluded_conflict": false
       }
      ],
@@ -18789,7 +18789,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto A è nettamente superiore per luminosità, bilanciamento del bianco e nitidezza. La foto B appare sbiadita e con una qualità d'immagine inferiore.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento del bianco e nitidezza. La foto originale appare sbiadita e con una qualità d'immagine inferiore.",
        "excluded_conflict": false
       },
       {
@@ -18820,7 +18820,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
        "excluded_conflict": false
       }
      ],
@@ -18957,7 +18957,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La foto B è tecnicamente superiore per luminosità, colori e allineamento. Sono state aggiunte delle piante negli scaffali e rimosso il watermark centrale.",
+       "notes": "La foto migliorata è tecnicamente superiore per luminosità, colori e allineamento. Sono state aggiunte delle piante negli scaffali e rimosso il watermark centrale.",
        "excluded_conflict": false
       },
       {
@@ -18988,7 +18988,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": true
        },
-       "notes": "La Foto A è nettamente superiore per nitidezza, esposizione e assenza di artefatti, rendendo l'ambiente più accogliente e professionale. La Foto B presenta una marcata sfocatura, una leggera inclinazione e un watermark centrale che ne riduce drasticamente l'efficacia commerciale.",
+       "notes": "La foto migliorata è nettamente superiore per nitidezza, esposizione e assenza di artefatti, rendendo l'ambiente più accogliente e professionale. La foto originale presenta una marcata sfocatura, una leggera inclinazione e un watermark centrale che ne riduce drasticamente l'efficacia commerciale.",
        "excluded_conflict": false
       }
      ],
@@ -19097,7 +19097,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è nettamente superiore per luminosità, bilanciamento del bianco e allineamento delle verticali. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è nettamente superiore per luminosità, bilanciamento del bianco e allineamento delle verticali. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -19128,7 +19128,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La Foto B è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e i dettagli più leggibili. Non sono state rilevate differenze di contenuto o oggetti aggiunti/rimossi tra le due immagini.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e i dettagli più leggibili. Non sono state rilevate differenze di contenuto o oggetti aggiunti/rimossi tra le due immagini.",
        "excluded_conflict": false
       }
      ],
@@ -19235,7 +19235,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "B è più luminosa e leggibile, con una dominante verde meno evidente e maggiore definizione; entrambe presentano verticali leggermente inclinate. Non emergono cambiamenti di contenuto: arredi, vista esterna, imperfezioni e watermark risultano conservati.",
+       "notes": "La foto migliorata è più luminosa e leggibile, con una dominante verde meno evidente e maggiore definizione; entrambe presentano verticali leggermente inclinate. Non emergono cambiamenti di contenuto: arredi, vista esterna, imperfezioni e watermark risultano conservati.",
        "excluded_conflict": false
       },
       {
@@ -19266,7 +19266,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile per una migliore esposizione, nitidezza e bilanciamento cromatico. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata è preferibile per una migliore esposizione, nitidezza e bilanciamento cromatico. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {
@@ -19297,7 +19297,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
+       "notes": "La foto migliorata è preferibile perché presenta un'esposizione più equilibrata e una nitidezza superiore, rendendo l'ambiente più accogliente e dettagliato. Non sono presenti differenze di contenuto o oggetti tra le due immagini, solo variazioni di qualità fotografica.",
        "excluded_conflict": true
       }
      ],
@@ -19404,7 +19404,7 @@
         "difetti_nascosti": false,
         "testi_loghi_alterati": false
        },
-       "notes": "La foto B presenta un'esposizione più bilanciata e colori più naturali. Non si riscontrano differenze di contenuto tra i due scatti.",
+       "notes": "La foto migliorata presenta un'esposizione più bilanciata e colori più naturali. Non si riscontrano differenze di contenuto tra i due scatti.",
        "excluded_conflict": false
       },
       {

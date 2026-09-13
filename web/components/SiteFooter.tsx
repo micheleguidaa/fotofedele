@@ -17,13 +17,13 @@ export function SiteFooter({ generatedAt }: { generatedAt?: string }) {
         <nav aria-label="Piè di pagina">
           <ul className="flex flex-wrap gap-x-4 gap-y-1">
             <li>
-              <Link className="hover:text-ink hover:underline" href="/studio">
-                Studio
+              <Link className="hover:text-ink hover:underline" href="/">
+                Foto
               </Link>
             </li>
             <li>
-              <Link className="hover:text-ink hover:underline" href="/lab">
-                Laboratorio
+              <Link className="hover:text-ink hover:underline" href="/numeri">
+                Numeri
               </Link>
             </li>
             <li>

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -66,6 +67,39 @@ def load_judge_records() -> dict[str, dict[str, list[dict]]]:
     return out
 
 
+# ----------------------------------------------------------------------------- judge notes
+
+_AB_PREP = {"in": "nella", "nella": "nella", "la": "la", "alla": "alla", "a": "alla", "della": "della", "di": "della",
+            "dalla": "dalla", "da": "dalla", "sulla": "sulla", "su": "sulla", "con": "con la", "mentre": "mentre la",
+            "preferisco": "preferisco la", "che": "che la", "e": "e la"}
+_AB_WORDS = "|".join(sorted([*_AB_PREP, *(w.capitalize() for w in _AB_PREP)], key=len, reverse=True))
+_AB_VERB = (r"(?=\s+(?:è|ha|presenta|appare|risulta|mostra|mantiene|offre|sembra|resta|rimane|conserva|evidenzia|"
+            r"introduce|elimina|corregge|migliora|perde|include|non|invece|pur|però)\b|[,;:])")
+
+
+def resolve_ab(text: str, input_first: bool) -> str:
+    """Judges see the pair as 'foto A' / 'foto B' in a random order: name them originale / migliorata instead."""
+    if not text:
+        return text
+    side = {"A": "originale" if input_first else "migliorata", "B": "migliorata" if input_first else "originale"}
+
+    def cap(src: str, out: str) -> str:
+        return out[0].upper() + out[1:] if src[:1].isupper() else out
+
+    text = re.sub(r"\b([Tt]ra) (?:le )?(?:(?:la |le )?(?:foto|immagini|immagine) )?A e (?:la )?(?:foto )?B\b",
+                  lambda m: f"{m.group(1)} le due foto", text)
+    text = re.sub(r"\b(?:[Ss]ia|[Ee]ntrambe(?: le foto)?,?) (?:la )?(?:foto )?A (?:che|e) (?:la )?(?:foto )?B\b",
+                  lambda m: cap(m.group(0), "entrambe le foto"), text)
+    text = re.sub(r"\b(?:le foto |le immagini )?A e B\b", lambda m: cap(m.group(0), "le due foto"), text)
+    text = re.sub(r"\b([Ff]oto|[Ii]mmagine|[Vv]ersione|[Ss]catto)\s+([AB])\b",
+                  lambda m: f"{m.group(1)} {side[m.group(2)]}", text)
+    text = re.sub(rf"\b({_AB_WORDS})\s+([AB])\b",
+                  lambda m: cap(m.group(1), f"{_AB_PREP[m.group(1).lower()]} foto {side[m.group(2)]}"), text)
+    text = re.sub(r"(^|[.!?]\s+)([AB])" + _AB_VERB, lambda m: f"{m.group(1)}La foto {side[m.group(2)]}", text)
+    text = re.sub(r"([;:]\s+|\(\s*)([AB])" + _AB_VERB, lambda m: f"{m.group(1)}la foto {side[m.group(2)]}", text)
+    return re.sub(r"(?<=\w )Foto\b", "foto", text)
+
+
 def reconcile(recs: list[dict], orders_rule: str = "any") -> dict:
     prefs = [r["preferred"] for r in recs]
     if len(recs) >= 2:
@@ -80,7 +114,7 @@ def reconcile(recs: list[dict], orders_rule: str = "any") -> dict:
         "rubric_output": {c: float(np.mean([r["rubric_output"][c] for r in recs])) for c in CRITERIA},
         "rubric_input": {c: float(np.mean([r["rubric_input"][c] for r in recs])) for c in CRITERIA},
         "checklist": {c: bool(comb(r["checklist"][c] for r in recs)) for c in CHECKS},
-        "notes": recs[0]["notes"],
+        "notes": resolve_ab(recs[0]["notes"], recs[0].get("input_first", True)),
         "n_orders": len(recs),
     }
 
@@ -309,6 +343,11 @@ def build(export_images: bool = True, log=print) -> dict:
             if fr:
                 item["input_full_ref"] = {k: round(float(fr["full_ref_input"][k]), 4) for k in ("psnr", "ssim", "lpips")}
         images.append(item)
+
+    unresolved = [f"{item['id']}:{wid}:{v['judge']}" for item in images for wid, o in item["outputs"].items()
+                  for v in o.get("judges", []) if re.search(r"\b[AB]\b", v["notes"] or "")]
+    if unresolved:
+        log(f"attenzione: {len(unresolved)} note dei giudici citano ancora A/B: {', '.join(unresolved[:10])}")
 
     # ---- per workflow summary
     wf_out = []

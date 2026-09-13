@@ -39,7 +39,7 @@ native type stripping). `build`/`dev` work with any Node version supported by Ne
 
 | Variable | Where | Effect |
 | --- | --- | --- |
-| `NEXT_PUBLIC_LIVE_MODE=1` | build time (client) | Enables the "Carica una tua foto" panel in `/studio`. Otherwise it is disabled with a note. |
+| `NEXT_PUBLIC_LIVE_MODE=1` | build time (client) | Shows the "Carica una tua foto" panel under the Foto view (`/`, `/foto/[id]`). Otherwise the panel is hidden. |
 | `LIVE_MODE=1` | runtime (server) | Enables `POST /api/enhance`. Otherwise it answers `501 {"error":"Disponibile solo in locale"}`. |
 | `PIPELINE_DIR` | runtime (server), mock script | Path of the Python pipeline (default `../pipeline`). |
 
@@ -58,7 +58,7 @@ data URLs and returns them (see `lib/live.ts` for the exact shapes).
 ## Structure
 
 ```
-app/                 pages: / · /studio · /lab · /lab/[id] · /metodo · /arena · api/enhance
+app/                 pages: / (Foto) · /foto/[id] · /numeri · /metodo · /arena · api/enhance (old /studio and /lab URLs redirect)
 components/          UI (CompareSlider, charts, tables, per-page client components)
 lib/types.ts         data contract
 lib/score.ts         decision score (same formula the pipeline uses), unit-tested in score.test.ts

@@ -1,4 +1,4 @@
-// Decision score, recomputed client-side in /lab when the user moves the weight sliders.
+// Decision score, recomputed client-side in /numeri when the user moves the weight sliders.
 //
 //   score = wq·winrate + wn·(naturalezza − 1)/4 + wc·costScore + ws·speedScore
 //   costScore  = 1 − log10(cost / minCost) / log10(maxCost / minCost)

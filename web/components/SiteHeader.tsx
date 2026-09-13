@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import { cx } from "./ui";
 
 const NAV = [
-  { href: "/studio", label: "Studio" },
-  { href: "/lab", label: "Laboratorio" },
+  { href: "/", label: "Foto" },
+  { href: "/numeri", label: "Numeri" },
   { href: "/metodo", label: "Metodo" },
   { href: "/arena", label: "Arena" },
 ];
@@ -34,7 +34,8 @@ export function SiteHeader() {
         <nav aria-label="Principale" className="-mr-2 ml-auto overflow-x-auto">
           <ul className="flex items-center gap-0.5 sm:gap-1">
             {NAV.map((item) => {
-              const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
+              const active =
+                item.href === "/" ? pathname === "/" || pathname.startsWith("/foto/") : pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
                 <li key={item.href}>
                   <Link

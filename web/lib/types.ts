@@ -39,7 +39,7 @@ export interface FidelityChecklist { // true = problem detected
 export interface JudgeVerdict {
   judge: JudgeId;
   preferred: "output" | "input" | "tie";   // after position-swap reconciliation
-  position_consistent: boolean;           // same answer in both A/B orders (if both asked)
+  position_consistent: boolean | null;    // same answer in both A/B orders; null when asked in one order only
   rubric_output: Rubric;
   rubric_input: Rubric;
   checklist: FidelityChecklist;
@@ -55,6 +55,7 @@ export interface Fidelity {
   semantic: number;               // DINOv2 cosine similarity 0..1
   alignment_ok: boolean;
   framing_kept_pct: number;       // % of the original frame still visible
+  invented_area_pct?: number;     // % of the output with no counterpart in the original (outpainted borders)
   checklist_majority: FidelityChecklist; // majority of unconflicted judges
 }
 

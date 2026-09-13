@@ -11,7 +11,7 @@ import { DEFECT_LABEL, familyLabel } from "@/lib/labels";
 import { DEFECT_METRIC, DEFECT_ORDER, targetLabel } from "@/lib/metrics";
 import type { Defect, Results, WorkflowId } from "@/lib/types";
 
-export const metadata: Metadata = { title: "Laboratorio" };
+export const metadata: Metadata = { title: "Numeri" };
 
 function defectFixRate(r: Results, wf: WorkflowId, d: Defect) {
   const rel = r.images.filter((im) => im.input.defects.includes(d) && im.outputs[wf]?.status === "ok");
@@ -49,7 +49,7 @@ export default function LabPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Laboratorio"
+        eyebrow="Numeri"
         title={`${WORKFLOW_COUNT_WORD[r.workflows.length] ?? r.workflows.length} workflow, le stesse foto, criteri misurabili`}
         lead={
           <p>

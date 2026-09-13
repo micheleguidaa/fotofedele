@@ -1,7 +1,7 @@
 # FotoFedele — foto degli annunci migliori, senza alterare la casa
 
 Case study *Product Builder, Agentic AI Products* · Immobiliare.it · settembre 2026
-**Demo:** https://fotofedele.vercel.app · **Codice:** https://github.com/micheleguidaa/fotofedele ([`pipeline/`](pipeline/) Python, [`web/`](web/) Next.js) · **Screenshot:** [risultati](docs/screenshots/risultati.jpg), [studio](docs/screenshots/studio.jpg), [heatmap](docs/screenshots/laboratorio-heatmap.jpg)
+**Demo:** https://fotofedele.vercel.app · **Codice:** https://github.com/micheleguidaa/fotofedele ([`pipeline/`](pipeline/) Python, [`web/`](web/) Next.js) · **Screenshot:** [foto](docs/screenshots/foto.jpg), [risultati](docs/screenshots/risultati.jpg)
 
 ## 1. Perimetro
 **Per chi:** agenti e inserzionisti che caricano foto da smartphone. **Bisogno:** foto presentabili in pochi secondi, senza rischiare annunci ingannevoli.
@@ -11,7 +11,7 @@ Case study *Product Builder, Agentic AI Products* · Immobiliare.it · settembre
 
 ## 2. Il prototipo
 Flusso agentico: **Diagnosi → Instradamento → Miglioramento → Verifica di fedeltà → Approvazione**, con fallback all'alternativa più conservativa o all'originale.
-La web app ha quattro sezioni: **Studio** (il prodotto visto dall'agente), **Laboratorio** (classifica, pesi, costo e qualità, dettaglio con heatmap), **Metodo** e **Arena** (voto umano, progettato).
+La web app ha quattro sezioni: **Foto** (la home: ogni foto con le sue versioni, slider prima/dopo, cosa è cambiato a parole e cosa pubblicare; i numeri restano nei dettagli tecnici), **Numeri** (classifica, pesi, costo e qualità, matrice), **Metodo** (problema, perimetro, flusso, risultati e valutazione) e **Arena** (voto umano, progettato).
 Pipeline `python -m fotolab run | evaluate | judge | aggregate`, con i flussi dichiarati in configurazione e ogni run e giudizio salvato in JSONL.
 **Dataset:** 18 foto reali con difetti da annunci Immobiliare.it, senza il watermark della piattaforma grazie a un filtro automatico, più 6 foto buone **degradate in modo controllato** per avere una verità di riferimento.
 
@@ -39,7 +39,7 @@ Tutto è fissato prima dell'aggregazione, in `pipeline/config/decision.yaml`.
 
 La regola:
 1. **Gate:** affidabilità ≥ 95% e foto segnalate ≤ 5%.
-2. **Punteggio** per chi li supera: 0,5·qualità + 0,2·naturalezza + 0,15·costo + 0,15·velocità, con i pesi regolabili nel Laboratorio. Un flusso che altera la casa non vince con nessun peso.
+2. **Punteggio** per chi li supera: 0,5·qualità + 0,2·naturalezza + 0,15·costo + 0,15·velocità, con i pesi regolabili nella pagina Numeri. Un flusso che altera la casa non vince con nessun peso.
 
 ## 5. Come misuro il qualitativo
 - **Rubrica ancorata** (6 criteri, voti 1-3-5 descritti) e **confronto a coppie alla cieca** invece di voti assoluti.
