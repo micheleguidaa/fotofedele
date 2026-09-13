@@ -56,20 +56,6 @@ workflows:
     question: "F3 vs F4: modello chiuso vs open-weights self-hosted"
     cost: {type: gpu_time}
 
-  - id: F5
-    name: "Ibrido · gpt-image come art director"
-    short: "trasferimento tonale da F3"
-    engine: hybrid
-    family: openai
-    generative: false
-    reference: F3
-    description: >-
-      Usa l'output di F3 solo come riferimento di colore e luce: stima, dove le due foto hanno la stessa
-      struttura, una curva tonale monotona, una matrice colore 3x3 e una mappa di luminosità molto sfocata,
-      e le applica ai pixel dell'ORIGINALE; geometria corretta come in F1. Nessun pixel viene generato.
-    question: "F3 vs F5: generare i pixel o trasferire solo il 'look'?"
-    cost: {type: inherit, from: F3, extra_usd: 0.0002}
-
   # F6 (Gemini / Nano Banana) was planned but NOT run: the Gemini CLI rejects individual accounts
   # (IneligibleTierError), the Gemini web app has no API, and Vertex AI is pay-per-use. By project
   # choice only the ChatGPT subscription (Codex) and self-hosted models are used. Documented in README.

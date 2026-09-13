@@ -18,7 +18,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 | `config/decision.yaml` | gates, weights and fidelity thresholds, fixed before aggregation |
 | `config/prompts/` | enhancement prompts and the judge prompt (anchored rubric + checklist) |
 | `config/comfy/` | ComfyUI API graphs (Qwen-Image-Edit 2511 + Lightning, Real-ESRGAN) |
-| `fotolab/workflows/` | classical (OpenCV), codex_image (gpt-image), comfyui (Qwen), hybrid (tone transfer) |
+| `fotolab/workflows/` | classical (OpenCV), codex_image (gpt-image), comfyui (Qwen) |
 | `fotolab/metrics/` | technical (defects vs targets), fidelity (structure, heatmap, DINOv2), reference, IQA |
 | `fotolab/judges/` | judge protocol and backends (Ollama on the VM, Codex) |
 | `fotolab/traps.py` | trap set: 6 deliberate alterations + 6 benign edits, to measure the detectors |

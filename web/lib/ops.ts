@@ -1,4 +1,4 @@
-// Human-readable Italian description of the `ops` log written by deterministic steps (F1, F5).
+// Human-readable Italian description of the `ops` log written by deterministic steps (F1).
 import { fmtNum, fmtPct } from "./format";
 
 export interface OpLine {
@@ -63,43 +63,6 @@ function describe(key: string, value: unknown): OpLine | null {
   if (key === "sharpen" && isDict(value)) {
     const a = num(value.amount);
     return { title: "Maschera di contrasto (nitidezza)", detail: a !== null ? `intensità ${fmtPct(a)}` : undefined };
-  }
-  if (key === "alignment" && isDict(value)) {
-    const ecc = num(value.ecc);
-    const valid = num(value.valid_fraction);
-    return {
-      title: "Allineamento con l'immagine di riferimento",
-      detail: [ecc !== null ? `correlazione ECC ${fmtNum(ecc, 2)}` : null, valid !== null ? `${fmtPct(valid)} dei pixel sovrapposti` : null]
-        .filter(Boolean)
-        .join(" · ") || undefined,
-    };
-  }
-  if (key === "agreeing_pixels") {
-    const a = num(value);
-    return { title: "Pixel con struttura concordante usati per la stima", detail: a !== null ? fmtPct(a) : undefined };
-  }
-  if (key === "warning" && typeof value === "string") {
-    return { title: "Avviso", detail: value === "low structural agreement, fitted on all aligned pixels" ? "riferimento poco concordante: stima su tutti i pixel allineati" : value };
-  }
-  if (key === "tone_curve" && isDict(value)) {
-    const pts = ["in_0.25", "in_0.5", "in_0.75"]
-      .map((k) => [k.slice(3), num(value[k])] as const)
-      .filter(([, v]) => v !== null)
-      .map(([k, v]) => `${fmtNum(Number(k), 2)}→${fmtNum(v as number, 2)}`);
-    return { title: "Curva tonale copiata dal riferimento", detail: pts.join(" · ") || undefined };
-  }
-  if (key === "color_matrix" && Array.isArray(value)) {
-    const flat = (value as unknown[]).flat().map(num).filter((x): x is number => x !== null);
-    const dev = flat.length === 9 ? Math.max(...flat.map((x, i) => Math.abs(x - (i % 4 === 0 ? 1 : 0)))) : null;
-    return { title: "Matrice colore 3×3 copiata dal riferimento", detail: dev !== null ? `scostamento massimo dall'identità ${fmtNum(dev, 2)}` : undefined };
-  }
-  if (key === "gain_map" && isDict(value)) {
-    const lo = num(value.min);
-    const hi = num(value.max);
-    return {
-      title: "Schiarita/scurita locale a bassa frequenza",
-      detail: lo !== null && hi !== null ? `guadagno tra ×${fmtNum(lo, 2)} e ×${fmtNum(hi, 2)}` : undefined,
-    };
   }
   return null;
 }

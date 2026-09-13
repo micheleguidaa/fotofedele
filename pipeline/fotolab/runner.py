@@ -115,15 +115,6 @@ def run_one(wf: dict, item: dict, rep: int = 0) -> dict:
                                        seed=int(p.get("seed", 42)) + rep, megapixels=float(p.get("megapixels", 1.0)))
             meta = comfyui.run(graph, dst)
             gpu_s = meta.get("gpu_seconds")
-        elif engine == "hybrid":
-            from fotolab.workflows import hybrid
-
-            ref = out_path(wf["reference"], item["id"], rep)
-            if not ref.exists():
-                raise FileNotFoundError(f"reference output {ref.name} of {wf['reference']} missing")
-            out, meta = hybrid.transfer(load_bgr(src), load_bgr(ref))
-            save_bgr(out, dst)
-            gpu_s = None
         elif engine == "gemini_image":
             from fotolab.workflows import gemini_image
 

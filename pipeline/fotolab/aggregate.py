@@ -290,17 +290,11 @@ def build(export_images: bool = True, log=print) -> dict:
             win_score = float(np.mean(wins)) if wins else None
             win = None if win_score is None else (1.0 if win_score > 0.5 else 0.0 if win_score < 0.5 else 0.5)
             rub = {c: float(np.mean([verdicts[j]["rubric_output"][c] for j in used])) for c in CRITERIA} if used else None
-            # latency/cost: F5 inherits the generation it depends on
             lat = float(r["wall_seconds"])
             gpu = r.get("gpu_seconds")
-            if w["engine"] == "hybrid":
-                ref = recs.get((w["reference"], iid, 0))
-                lat += float(ref["wall_seconds"]) if ref else 0.0
             cost_cfg = w["cost"]
             if cost_cfg["type"] == "gpu_time":
                 cost = (gpu or lat) * h200 / 3600
-            elif cost_cfg["type"] == "inherit":
-                cost = float(wf_by_id[cost_cfg["from"]]["cost"]["usd_per_image"]) + float(cost_cfg.get("extra_usd", 0))
             else:
                 cost = float(cost_cfg["usd_per_image"]) + ((gpu or 0) * h200 / 3600)
             exp = {"src": f"{base}/{wid}.webp", "w": r["out_w"], "h": r["out_h"]}
@@ -327,8 +321,7 @@ def build(export_images: bool = True, log=print) -> dict:
                             "excluded_conflict": JUDGE_FAMILY[j] == fam} for j, v in verdicts.items()],
                 "ensemble": {"win": win, "judges_used": used,
                              "rubric_mean": {c: round(x, 2) for c, x in rub.items()} if rub else None},
-                "ops": (r.get("meta") or {}).get("ops") if w["engine"] == "classical" else
-                       ({k: v for k, v in (r.get("meta") or {}).items() if k != "color_matrix"} if w["engine"] == "hybrid" else None),
+                "ops": (r.get("meta") or {}).get("ops") if w["engine"] == "classical" else None,
                 "full_ref": ({k: round(float(om["full_ref"][k]), 4) for k in ("psnr", "ssim", "lpips")} if "full_ref" in om else None),
                 "iqa": {k: round(float(v), 3) for k, v in om["iqa"].items()},
             }
@@ -388,8 +381,6 @@ def build(export_images: bool = True, log=print) -> dict:
         summary["gates"] = {"reliability": summary["success_rate"] >= dec["gates"]["reliability_min"],
                             "fidelity": summary["fidelity_flag_rate"] <= dec["gates"]["fidelity_flag_max"]}
         prompt = (CONFIG / "prompts" / f"{w['prompt']}.md").read_text().strip() if w.get("prompt") else None
-        if w["engine"] == "hybrid":
-            prompt = "Nessun prompt proprio: usa come riferimento l'output di F3 (prompt vincolato)."
         wf_out.append({"id": w["id"], "name": w["name"], "short": w["short"], "engine": w["engine"],
                        "family": w["family"], "generative": bool(w["generative"]),
                        "description": " ".join(w["description"].split()), "question": w["question"],
@@ -616,7 +607,7 @@ REAL_VS_SIMULATED = [
     {"item": "Foto di input (18 reali + 6 degradate)", "status": "reale", "note": "Annunci pubblici Immobiliare.it; le 6 degradate sono foto buone peggiorate in modo controllato."},
     {"item": "Output gpt-image (F2, F3)", "status": "reale", "note": "Generati con Codex CLI sull'abbonamento ChatGPT (strumento image_gen integrato)."},
     {"item": "Output Qwen-Image-Edit 2511 (F4) e Real-ESRGAN", "status": "reale", "note": "Modelli open-weights su ComfyUI, GPU H200 dedicata."},
-    {"item": "Flussi classico (F1) e ibrido (F5)", "status": "reale", "note": "Codice Python/OpenCV scritto per il prototipo."},
+    {"item": "Flusso classico (F1)", "status": "reale", "note": "Codice Python/OpenCV scritto per il prototipo."},
     {"item": "Metriche tecniche, strutturali, semantiche e IQA", "status": "reale", "note": "Calcolate su ogni output."},
     {"item": "Giudici AI (Gemma, Qwen, GPT)", "status": "reale", "note": "Stesso prompt e rubrica per tutti; ordine A/B randomizzato."},
     {"item": "Costo per immagine", "status": "stimato", "note": "Listini API (gpt-image-2) e costo orario H200 on-demand: l'abbonamento non espone costi unitari."},

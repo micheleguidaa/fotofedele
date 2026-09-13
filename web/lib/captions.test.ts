@@ -100,7 +100,7 @@ test("verdict: router choice, then fidelity flag, then the judges", () => {
   assert.equal(versionVerdict(router, "F1", output({ ensemble: { win: 0, judges_used: [], rubric_mean: rubric } })).label, "Peggiora la foto");
   assert.equal(versionVerdict(router, "F1", output({ ensemble: { win: 0.5, judges_used: [], rubric_mean: rubric } })).label, "Quasi uguale");
   assert.equal(versionVerdict(router, "F3", output({})).label, "Fedele");
-  assert.equal(versionVerdict(router, "F5", undefined).label, "Non disponibile");
+  assert.equal(versionVerdict(router, "F6", undefined).label, "Non disponibile");
 });
 
 test("quote: the judge who spotted the alteration wins; generic notes are skipped", () => {

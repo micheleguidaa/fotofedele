@@ -203,20 +203,6 @@ const WORKFLOWS = [
     cost_note: "tempo GPU misurato × 4,40 $/h (H200 on-demand)",
   },
   {
-    id: "F5",
-    name: "Ibrido · gpt-image come art director",
-    short: "trasferimento tonale da F3",
-    engine: "hybrid",
-    family: "openai",
-    generative: false,
-    description:
-      "Usa l'output di F3 solo come riferimento di colore e luce: stima una LUT 3D + una mappa di luminosità a bassa frequenza e le applica ai pixel dell'ORIGINALE; geometria corretta come in F1.",
-    question: "F3 vs F5: generare i pixel o trasferire solo il 'look'?",
-    prompt: readPrompt("enhance_strict"),
-    cost_range: [0.0412, 0.1652],
-    cost_note: "costo di F3 + 0,0002 $ di CPU",
-  },
-  {
     id: "F6",
     name: "Gemini · Nano Banana",
     short: "Gemini image (abbonamento Plus)",
@@ -242,8 +228,6 @@ const SIM = {
     fix: { buia: 0.9, sovraesposta: 0.6, dominante: 0.9, storta: 0.7, sfocata: 0.85, rumorosa: 0.9 } },
   F4: { win: 0.68, tie: 0.1, nat: 3.8, attr: 3.8, newDef: 0.07, flags: 2, struct: [0.72, 0.9], sem: [0.88, 0.97], frame: [92, 99.5],
     fix: { buia: 0.8, sovraesposta: 0.5, dominante: 0.8, storta: 0.6, sfocata: 0.85, rumorosa: 0.85 } },
-  F5: { win: 0.66, tie: 0.12, nat: 4.2, attr: 3.9, newDef: 0.03, flags: 0, struct: [0.91, 0.975], sem: [0.95, 0.99], frame: [93, 98.5],
-    fix: { buia: 0.85, sovraesposta: 0.45, dominante: 0.9, storta: 0.9, sfocata: 0.25, rumorosa: 0.35 } },
   F6: { win: 0.7, tie: 0.08, nat: 3.9, attr: 4.1, newDef: 0.08, flags: 4, struct: [0.64, 0.86], sem: [0.86, 0.95], frame: [88, 99],
     fix: { buia: 0.9, sovraesposta: 0.6, dominante: 0.85, storta: 0.6, sfocata: 0.85, rumorosa: 0.9 } },
 };
@@ -257,7 +241,6 @@ const FLAG_KEYS = {
   F2: ["oggetti_aggiunti_rimossi", "finestre_vista_cambiata", "materiali_colori_cambiati", "difetti_nascosti"],
   F3: ["finestre_vista_cambiata", "difetti_nascosti", "materiali_colori_cambiati"],
   F4: ["geometria_stanza_alterata", "testi_loghi_alterati", "materiali_colori_cambiati"],
-  F5: ["materiali_colori_cambiati"],
   F6: ["materiali_colori_cambiati", "oggetti_aggiunti_rimossi", "finestre_vista_cambiata"],
 };
 const FLAG_EXAMPLES = {
@@ -554,31 +537,14 @@ function simulateJudges(wf, sim, flagged, flagKeys, fixed, remaining, inDefects)
   return { verdicts: ordered, ensemble: { win, judges_used: used.map((v) => v.judge), rubric_mean }, majority };
 }
 
-function f5Ops(f1ops) {
-  const s = f1ops?.straighten ?? { measured_tilt_deg: rd(gauss(0, 1), 2), rotated_deg: 0, keystone_corrected: 0, crop_fraction: 0.02 };
-  return {
-    alignment: { ecc: rd(between(0.86, 0.97), 3), valid_fraction: rd(between(0.94, 0.995), 3) },
-    agreeing_pixels: rd(between(0.62, 0.9), 3),
-    tone_curve: { "in_0.25": rd(between(0.3, 0.4), 3), "in_0.5": rd(between(0.55, 0.64), 3), "in_0.75": rd(between(0.78, 0.86), 3) },
-    color_matrix: [
-      [rd(between(0.95, 1.08), 3), rd(between(-0.04, 0.04), 3), rd(between(-0.04, 0.04), 3)],
-      [rd(between(-0.04, 0.04), 3), rd(between(0.96, 1.05), 3), rd(between(-0.04, 0.04), 3)],
-      [rd(between(-0.04, 0.04), 3), rd(between(-0.04, 0.04), 3), rd(between(0.9, 1.06), 3)],
-    ],
-    gain_map: { min: rd(between(0.8, 0.95), 3), max: rd(between(1.05, 1.25), 3) },
-    straighten: s,
-  };
-}
-
 const FULL_REF = {
   F1: [24.1, 0.79, 0.21],
   F2: [18.9, 0.61, 0.36],
   F3: [21.2, 0.7, 0.28],
   F4: [22.3, 0.73, 0.25],
-  F5: [24.8, 0.81, 0.19],
   F6: [20.4, 0.67, 0.31],
 };
-const MUSIQ = { F1: 57, F2: 71, F3: 69, F4: 65, F5: 62, F6: 68 };
+const MUSIQ = { F1: 57, F2: 71, F3: 69, F4: 65, F6: 68 };
 
 // Pre-assign which outputs get a fidelity flag (fixed counts → stable gates).
 const flagPlan = new Set();
@@ -615,8 +581,6 @@ for (const m of entries) {
       gpu = rec?.gpu_seconds ?? rd(between(4.6, 5.2), 3);
     } else if (wf.id === "F2" || wf.id === "F3") {
       latency = rec?.wall_seconds ?? clamp(gauss(wf.id === "F2" ? 92 : 104, 16), 55, 170);
-    } else if (wf.id === "F5") {
-      latency = (records.get(`F3/${m.id}`)?.wall_seconds ?? clamp(gauss(104, 16), 55, 170)) + between(0.8, 1.8);
     } else {
       latency = clamp(gauss(24, 7), 9, 60);
     }
@@ -625,11 +589,9 @@ for (const m of entries) {
         ? 0.0002 + ((gpu ?? 0) * H200_USD_PER_HOUR) / 3600
         : wf.id === "F4"
           ? ((gpu ?? 5) * H200_USD_PER_HOUR) / 3600
-          : wf.id === "F5"
-            ? 0.1652
-            : wf.id === "F6"
-              ? 0.039
-              : 0.165;
+          : wf.id === "F6"
+            ? 0.039
+            : 0.165;
 
     if (ERRORS[key]) {
       outputs[wf.id] = { status: "error", error: ERRORS[key], latency_s: rd(wf.id === "F6" && key.endsWith("D04") ? 180 : latency, 2), gpu_s: null, cost_usd: 0 };
@@ -693,7 +655,6 @@ for (const m of entries) {
       ensemble: j.ensemble,
     };
     if (wf.id === "F1") o.ops = rec?.meta?.ops ?? { white_balance: { wb_gains_bgr: [1.02, 1, 0.97] } };
-    if (wf.id === "F5") o.ops = f5Ops(records.get(`F1/${m.id}`)?.meta?.ops);
     if (m.kind === "degraded") {
       const [p, s, l] = FULL_REF[wf.id];
       o.full_ref = { psnr: rd(gauss(p, 1.2), 2), ssim: rd(clamp(gauss(s, 0.03), 0.3, 0.98), 3), lpips: rd(clamp(gauss(l, 0.03), 0.05, 0.6), 3) };
@@ -842,11 +803,11 @@ for (const im of images) {
     reason = `Difetti misti (${list(d)}): si usa il workflow vincitore della valutazione.`;
   }
   if (!okClean(im, chosen)) {
-    const alt = ["F1", "F5", "F4"].filter((id) => id !== chosen && passing.includes(id)).find((id) => okClean(im, id)) ?? "F1";
+    const alt = ["F1", "F4"].filter((id) => id !== chosen && passing.includes(id)).find((id) => okClean(im, id)) ?? "F1";
     reason += ` Su questa foto ${chosen} ha un flag di fedeltà: si passa a ${alt}.`;
     chosen = alt;
   }
-  const fallback = chosen === "F1" ? (okClean(im, "F5") ? "F5" : null) : okClean(im, "F1") ? "F1" : null;
+  const fallback = chosen === "F1" ? (okClean(im, "F4") ? "F4" : null) : okClean(im, "F1") ? "F1" : null;
   im.router = { chosen, reason, fallback };
 }
 
@@ -888,11 +849,6 @@ const pairwise_questions = [
     pair: ["F3", "F4"],
     question: "Modello chiuso o open-weights self-hosted?",
     answer: `F3 è preferito più spesso (${pctIt(S("F3").quality_winrate)} contro ${pctIt(S("F4").quality_winrate)}), ma F4 costa circa ${Math.round(S("F3").cost_usd_per_image / S("F4").cost_usd_per_image)} volte meno, risponde in ${Math.round(S("F4").latency_p50_s)} s invece di ${Math.round(S("F3").latency_p50_s)} s e ha meno flag (${pctIt(S("F4").fidelity_flag_rate)} contro ${pctIt(S("F3").fidelity_flag_rate)}).`,
-  },
-  {
-    pair: ["F3", "F5"],
-    question: "Generare i pixel o trasferire solo il 'look'?",
-    answer: `Trasferire il look conserva buona parte della qualità (${pctIt(S("F5").quality_winrate)} contro ${pctIt(S("F3").quality_winrate)}) e azzera quasi i flag (${pctIt(S("F5").fidelity_flag_rate)} contro ${pctIt(S("F3").fidelity_flag_rate)}), perché i pixel restano quelli dell'originale. Ma eredita costo e latenza di F3 e non recupera dettaglio sulle foto piccole.`,
   },
   {
     pair: ["F3", "F6"],

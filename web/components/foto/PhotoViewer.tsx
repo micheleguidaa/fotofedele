@@ -67,16 +67,6 @@ function CaptionChip({ caption }: { caption: Caption }) {
   );
 }
 
-function VerdictPill({ verdict }: { verdict: Verdict }) {
-  return (
-    <Pill tone={verdict.tone}>
-      {verdict.tone === "accent" && <IconCheck className="size-3" />}
-      {(verdict.tone === "warn" || verdict.tone === "bad") && <IconAlert className="size-3" />}
-      {verdict.label}
-    </Pill>
-  );
-}
-
 export function PhotoViewer({ image, title, strip, prevId, nextId, versions, recommended, defaultVersion, workflows, judges }: PhotoViewerProps) {
   const qv = useQueryParam("v");
   const qb = useQueryParam("b"); // links from the old lab page
@@ -273,11 +263,8 @@ export function PhotoViewer({ image, title, strip, prevId, nextId, versions, rec
                     >
                       <img src={v.thumb} alt="" loading="lazy" decoding="async" className="h-[66px] w-[88px] shrink-0 rounded-md object-cover" />
                       <span className="min-w-0 flex-1">
-                        <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                          <span className="text-sm font-semibold">
-                            {v.id} · {v.name}
-                          </span>
-                          <VerdictPill verdict={v.verdict} />
+                        <span className="block text-sm font-semibold">
+                          {v.id} · {v.name}
                         </span>
                         <span className="mt-1 block text-[13px] leading-snug text-muted">{v.summary}</span>
                       </span>

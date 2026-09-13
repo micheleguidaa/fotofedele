@@ -1,7 +1,7 @@
 // Data contract between the Python pipeline (pipeline/fotolab/aggregate.py) and the web app.
 // The pipeline writes web/public/data/results.json with this exact shape.
 
-export type WorkflowId = "F1" | "F2" | "F3" | "F4" | "F5" | "F6";
+export type WorkflowId = "F1" | "F2" | "F3" | "F4" | "F6";
 export type JudgeId = "gpt" | "gemini" | "gemma" | "qwen";
 export type Defect =
   | "buia" | "sovraesposta" | "dominante" | "storta" | "sfocata" | "rumorosa" | "bassa_risoluzione";
@@ -77,7 +77,7 @@ export interface Output {
   fidelity?: Fidelity;
   judges?: JudgeVerdict[];
   ensemble?: { win: number; judges_used: JudgeId[]; rubric_mean: Rubric }; // win: 1 / 0.5 / 0 vs input
-  ops?: Record<string, unknown>; // what the deterministic steps did (F1/F5)
+  ops?: Record<string, unknown>; // what the deterministic steps did (F1)
   full_ref?: { psnr: number; ssim: number; lpips: number } | null; // only for degraded inputs, vs ground truth
   iqa?: { musiq: number; topiq: number } | null;
 }

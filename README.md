@@ -22,7 +22,6 @@ Pipeline `python -m fotolab run | evaluate | judge | aggregate`, con i flussi di
 | F2 | gpt-image, prompt semplice («rendila professionale») | Codex CLI, abbonamento ChatGPT | — |
 | F3 | gpt-image, prompt vincolato (cosa migliorare, cosa NON toccare) | idem | F2 vs F3: quanto conta il prompt? |
 | F4 | Qwen-Image-Edit 2511 open weights + Lightning, stesso prompt | ComfyUI su H200 | F3 vs F4: modello chiuso o open? |
-| F5 | **Ibrido:** da F3 prendo solo curva tonale, matrice colore e luce sfocata, e le applico ai pixel originali | Python | F3 vs F5: generare pixel o trasferire il look? |
 
 F6 (Gemini) non è stato eseguito: la CLI rifiuta gli account individuali, la web app non ha API e Vertex è a consumo. Ho scelto di usare solo l'abbonamento ChatGPT e modelli self-hosted.
 
@@ -56,25 +55,23 @@ La regola:
 | F2 gpt-image semplice | 100% | **92%** | 8% | 0,165 $ | 59 s |
 | F3 gpt-image vincolato | 94% | **83%** | 17% | 0,165 $ | 108 s |
 | F4 Qwen open weights | 92% | 38% | **58%** | 0,006 $ | 10 s |
-| F5 ibrido | 56% | 8% | 54% | 0,165 $ | 108 s |
 
 - **Nessun flusso supera il gate del 5%.** Quindi niente pubblicazione automatica: la verifica gira foto per foto e l'agente approva.
 - **Il router è F1 → F4:** si prova il classico e, se la verifica lo scarta o la foto non migliora, si passa a Qwen. Consegna **il 63% delle foto migliorate e fedeli a 0,006 $ di media**, contro il 17% a 0,165 $ di gpt-image da solo. L'ordine usa il punteggio dichiarato, con la quota «migliore e fedele» al posto del win-rate.
 - **gpt-image fa le foto più belle ma ridisegna la casa.** Nel test iniziale ha inventato uno skyline dietro le tende e su R01 ha ricolorato le pareti. Con «rendila professionale» cancella o altera loghi e watermark nel 54% delle foto e nasconde difetti nel 33%. Il prompt vincolato dimezza l'area ridisegnata (dal 22% all'11%), ma le segnalazioni restano all'83%.
 - **Qwen open weights è preferito quasi quanto gpt-image** (92% contro 94%), costa 28 volte meno e altera meno della metà delle volte (38% contro 83%).
-- **L'ibrido F5 conserva i pixel originali** (8% di segnalazioni), ma eredita costo e latenza di gpt-image.
 - **Misura della misura:**
   - la regola finale ha precision e recall 1,00 sulle trappole, mentre il solo rilevatore strutturale ha recall 0,83 perché non vede un logo cancellato;
   - i tre giudici riconoscono l'originale pulito nel 100% dei casi;
   - l'accordo tra giudici è moderato (α 0,41);
   - Qwen favorisce la propria famiglia (81% contro 67%).
-- **Iterazione:** F1 e F5 v1 tagliavano loghi ai bordi, e F5 v1 dava un effetto slavato. Li ho corretti e rimisurati; le v1 sono archiviate.
+- **Iterazione:** F1 v1 tagliava loghi ai bordi. L'ho corretto e rimisurato; la v1 è archiviata.
 
 ## 7. Strumenti
 Claude Code per architettura, codice e analisi, con un agente in parallelo per la web app. Codex CLI per gpt-image e il giudice GPT. ComfyUI e Ollama su H200 per Qwen-Image-Edit, Real-ESRGAN, Gemma e Qwen VL. Python con OpenCV, PyTorch, LPIPS, pyiqa e DINOv2. Next.js su Vercel.
 
 ## 8. Reale, stimato, simulato
-- **Reale:** foto, output dei 5 flussi, metriche, giudizi AI, latenze.
+- **Reale:** foto, output dei 4 flussi, metriche, giudizi AI, latenze.
 - **Stimato:** i costi, perché l'abbonamento non espone prezzi unitari; la latenza di gpt-image, che include l'overhead dell'agente Codex.
 - **Simulato:** le degradazioni controllate, l'integrazione nel back-office e il caricamento live, che funziona solo in locale.
 - **Progettato, non eseguito:** l'arena umana e l'A/B test su annunci veri.

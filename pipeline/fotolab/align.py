@@ -1,7 +1,7 @@
 """Geometric alignment between an input photo and a workflow output.
 
 Generative models may re-frame, straighten or resize. Before comparing pixels
-(fidelity, tone transfer, full-reference metrics) we register the candidate onto
+(fidelity, full-reference metrics) we register the candidate onto
 the reference with ECC (invariant to brightness/contrast changes), coarse-to-fine.
 """
 

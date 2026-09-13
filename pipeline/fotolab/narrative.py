@@ -100,13 +100,4 @@ def decorate(results: dict) -> None:
         lambda c: (f"Su {c['n']} foto: win-rate {_pct(c['win'][0])} (gpt-image) vs {_pct(c['win'][1])} (Qwen); "
                    f"segnalati {_pct(c['flag'][0])} vs {_pct(c['flag'][1])}; costo stimato {_usd(s['F3']['cost_usd_per_image'])} vs "
                    f"{_usd(s['F4']['cost_usd_per_image'])} per foto, latenza mediana {s['F3']['latency_p50_s']:.0f} s vs {s['F4']['latency_p50_s']:.0f} s."))
-    add("F3", "F5", "Generare i pixel o trasferire solo il 'look'? (gpt-image vs ibrido)",
-        lambda c: (f"Su {c['n']} foto: win-rate {_pct(c['win'][0])} (gpt-image) vs {_pct(c['win'][1])} (ibrido); "
-                   f"segnalati {_pct(c['flag'][0])} vs {_pct(c['flag'][1])}; area cambiata {c['area'][0]:.0f}% vs {c['area'][1]:.0f}%. "
-                   "L'ibrido usa gpt-image solo come 'direttore della fotografia': luce e colore arrivano dal modello, "
-                   "i pixel restano quelli dell'originale."))
-    add("F1", "F5", "Serve davvero l'AI? (classico deterministico vs ibrido)",
-        lambda c: (f"Su {c['n']} foto: win-rate {_pct(c['win'][0])} (classico) vs {_pct(c['win'][1])} (ibrido), "
-                   f"entrambi con segnalazioni {_pct(c['flag'][0])} / {_pct(c['flag'][1])}; il classico costa ~0 e impiega "
-                   f"{s['F1']['latency_p50_s']:.1f} s.".replace(".", ",", 1)))
     dec["pairwise_questions"] = qs

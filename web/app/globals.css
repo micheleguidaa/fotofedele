@@ -4,77 +4,42 @@
 @source not "../public";
 
 /*
-  FotoFedele design tokens.
-  Neutral warm-grey palette + one accent (deep teal). Status colours are reserved for
-  state (ok / warn / bad) and always ship with an icon or a text label.
-  Light theme is the default; dark theme follows prefers-color-scheme.
+  FotoFedele design tokens: Immobiliare.it palette (blue #0074c1, ink #373c47, greys, light blue #e6f1f9).
+  Light theme only, like immobiliare.it. Status colours are reserved for state (ok / warn / bad) and always
+  ship with an icon or a text label.
 */
 :root {
   color-scheme: light;
-  --canvas: #f7f7f4;
+  --canvas: #f5f6f7;
   --surface: #ffffff;
-  --subtle: #efeeea;
-  --ink: #1b1c1a;
-  --muted: #5a5b56;
-  --line: #deddd7;
-  --line-strong: #c4c3bb;
+  --subtle: #eceef1;
+  --ink: #373c47;
+  --muted: #60687a;
+  --line: #d5d7dd;
+  --line-strong: #b6bac4;
 
-  --accent: #0d5f5b;
-  --accent-strong: #094845;
-  --accent-soft: #e2efed;
+  --accent: #0074c1;
+  --accent-strong: #005c99;
+  --accent-soft: #e6f1f9;
   --on-accent: #ffffff;
 
-  --ok: #1d6f36;
-  --ok-soft: #e4f3e8;
-  --warn: #9a4600;
-  --warn-soft: #fcefdf;
-  --bad: #b3261e;
-  --bad-soft: #fcebe9;
+  --ok: #1d7a3e;
+  --ok-soft: #e5f4ea;
+  --warn: #9a4a00;
+  --warn-soft: #fff1df;
+  --bad: #d10011;
+  --bad-soft: #fdeced;
 
   /* chart chrome */
-  --grid: #e6e5df;
-  --axis: #b9b8b0;
-  --chart-neutral: #a9a8a1;
+  --grid: #e4e6ea;
+  --axis: #b6bac4;
+  --chart-neutral: #a3a8b3;
 
   /* categorical series (validated order, dataviz reference palette): score components */
   --c1: #2a78d6;
   --c2: #eb6834;
   --c3: #1baf7a;
   --c4: #eda100;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --canvas: #111312;
-    --surface: #191c1b;
-    --subtle: #222625;
-    --ink: #eceeec;
-    --muted: #a6ada9;
-    --line: #2d3331;
-    --line-strong: #3f4744;
-
-    --accent: #5cc2b6;
-    --accent-strong: #82d4ca;
-    --accent-soft: #143230;
-    --on-accent: #062220;
-
-    --ok: #73d08e;
-    --ok-soft: #133021;
-    --warn: #f4a55c;
-    --warn-soft: #3a2511;
-    --bad: #f28b82;
-    --bad-soft: #3b1a17;
-
-    --grid: #2a2f2d;
-    --axis: #48504d;
-    --chart-neutral: #6d7470;
-
-    --c1: #3987e5;
-    --c2: #d95926;
-    --c3: #199e70;
-    --c4: #c98500;
-  }
 }
 
 @theme inline {
