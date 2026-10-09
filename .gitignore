@@ -18,3 +18,4 @@ pipeline/data/metrics/heatmaps/
 pipeline/data/traps/*.png
 pipeline/data/traps/*.jpg
 *.log
+.vercel
